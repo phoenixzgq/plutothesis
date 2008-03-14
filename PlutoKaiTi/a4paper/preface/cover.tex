@@ -1,0 +1,18 @@
+% 封面 页
+\caffil{计算机科学与技术学院}  %学院
+\csubject{计算机系统结构}      %学科、专业
+\csupervisor{某~~某~~某~~~~教~~授}  %某~~~~~~某~~~~教~~授    导师
+%\cassosupervisor{张~~三~~丰}  % 副导师
+\cauthor{某~~某~~某}           %作者
+\cbdate{2003~年~9~月}          %入学时间  %硕士是年级
+\cdate{2005~年~3~月}           %开题报告日期
+\ifxueweidoctor
+  \ctitle{哈工大硕博士学位论文开题} %论文题目
+  \ctitlesec{报告模板~\version~版}      %论文题目太长，分成两行，这是第二行 ; 注释掉
+\fi
+%% 硕士
+\ifxueweimaster
+  \ctitle{\hspace*{10pt}哈工大硕博士学位论文开题报告模板~\version~版} %论文题目 %手动调节 \hspace*{40pt}
+\fi
+
+\makecover

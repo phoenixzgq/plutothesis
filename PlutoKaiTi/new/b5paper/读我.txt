@@ -1,0 +1,10 @@
+一. 用acrobat 打印，
+page scaling: None
+选择 choose paper source by pdf page size
+不要选 auto-Rotate and Center
+
+二.模板规格
+1. b5纸，双面打印，页眉不变；
+2. 正文用的是五号；图表题用的小五。
+3. 参考文献不分页；
+4. 图题是汉语，不含英语。 不过很容易改成双语的。

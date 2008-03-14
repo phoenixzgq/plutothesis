@@ -1,0 +1,67 @@
+\defaultfont
+
+\BiChapter{模板选择及使用中的一些技巧}{Some Tricks of Using this Template}
+\label{Tricks}
+
+\BiSection{关于学位论文模板}{Something About Templates}
+\label{tricks:abouttemplates}
+
+
+\BiSection{算法}{algorithm}
+这是一个算法的例子，来自~worldguy@lilacbbs~
+
+\begin{minipage}{0.8\textwidth}
+\begin{algorithm}[H]
+	\caption{This is the caption}
+\KwIn{training samples, {$(d_i, d_j)_q$; $\mathbf{q}_i, \mathbf{q}_j \in C$, $q\in \mathbf{Q}$} }
+\KwOut{parameter setting $\lambda^T$}
+
+Initialization : set $\lambda_0=1, \lambda_i=0$, for i=$1, \dots, N$
+
+\For{$t$=1 to $T$}
+{
+    \ForEach{training sample $(d_i, d_j)_q$}
+    {
+        \If{ $Score(q, d_j, \lambda^t) \ge Score(q, d_i, \lambda^t)$ }
+        {
+            \ForEach{$\lambda^t_n (n=1, \dots, N)$}
+            {
+                $\lambda^{t+1}_n = \lambda^t_n + \eta (f_n(q, c, d_i) - f_n(q, c, d_j))$
+            }
+        }
+    }
+}
+\end{algorithm}
+\end{minipage}
+
+\BiChapter{模板选择及使用中的一些技巧}{Some Tricks of Using this Template}
+\label{Tricks}
+
+\BiSection{关于学位论文模板}{Something About Templates}
+\label{tricks:abouttemplates}
+
+
+\begin{minipage}{0.8\textwidth}
+\begin{algorithm}[H]
+	\caption{This is the caption}
+\KwIn{training samples, {$(d_i, d_j)_q$; $\mathbf{q}_i, \mathbf{q}_j \in C$, $q\in \mathbf{Q}$} }
+\KwOut{parameter setting $\lambda^T$}
+
+Initialization : set $\lambda_0=1, \lambda_i=0$, for i=$1, \dots, N$
+
+\For{$t$=1 to $T$}
+{
+    \ForEach{training sample $(d_i, d_j)_q$}
+    {
+        \If{ $Score(q, d_j, \lambda^t) \ge Score(q, d_i, \lambda^t)$ }
+        {
+            \ForEach{$\lambda^t_n (n=1, \dots, N)$}
+            {
+                $\lambda^{t+1}_n = \lambda^t_n + \eta (f_n(q, c, d_i) - f_n(q, c, d_j))$
+            }
+        }
+    }
+}
+\end{algorithm}
+\end{minipage}
+

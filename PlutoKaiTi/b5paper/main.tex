@@ -1,0 +1,45 @@
+%input "reference\reference.bib" % for winedt users
+\def\version{b5-0.2}         % 哈尔滨工业大学硕博开题LaTeX模板
+
+\def \xuewei {Doctor}     % 定义学位 博士
+%\def \xuewei {Master}    % 硕士
+
+\def\oneortwoside{twoside}% 双面打印
+
+\def\xueke{Engineering}   % 定义学科 工学
+%\def\xueke{Science}      % 理学
+%\def\xueke{Management}   % 管理学
+%\def\xueke{Arts}         % 艺术学
+
+\def\usewhat{dvipdfmx}    % 你喜欢哪种编译方式，pdflatex dvipdfmx dvipspdf yap
+
+\input{setup/type.tex}    % 硕博类型
+
+%下面的book选项中可以使用 draft 选项，使插入的图形只显示外框，以加快预览速度。
+\documentclass[11pt,b5paper,openany,\oneortwoside]{book}
+
+\input{setup/package.tex}
+
+\graphicspath{{figures/}} % 定义所有的eps文件在 figures 子目录下
+\begin{document}
+\begin{CJK*}{GBK}{song}
+\input{setup/Definition}  % 文本格式定义
+\input{setup/format}
+
+\frontmatter
+\sloppy
+\input{preface/cover} % 封面
+
+\mainmatter
+\defaultfont % 对应于小五的标准字号是 10.5pt
+
+\input{body/KaiTi}
+
+%参考文献
+\defaultfont
+\bibliographystyle{chinesebst}
+\addtolength{\bibsep}{-0.8 em} \nocite{*}
+\bibliography{reference/reference}
+\clearpage
+\end{CJK*}
+\end{document}
