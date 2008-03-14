@@ -1,0 +1,123 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   LaTeX File for the Dissertation of Harbin Institute of Technology
+%   LaTeX + CJK     哈尔滨工业大学学位论文模板
+%   Based on Wang Lei's Template for Tsinghua University
+%   Version: \beta
+%   Last Update: 2004-04-28
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    by  Xiangqian Wu (HIT BBS: UFO, SMTH BBS: SuperUFO)
+%                  csxqwu@hotmail.com
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+
+
+
+%%定义新命令，用\mr来代替\mathrm
+\newcommand{\mr}[1]{\mathrm{#1}}
+
+%%定义常量\english
+\def \english {English}
+
+%%定义参考文献的标题
+\ifx \language \english
+\def \ReferenceName {REFERENCE}
+\else
+\def \ReferenceName {参考文献}
+\fi
+%定义双标题命令
+\newcommand{\FigureBiCaption}[2]
+{
+%\bicaption{}{#1}{Figure}{#2}
+
+\renewcommand{\figurename}{图}
+\caption{#1}
+\addtocounter{figure}{-1}
+\renewcommand{\figurename}{Fig.}
+\vspace{-0.5ex}
+\caption{#2}
+}
+\newcommand{\SubfigureCaption}[2]  % Two Parameters, the first one is the width of the subfigure,
+{
+\addtocounter{subfigure}{-1}       % the second one is the caption of the subfigure
+\vspace{-2ex}
+\subfigure[#2]{\rule{#1}{0pt}}
+}
+
+\newcommand{\TableBiCaption}[2]
+{
+\renewcommand{\tablename}{表}
+\caption{#1}
+
+\addtocounter{table}{-1}
+\renewcommand{\tablename}{Table}
+\vspace{-0.5ex}
+\caption{#2}
+\vspace{1ex}
+}
+
+
+\newcommand{\BiChapter}[2]
+{
+\ifx \language \english
+    \chapter[#2]{#1}
+\else
+    \chapter{\bfseries #1}
+\fi
+}
+
+\newcommand{\BiSection}[2]
+{
+\ifx \language \english
+\section[#2]{#1}
+\else
+\section{#1}
+\fi
+}
+\newcommand{\BiSubsection}[2]
+{
+\ifx \language \english
+\subsection[#2]{#1}
+\else
+\subsection{#1}
+\fi
+}
+
+\newcommand{\BiSubsubsection}[2]
+{
+\ifx \language \english
+\subsubsection[#2]{#1}
+\else
+\subsubsection{#1}
+\fi
+}
+
+\newcommand{\BiAppendixChapter}[2]
+{
+\phantomsection
+\ifx \language \english
+\markboth{\MakeUppercase{#2}}{\MakeUppercase{#2}}
+\addcontentsline{toc}{chapter}{\hei#2}
+\else
+\markboth{\MakeUppercase{#1}}{\MakeUppercase{#1}}
+\addcontentsline{toc}{chapter}{\hei#1}
+\fi
+\chapter*{#1}
+}
+
+%%使图编号为 7-1 的格式
+\renewcommand{\thefigure}{\arabic{chapter}-\arabic{figure}}
+
+%%使子图编号为 7-1(a) 的格式
+\makeatletter
+\renewcommand{\p@subfigure}{\thefigure}
+\makeatother
+%%使表编号为 7-1 的格式
+\renewcommand{\thetable}{\arabic{chapter}-\arabic{table}}
+
+%%使公式编号为 7-1 的格式
+\renewcommand{\theequation}{\arabic{chapter}-\arabic{equation}}
+
+%设置公式之间的垂直距离 默认value = 3pt
+\setlength\jot{2.5ex}

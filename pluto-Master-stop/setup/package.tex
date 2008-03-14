@@ -1,0 +1,201 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   LaTeX File for the Dissertation of Harbin Institute of Technology
+%   LaTeX + CJK     哈尔滨工业大学学位论文模板
+%   Based on Wang Lei's Template for Tsinghua University
+%   Version: \beta
+%   Last Update: 2004-04-28
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    by  Xiangqian Wu (HIT BBS: UFO, SMTH BBS: SuperUFO)
+%                  csxqwu@hotmail.com
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   LaTeX File for Doctor (Master) Thesis of Tsinghua University
+%   LaTeX + CJK     清华大学博士（硕士）论文模板
+%   Based on Wang Tianshu's Template for XJTU
+%   Version: 1.00
+%   Last Update: 2003-09-12
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Copyright 2002-2003  by  Lei Wang (BaconChina)       (bcpub@sina.com)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   LaTeX File for phd thesis of xi'an Jiao Tong University
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Copyright 2002  by  Wang Tianshu    (tswang@asia.com)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Latex 西安交通大学博士论文的模板.
+%
+% 建议使用miktex2.1最大安装编译此模板
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% 引用的宏包和相应的定义
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% 图形支持宏包 为了使用pdftex 需要作相应判断
+
+%定义一个新判断命令
+\newif\ifpdf
+\ifx\pdfoutput\undefined
+   \pdffalse
+ \else
+   \pdfoutput=1
+   \pdftrue
+ \fi
+
+
+
+%%%%%%%%%%%%%%%%%%%   Modified By UFO   Begin  %%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%彩色引用和书签_UFO%%%%%%
+\ifpdf
+\usepackage[pdftex]{graphicx}
+
+% 生成带书签的pdf
+\else
+\usepackage[dvips]{graphicx}
+\fi
+
+%\usepackage[dvipdfm,
+%            CJKbookmarks=true,
+%            bookmarksnumbered=true,
+%            bookmarksopen=true,
+%            colorlinks=true,
+%            pdfborder=001,
+%            citecolor=blue,
+%            linkcolor=red,
+%            anchorcolor=green,
+%            urlcolor=blue
+%            ]{hyperref}
+%%%%%%%%%%%%%%%%%%%   Modified By UFO   End  %%%%%%%%%%%%%%%%%%%%%%%%%
+
+%
+
+% 支持彩色
+\usepackage{color}
+% eps图像
+\usepackage{epsfig}
+
+% 首行缩进宏包
+\usepackage{indentfirst}
+
+% 版面控制宏包，定义规定的版面尺寸
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% HIT:
+%论文版芯大小一般应为145mm×210mm（包括页眉及页码则为145mm×230mm）
+%页码在版芯下边线之下隔行居中放置；
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[%paperwidth=18.4cm, paperheight= 26cm,
+            body={14.5true cm,21true cm},
+            twosideshift=0 pt,
+            %headheight=1.0true cm
+            ]{geometry}
+
+% 中文支持宏包
+\usepackage{CJK}
+
+% 脚注控制
+\usepackage[perpage,symbol]{footmisc}
+
+% AMSLaTeX宏包 用来排出更加漂亮的公式
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% 不同于\mathcal or \mathfrak 之类的英文花体字体
+\usepackage{mathrsfs}
+
+% 定理类环境宏包，其中 amsmath 选项用来兼容 AMS LaTeX 的宏包
+\usepackage[amsmath,thmmarks]{ntheorem}
+
+% 因为图形可浮动到当前页的顶部，所以它可能会出现
+% 在它所在文本的前面. 要防止这种情况，可使用 flafter
+% 宏包
+%\usepackage{flafter}
+
+%浮动图形控制宏包
+%允许上一个section的浮动图形出现在下一个section的开始部分
+%该宏包提供处理浮动对象的 \FloatBarrier 命令，使所有未处
+%理的浮动图形立即被处理
+\usepackage[below]{placeins}
+
+% 图文混排用宏包
+\usepackage{floatflt}
+
+% 图形和表格的控制
+\usepackage{rotating}
+
+% tex1cm宏包，控制字体的大小
+\usepackage{type1cm}
+
+% 控制标题的宏包
+\usepackage[sf]{titlesec}
+
+% 控制目录的宏包
+%\usepackage{titletoc}
+\usepackage{titletoc}
+% 处理数学公式中的黑斜体的宏包
+\usepackage{bm}
+
+%可将浮动对象放置到文件的最后
+%\usepackage{endfloat}
+
+% fancyhdr宏包 页眉和页脚的相关定义
+\usepackage{fancyhdr}
+\usepackage{fancyref}
+
+%%%%%%%%%%%%%%%%%%%   Modified By UFO   Begin  %%%%%%%%%%%%%%%%%%%%%%%
+
+% 支持引用的宏包
+%\usepackage{cite}
+% 支持引用缩写的宏包_UFO
+\usepackage[sort&compress,numbers]{natbib}
+\usepackage{hypernat}
+
+%%%%%%%%%%%%%%%%%%%   Modified By UFO   End  %%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%浮动图形和表格标题样式
+\usepackage[centerlast]{caption2}
+
+% 定制表格和图形的多行标题行距
+\usepackage{setspace}
+
+% 打印当前页面格式的宏包
+\usepackage{layouts}
+
+% 使用Times字体的宏包
+\usepackage{times}
+
+%%%%%%%%%%%%%%%%%%%   Added By UFO   Begin  %%%%%%%%%%%%%%%%%%%%%%%
+%使用Multirow宏包，使得表格可以合并多个row格
+\usepackage{multirow}
+%支持子图
+\usepackage[hang, centerlast]{subfigure}
+%数学宏包
+\usepackage{amsmath}
+%%%%%%%%%%%%%%%%%%%   Added By UFO   End  %%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[dvipdfm,
+            CJKbookmarks=true,
+            bookmarksnumbered=true,
+            bookmarksopen=true,
+            colorlinks=true,
+            pdfborder=001,
+            citecolor=black,
+            linkcolor=black,
+            anchorcolor=black,
+            urlcolor=black
+            ]{hyperref}
+\AtBeginDvi{\special{pdf:tounicode GBK-EUC-UCS2}} % GBK -> Unicode
+\usepackage{hyperref}
