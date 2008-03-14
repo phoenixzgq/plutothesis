@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.6)
+The top-level auxiliary file: main.aux
+The style file: chinesebst.bst
+Database file #1: reference/reference.bib
+Warning--missing publisher in BEZOS02
+Warning--missing publisher in OOSTRUM01
+Warning--"2$\varepsilon$}用户手册" isn't a brace-balanced string for entry TEXGURU99
+while executing--line 1499 of file chinesebst.bst
+Warning--"2$\VAREPSILON$}用户手册" isn't a brace-balanced string for entry TEXGURU99
+while executing--line 1499 of file chinesebst.bst
+Warning--missing publisher in TEXGURU99
+Warning--"2$\varepsilon$}, {\LaTeX 2$\varepsilon$}插图指南" isn't a brace-balanced string for entry WANG00
+while executing--line 1499 of file chinesebst.bst
+Warning--"2$\VAREPSILON$}, {\LaTeX 2$\varepsilon$}插图指南" isn't a brace-balanced string for entry WANG00
+while executing--line 1499 of file chinesebst.bst
+Warning--"2$\varepsilon$}插图指南" isn't a brace-balanced string for entry WANG00
+while executing--line 1499 of file chinesebst.bst
+Warning--"2$\VAREPSILON$}插图指南" isn't a brace-balanced string for entry WANG00
+while executing--line 1499 of file chinesebst.bst
+Warning--missing publisher in WANG00
+Warning--missing publisher in Zhang2002
+You've used 9 entries,
+            2879 wiz_defined-function locations,
+            681 strings with 5810 characters,
+and the built_in function-call counts, 21443 in all, are:
+= -- 1714
+> -- 271
+< -- 1189
++ -- 1941
+- -- 67
+* -- 175
+:= -- 2607
+add.period$ -- 24
+call.type$ -- 9
+change.case$ -- 67
+chr.to.int$ -- 182
+cite$ -- 23
+duplicate$ -- 2316
+empty$ -- 1425
+format.name$ -- 17
+if$ -- 3434
+int.to.chr$ -- 0
+int.to.str$ -- 9
+missing$ -- 92
+newline$ -- 73
+num.names$ -- 9
+pop$ -- 2181
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1369
+stack$ -- 0
+substring$ -- 1836
+swap$ -- 140
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 5
+while$ -- 140
+width$ -- 10
+write$ -- 117
+(There were 11 warnings)

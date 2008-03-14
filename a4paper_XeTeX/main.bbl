@@ -1,0 +1,74 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibAnnoteFile}[1]{%
+  \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ \input{#1}\end{quotation}}{}}
+\providecommand{\bibAnnote}[2]{%
+  \begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ #2\end{quotation}}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{BEZOS02}
+J.~Bezos.
+\newblock The Titlesec and Titletoc Packages.
+\newblock 2nd edn.
+\newblock 2002:10--20
+\bibAnnoteFile{BEZOS02}
+
+\bibitem{OOSTRUM01}
+{P. Oostrum, ifuleyou@bbs.ctex.org~译}.
+\newblock {\LaTeX}下的页面布局.
+\newblock 2001:10--20
+\bibAnnoteFile{OOSTRUM01}
+
+\bibitem{SHELL02}
+M.~Shell.
+\newblock How to Use the {IEEEtran} {\LaTeX} Class.
+\newblock Journal of {\LaTeX} Class Files.
+\newblock 2002, 1(11):10--20
+\bibAnnoteFile{SHELL02}
+
+\bibitem{TEXGURU99}
+{\TeX}Guru.
+\newblock {\LaTeX 2$\varepsilon$}用户手册.
+\newblock 1999:10--20
+\bibAnnoteFile{TEXGURU99}
+
+\bibitem{WANG00}
+{K. Reckdahl~原著, 王磊~译}.
+\newblock Using Import Graphics in {\LaTeX 2$\varepsilon$}, {\LaTeX
+  2$\varepsilon$}插图指南.
+\newblock 2000:10--20
+\bibAnnoteFile{WANG00}
+
+\bibitem{Zhang2002}
+张三, 李四, 王五, 等.
+\newblock 七仙女下凡除妖记.
+\newblock 第二版.
+\newblock 2002:1--200
+\bibAnnoteFile{Zhang2002}
+
+\bibitem{zarchan84}
+F.~W. Nesline, P.~Zarchan, P.~Oostrum, et~al.
+\newblock Miss Distance Dynamics in Homing Missiles.
+\newblock Guidance and Control Conference, Seattle, WA, Technical Papers.
+\newblock 1984:84--98
+\bibAnnoteFile{zarchan84}
+
+\bibitem{zhangsanfeng83}
+张三丰.
+\newblock 太极剑法与太极拳.
+\newblock 武当大学博士学位论文.
+\newblock 1783:15--16
+\bibAnnoteFile{zhangsanfeng83}
+
+\bibitem{zhangsanfeng}
+S.~F. Zhang.
+\newblock Tai Ji Jian and Tai Ji Quang.
+\newblock Ph.D. thesis, wu dan university.
+\newblock 1783:15--16
+\bibAnnoteFile{zhangsanfeng}
+
+\end{thebibliography}

@@ -1,0 +1,1284 @@
+This is XeTeX, Version 3.141592-2.2-0.997 (MiKTeX 2.7 Beta 4) (preloaded format=xelatex 2007.11.3)  12 NOV 2007 21:43
+entering extended mode
+**main
+(main.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8h> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman, ngerman, french, loaded.
+(setup/type.tex) ("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\base\book.cls"
+Document Class: book 2005/09/16 v1.4f Standard LaTeX document class
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\base\bk12.clo"
+File: bk12.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (setup/package.tex
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\etex\etex.sty"
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count88
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\xelatex\fontspec\fontspec.sty"
+Package: fontspec 2007/09/16 v1.16 Advanced font selection for XeLaTeX
+
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2006/08/21 v0.3 Provides ifxetex conditional
+)
+\c@zf@newff=\count89
+\c@zf@index=\count90
+\c@zf@script=\count91
+\c@zf@language=\count92
+
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\tools\calc.sty"
+Package: calc 2005/08/06 v4.2 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count93
+\calc@Bcount=\count94
+\calc@Adimen=\dimen103
+\calc@Bdimen=\dimen104
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
+LaTeX Info: Redefining \setlength on input line 75.
+LaTeX Info: Redefining \addtolength on input line 76.
+\calc@Ccount=\count95
+\calc@Cskip=\skip45
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2006/11/18 v2.5f package option processing (HA)
+
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\generic\xkeyval\xkeyval.tex"
+\XKV@toks=\toks14
+\XKV@depth=\count96
+File: xkeyval.tex 2006/11/18 v2.5f key=value parser (HA)
+
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\generic\xkeyval\keyval.tex")))
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\base\fontenc.sty"
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\xelatex\euenc\eu1enc.def"
+File: eu1enc.def 2006/08/13 v0.1a Experimental unicode font encoding
+)
+LaTeX Font Info:    Try loading font information for EU1+lmr on input line 100.
+
+
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\xelatex\euenc\lm\eu1lmr.fd"
+File: eu1lmr.fd 2007/01/14 v1.3 Font defs for Latin Modern
+))
+LaTeX Info: Redefining \itshape on input line 1069.
+LaTeX Info: Redefining \slshape on input line 1072.
+LaTeX Info: Redefining \scshape on input line 1075.
+LaTeX Info: Redefining \upshape on input line 1078.
+
+fontspec.cfg loaded.
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\xelatex\fontspec\fontspec.cfg"))
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\xelatex\xunicode\xunicode.sty"
+File: xunicode.sty 2005/02/26 v0.5 provides access to latin accents and many ot
+her characters in Unicode lower plane
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\xelatex\xltxtra\xltxtra.sty"
+Package: xltxtra 2007/09/01 v0.3b Improvements for the "XeLaTeX" format
+
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\graphics\graphics.sty"
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: xetex.def on input line 90.
+
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\xelatex\graphics\xetex.def"
+File: xetex.def 2006/08/10 v0.92 LaTeX color/graphics driver for XeTeX (RRM, mo
+d. JK)
+))
+\Gin@req@height=\dimen105
+\Gin@req@width=\dimen106
+)
+LaTeX Info: Redefining \TeX on input line 39.
+LaTeX Info: Redefining \LaTeX on input line 45.
+
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\base\fixltx2e.sty"
+Package: fixltx2e 2006/03/24 v1.1n fixes to LaTeX
+LaTeX Info: Redefining \em on input line 420.
+)
+LaTeX Info: Redefining \em on input line 114.
+LaTeX Info: Redefining \emph on input line 123.
+LaTeX Info: Redefining \- on input line 128.
+LaTeX Info: Redefining \textsubscript on input line 147.
+LaTeX Info: Redefining \textsuperscript on input line 149.
+\xxt@tempbox=\box26
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2007/09/09 v1.5 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode not detected.
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\geometry\geometry.sty"
+Package: geometry 2002/07/08 v3.2 Page Geometry
+\Gm@cnth=\count97
+\Gm@cntv=\count98
+\c@Gm@tempcnt=\count99
+\Gm@bindingoffset=\dimen107
+\Gm@wd@mp=\dimen108
+\Gm@odd@mp=\dimen109
+\Gm@even@mp=\dimen110
+\Gm@dimlist=\toks15
+
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\xelatex\xetexconfig\geometry.cfg")
+
+Package geometry Warning: `twosideshift' is obsolete.
+
+) ("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\misc\layouts.sty"
+Package: layouts 2002/06/09 v2.6 graphical depiction of document elements
+\l@ylen=\skip46
+\layoutsbox=\box27
+\l@youtunitlength=\skip47
+\l@youtlinethick=\skip48
+\l@youtlinethickii=\skip49
+\l@ysetupparskip=\skip50
+\l@ysetupbaselineskip=\skip51
+\l@yonem=\skip52
+\l@yonex=\skip53
+\l@ylmarg=\skip54
+\l@yrmarg=\skip55
+\l@yitmindent=\skip56
+\l@ylblwidth=\skip57
+\l@ylblsep=\skip58
+\l@ylparindent=\skip59
+\l@ytsep=\skip60
+\l@ypskip=\skip61
+\l@yptsep=\skip62
+\l@ypsep=\skip63
+\l@yitmsep=\skip64
+\l@ytok=\toks16
+\l@youtpw=\count100
+\l@youtph=\count101
+\l@youthpi=\count102
+\l@youthpii=\count103
+\l@youthpiii=\count104
+\l@youthpiv=\count105
+\l@youthpv=\count106
+\l@youthpvi=\count107
+\l@youthpvii=\count108
+\l@youtparskip=\count109
+\l@youtvpi=\count110
+\l@youtvpii=\count111
+\l@youtvpiii=\count112
+\l@youtvpiv=\count113
+\l@youtvpv=\count114
+\l@youtvpvi=\count115
+\l@youtvpvii=\count116
+\l@youthdo=\count117
+\l@youthdi=\count118
+\l@youthdii=\count119
+\l@youthdiii=\count120
+\l@youthdiv=\count121
+\l@youthdv=\count122
+\l@youthdvi=\count123
+\l@youthdvii=\count124
+\l@youtvdo=\count125
+\l@youtvdi=\count126
+\l@youtvdii=\count127
+\l@youtvdiii=\count128
+\l@youtvdiv=\count129
+\l@youtvdv=\count130
+\l@youtvdvi=\count131
+\l@youtvdvii=\count132
+\l@youtvdviii=\count133
+\l@youtxci=\count134
+\l@youtxcii=\count135
+\l@youtxciii=\count136
+\l@youtxciv=\count137
+\l@youtxcv=\count138
+\l@youtxcvi=\count139
+\l@youtyci=\count140
+\l@youtycii=\count141
+\l@youtyciii=\count142
+\l@youtyciv=\count143
+\l@youtycv=\count144
+\l@youtycvi=\count145
+\l@youtycvii=\count146
+\l@youtycviii=\count147
+\l@youtxco=\count148
+\l@youtyco=\count149
+\l@ytempdima=\skip65
+\stockwidth=\skip66
+\stockheight=\skip67
+\trimedge=\skip68
+\trimtop=\skip69
+\uppermargin=\skip70
+\spinemargin=\skip71
+)
+(D:\GreenSoft\CTEX\texmf\tex\latex\titlesec\titlesec.sty
+Package: titlesec 2005/01/22 v2.6 Sectioning titles
+\ttl@box=\box28
+\beforetitleunit=\skip72
+\aftertitleunit=\skip73
+\ttl@plus=\dimen111
+\ttl@minus=\dimen112
+\titlewidth=\dimen113
+\titlewidthlast=\dimen114
+\titlewidthfirst=\dimen115
+
+(D:\GreenSoft\CTEX\texmf\tex\latex\titlesec\titlesec.new))
+(D:\GreenSoft\CTEX\texmf\tex\latex\titlesec\titletoc.sty
+Package: titletoc 2005/01/22 v1.5 TOC entries
+
+(D:\GreenSoft\CTEX\texmf\tex\latex\titlesec\titletoc.new
+*** titletoc 1.5, loading patch level 1 ***))
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\misc\footmisc.sty"
+Package: footmisc 2002/08/28 v5.0 a miscellany of footnote facilities
+\FN@temptoken=\toks17
+\footnotemargin=\dimen116
+\c@@fnserial=\count150
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\fancyhdr\fancyhdr.sty"
+\fancy@headwidth=\skip74
+\f@ncyO@elh=\skip75
+\f@ncyO@erh=\skip76
+\f@ncyO@olh=\skip77
+\f@ncyO@orh=\skip78
+\f@ncyO@elf=\skip79
+\f@ncyO@erf=\skip80
+\f@ncyO@olf=\skip81
+\f@ncyO@orf=\skip82
+)
+(D:\GreenSoft\CTEX\texmf\tex\latex\fancyref\fancyref.sty
+Package: fancyref 1999/02/03 v0.9c Fancy cross-referencing
+
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\tools\varioref.sty"
+Package: varioref 2006/05/13 v1.4p package for extended references (FMi)
+\c@vrcnt=\count151
+))
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\misc\type1cm.sty"
+Package: type1cm 2002/09/05 v0.04 BlueSky/Y&Y Type1 CM font definitions (DPC, p
+atched RF)
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\psnfss\times.sty"
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\graphics\color.sty"
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: xetex.def on input line 130.
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\amslatex\amsmath.sty"
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip83
+
+For additional information on amsmath, use the `?' option.
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\amslatex\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\amslatex\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks18
+\ex@=\dimen117
+))
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\amslatex\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen118
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\amslatex\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count152
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count153
+\leftroot@=\count154
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count155
+\DOTSCASE@=\count156
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box29
+\strutbox@=\box30
+\big@size=\dimen119
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count157
+\c@MaxMatrixCols=\count158
+\dotsspace@=\muskip10
+\c@parentequation=\count159
+\dspbrk@lvl=\count160
+\tag@help=\toks19
+\row@=\count161
+\column@=\count162
+\maxfields@=\count163
+\andhelp@=\toks20
+\eqnshift@=\dimen120
+\alignsep@=\dimen121
+\tagshift@=\dimen122
+\tagwidth@=\dimen123
+\totwidth@=\dimen124
+\lineht@=\dimen125
+\@envbody=\toks21
+\multlinegap=\skip84
+\multlinetaggap=\skip85
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\ltxmisc\relsize.sty"
+Package: relsize 2003/07/04 ver 3.1
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\jknappen\mathrsfs.sty"
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup4
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\tools\bm.sty"
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup5
+\symboldletters=\mathgroup6
+\symboldsymbols=\mathgroup7
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 137.
+LaTeX Info: Redefining \bm on input line 203.
+)
+(D:\GreenSoft\CTEX\texmf\tex\latex\ntheorem\ntheorem.sty
+Style `ntheorem', Version 1.203 <2002/01/07>
+Package: ntheorem 2002/01/07 1.203
+\theorem@style=\toks23
+\theorem@@style=\toks24
+\theorembodyfont=\toks25
+\theoremnumbering=\toks26
+\theorempreskipamount=\skip86
+\theorempostskipamount=\skip87
+\theoremindent=\dimen126
+\theorem@indent=\dimen127
+\theoremheaderfont=\toks27
+\theoremseparator=\toks28
+\theoremsymbol=\toks29
+\qedsymbol=\toks30
+\theoremkeyword=\toks31
+\qedsymbol=\toks32
+\thm@topsepadd=\skip88
+Package ntheorem Info: Option `thmmarks' loaded on input line 975.
+\c@endNonectr=\count164
+\c@currNonectr=\count165
+\mysavskip=\skip89
+Package ntheorem Info: option `amsmath' handling for `thmmarks' loaded on input
+ line 975.
+\thm@amstmpdepth=\dimen128
+) ("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\graphics\epsfig.sty"
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+\epsfxsize=\dimen129
+\epsfysize=\dimen130
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\misc\placeins.sty"
+Package: placeins 2002/06/27  v 2.0
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\misc\psfrag.sty"
+Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
+\pfg@pcount=\count166
+\pfg@scount=\count167
+\pfg@temp=\write3
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\floatflt\floatflt.sty"
+Package: floatflt 1996/02/27 v. 1.3
+\c@OptionTest=\count168
+\figbox=\box31
+\tabbox=\box32
+\pagebox=\box33
+\ffigcount=\count169
+\ftabcount=\count170
+\fftest=\count171
+\hangcount=\count172
+\nosuccesstryfig=\count173
+\nosuccesstrytab=\count174
+\figgutter=\dimen131
+\tabgutter=\dimen132
+\htdone=\dimen133
+\pageht=\dimen134
+\startpageht=\dimen135
+\tabbredd=\dimen136
+\floatfltwidth=\dimen137
+\fltitemwidth=\dimen138
+\outputpretest=\toks33
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\misc\rotating.sty"
+Package: rotating 1997/09/26, v2.13 Rotation package
+
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count175
+\rot@float@box=\box34
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\misc\setspace.sty"
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) ("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\base\flafter.sty"
+Package: flafter 2000/07/23 v1.2i Standard LaTeX floats after reference (FMi)
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\tools\array.sty"
+Package: array 2005/08/23 v2.4b Tabular extension package (FMi)
+\col@sep=\dimen139
+\extrarowheight=\dimen140
+\NC@list=\toks34
+\extratabsurround=\skip90
+\backup@length=\skip91
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\multirow\multirow.sty"
+\bigstrutjot=\dimen141
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\booktabs\booktabs.sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen142
+\lightrulewidth=\dimen143
+\cmidrulewidth=\dimen144
+\belowrulesep=\dimen145
+\belowbottomsep=\dimen146
+\aboverulesep=\dimen147
+\abovetopsep=\dimen148
+\cmidrulesep=\dimen149
+\cmidrulekern=\dimen150
+\defaultaddspace=\dimen151
+\@cmidla=\count176
+\@cmidlb=\count177
+\@aboverulesep=\dimen152
+\@belowrulesep=\dimen153
+\@thisruleclass=\count178
+\@lastruleclass=\count179
+\@thisrulewidth=\dimen154
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\tools\longtable.sty"
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip92
+\LTright=\skip93
+\LTpre=\skip94
+\LTpost=\skip95
+\LTchunksize=\count180
+\LTcapwidth=\dimen155
+\LT@head=\box35
+\LT@firsthead=\box36
+\LT@foot=\box37
+\LT@lastfoot=\box38
+\LT@cols=\count181
+\LT@rows=\count182
+\c@LT@tables=\count183
+\c@LT@chunks=\count184
+\LT@p@ftn=\toks35
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\misc\subfigure.sty"
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip96
+\subfigcapskip=\skip97
+\subfigcaptopadj=\dimen156
+\subfigbottomskip=\skip98
+\subfigcapmargin=\dimen157
+\subfiglabelskip=\skip99
+\c@subfigure=\count185
+\c@lofdepth=\count186
+\c@subtable=\count187
+\c@lotdepth=\count188
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\subfigure\subfigure.cfg")
+\subfig@top=\skip100
+\subfig@bottom=\skip101
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\natbib\natbib.sty"
+Package: natbib 2007/10/30 8.1 (PWD)
+\bibhang=\skip102
+\bibsep=\skip103
+LaTeX Info: Redefining \cite on input line 602.
+\c@NAT@ctr=\count189
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\ltxmisc\hypernat.sty"
+Package: hypernat 2001/07/09 v1.0b hyperref and natbib compatibility (jb)
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\enumitem\enumitem.sty"
+Package: enumitem 2007/06/30 v2.1 Customized lists
+\enit@toks=\toks36
+\labelindent=\skip104
+\enit@outerparindent=\dimen158
+\enitdp@desc=\count190
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\misc\ccaption.sty"
+Package: ccaption 2002/10/18 v3.1b Extended captioning and new floats
+\@contcwidth=\skip105
+\@contindw=\skip106
+\abovelegendskip=\skip107
+\belowlegendskip=\skip108
+\c@@contsubnum=\count191
+\c@newflo@tctr=\count192
+)
+(D:\GreenSoft\CTEX\texmf\tex\latex\algorithm2e\algorithm2e.sty
+Package: algorithm2e 2005/10/04 v3.9 algorithms environments
+\c@AlgoLine=\count193
+
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\tools\xspace.sty"
+Package: xspace 2006/05/08 v1.12 Space after command names (DPC,MH)
+)
+********************************************************
+Package `algorithm2e' Release 3.9 -- october 04 2005 --
+- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
+- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
+subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
+- Author: Christophe Fiorio (fiorio@lirmm.fr)
+********************************************************
+\skiptotal=\skip109
+\skiprule=\skip110
+\skiphlne=\skip111
+\skiptext=\skip112
+\skiplength=\skip113
+\algomargin=\skip114
+\skipalgocfslide=\skip115
+\algowidth=\dimen159
+\inoutsize=\dimen160
+\inoutline=\dimen161
+\algocf@inoutbox=\box39
+\algocf@inputbox=\box40
+\AlCapSkip=\skip116
+\AlCapHSkip=\skip117
+\algocf@capbox=\box41
+\c@algocfline=\count194
+\c@algocf=\count195
+\algocf@algoframe=\box42
+\algocf@algobox=\box43
+) ("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2007/11/05 v6.77c Hypertext links for LaTeX
+
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\oberdiek\hycolor.sty"
+Package: hycolor 2007/04/11 v1.1 Code for color options of hyperref/bookmark (H
+O)
+)
+\@linkdim=\dimen162
+\Hy@linkcounter=\count196
+\Hy@pagecounter=\count197
+
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\confproc\pd1enc.def"
+File: pd1enc.def 1999/03/30 v0.3 PDFDocEncoding (Heiko Oberdiek)
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2007/09/09 v1.1 Prefix for e-TeX command names (HO)
+
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
+))
+
+Package hyperref Warning: Height of page (\stockheight) is invalid (0.0pt),
+(hyperref)                using 11in.
+
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2007/10/18 v3.0 Keyval support for LaTeX options (HO)
+)
+Package hyperref Info: Option `CJKbookmarks' set `true' on input line 2647.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 2647
+.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 2647.
+Package hyperref Info: Option `colorlinks' set `false' on input line 2647.
+Package hyperref Info: Option `breaklinks' set `true' on input line 2647.
+Package hyperref Info: Option `naturalnames' set `true' on input line 2647.
+Package hyperref Info: Hyper figures OFF on input line 2683.
+Package hyperref Info: Link nesting OFF on input line 2688.
+Package hyperref Info: Hyper index ON on input line 2691.
+Package hyperref Info: Plain pages OFF on input line 2698.
+Package hyperref Info: Backreferencing OFF on input line 2703.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 2859.
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\xelatex\xetexurl\url.sty"
+\Urlmuskip=\muskip11
+Package: url 2004/03/15  ver 3.1  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 3029.
+
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\generic\oberdiek\bitset.sty"
+Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
+
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\generic\oberdiek\intcalc.sty"
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\generic\oberdiek\bigintcalc.sty"
+Package: bigintcalc 2007/09/27 v1.0 Expandable big integer calculations (HO)
+))
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2007/09/29 v1.3 Key value parser with default handler suppor
+t (HO)
+)
+\Fld@menulength=\count198
+\Field@Width=\dimen163
+\Fld@charsize=\dimen164
+\Field@toks=\toks37
+Package hyperref Info: Hyper figures OFF on input line 3910.
+Package hyperref Info: Link nesting OFF on input line 3915.
+Package hyperref Info: Hyper index ON on input line 3918.
+Package hyperref Info: backreferencing OFF on input line 3925.
+Package hyperref Info: Link coloring OFF on input line 3930.
+
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\generic\oberdiek\atbegshi.sty"
+Package: atbegshi 2007/09/09 v1.6 At begin shipout hook (HO)
+)
+\Hy@abspage=\count199
+\c@Item=\count200
+\c@Hfootnote=\count201
+)
+*hyperref using driver hdvipdfm*
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\hyperref\hdvipdfm.def"
+File: hdvipdfm.def 2007/11/05 v6.77c Hyperref driver for dvipdfm
+\pdfm@box=\box44
+\HyField@AnnotCount=\count202
+\Fld@listcount=\count203
+)
+(D:\GreenSoft\CTEX\texmf\tex\latex\arydshln\arydshln.sty
+Package: arydshln 2004/08/31 v1.71 
+\dashlinedash=\dimen165
+\dashlinegap=\dimen166
+\adl@box=\box45
+\adl@height=\dimen167
+\adl@heightsave=\dimen168
+\adl@depth=\dimen169
+\adl@depthsave=\dimen170
+\adl@finaldepth=\dimen171
+\adl@columns=\count204
+\adl@ncol=\count205
+\adl@currentcolumn=\count206
+\adl@currentcolumnsave=\count207
+\adl@totalheight=\count208
+\adl@totalheightsave=\count209
+\adl@dash=\count210
+\adl@gap=\count211
+\adl@cla=\count212
+\adl@clb=\count213
+\adl@everyvbox=\toks38
+\adl@LTpagetotal=\dimen172
+)
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\zhspacing\zhspacing.sty"
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\zhspacing\usefulmacros.sty")
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\zhspacing\ifcjkchar.sty")
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\zhspacing\myclass.sty"
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\zhspacing\usefulmacros.sty"))
+\@@interclasstoks@boundary@boundary=\toks39
+\@@interclasstoks@halfwidth@boundary=\toks40
+\@@interclasstoks@boundary@halfwidth=\toks41
+\@@interclasstoks@halfwidth@halfwidth=\toks42
+\@@interclasstoks@fullwidth@boundary=\toks43
+\@@interclasstoks@boundary@fullwidth=\toks44
+\@@interclasstoks@fullwidth@halfwidth=\toks45
+\@@interclasstoks@halfwidth@fullwidth=\toks46
+\@@interclasstoks@fullwidth@fullwidth=\toks47
+\@@interclasstoks@alphanum@boundary=\toks48
+\@@interclasstoks@boundary@alphanum=\toks49
+\@@interclasstoks@alphanum@halfwidth=\toks50
+\@@interclasstoks@halfwidth@alphanum=\toks51
+\@@interclasstoks@alphanum@fullwidth=\toks52
+\@@interclasstoks@fullwidth@alphanum=\toks53
+\@@interclasstoks@alphanum@alphanum=\toks54
+\@@interclasstoks@hanzi@boundary=\toks55
+\@@interclasstoks@boundary@hanzi=\toks56
+\@@interclasstoks@hanzi@halfwidth=\toks57
+\@@interclasstoks@halfwidth@hanzi=\toks58
+\@@interclasstoks@hanzi@fullwidth=\toks59
+\@@interclasstoks@fullwidth@hanzi=\toks60
+\@@interclasstoks@hanzi@alphanum=\toks61
+\@@interclasstoks@alphanum@hanzi=\toks62
+\@@interclasstoks@hanzi@hanzi=\toks63
+\@@interclasstoks@openfw@boundary=\toks64
+\@@interclasstoks@boundary@openfw=\toks65
+\@@interclasstoks@openfw@halfwidth=\toks66
+\@@interclasstoks@halfwidth@openfw=\toks67
+\@@interclasstoks@openfw@fullwidth=\toks68
+\@@interclasstoks@fullwidth@openfw=\toks69
+\@@interclasstoks@openfw@alphanum=\toks70
+\@@interclasstoks@alphanum@openfw=\toks71
+\@@interclasstoks@openfw@hanzi=\toks72
+\@@interclasstoks@hanzi@openfw=\toks73
+\@@interclasstoks@openfw@openfw=\toks74
+\@@interclasstoks@closefw@boundary=\toks75
+\@@interclasstoks@boundary@closefw=\toks76
+\@@interclasstoks@closefw@halfwidth=\toks77
+\@@interclasstoks@halfwidth@closefw=\toks78
+\@@interclasstoks@closefw@fullwidth=\toks79
+\@@interclasstoks@fullwidth@closefw=\toks80
+\@@interclasstoks@closefw@alphanum=\toks81
+\@@interclasstoks@alphanum@closefw=\toks82
+\@@interclasstoks@closefw@hanzi=\toks83
+\@@interclasstoks@hanzi@closefw=\toks84
+\@@interclasstoks@closefw@openfw=\toks85
+\@@interclasstoks@openfw@closefw=\toks86
+\@@interclasstoks@closefw@closefw=\toks87
+\@@interclasstoks@judou@boundary=\toks88
+\@@interclasstoks@boundary@judou=\toks89
+\@@interclasstoks@judou@halfwidth=\toks90
+\@@interclasstoks@halfwidth@judou=\toks91
+\@@interclasstoks@judou@fullwidth=\toks92
+\@@interclasstoks@fullwidth@judou=\toks93
+\@@interclasstoks@judou@alphanum=\toks94
+\@@interclasstoks@alphanum@judou=\toks95
+\@@interclasstoks@judou@hanzi=\toks96
+\@@interclasstoks@hanzi@judou=\toks97
+\@@interclasstoks@judou@openfw=\toks98
+\@@interclasstoks@openfw@judou=\toks99
+\@@interclasstoks@judou@closefw=\toks100
+\@@interclasstoks@closefw@judou=\toks101
+\@@interclasstoks@judou@judou=\toks102
+\@@interclasstoks@fwpunct@boundary=\toks103
+\@@interclasstoks@boundary@fwpunct=\toks104
+\@@interclasstoks@fwpunct@halfwidth=\toks105
+\@@interclasstoks@halfwidth@fwpunct=\toks106
+\@@interclasstoks@fwpunct@fullwidth=\toks107
+\@@interclasstoks@fullwidth@fwpunct=\toks108
+\@@interclasstoks@fwpunct@alphanum=\toks109
+\@@interclasstoks@alphanum@fwpunct=\toks110
+\@@interclasstoks@fwpunct@hanzi=\toks111
+\@@interclasstoks@hanzi@fwpunct=\toks112
+\@@interclasstoks@fwpunct@openfw=\toks113
+\@@interclasstoks@openfw@fwpunct=\toks114
+\@@interclasstoks@fwpunct@closefw=\toks115
+\@@interclasstoks@closefw@fwpunct=\toks116
+\@@interclasstoks@fwpunct@judou=\toks117
+\@@interclasstoks@judou@fwpunct=\toks118
+\@@interclasstoks@fwpunct@fwpunct=\toks119
+\@@interclasstoks@cjkexta@boundary=\toks120
+\@@interclasstoks@boundary@cjkexta=\toks121
+\@@interclasstoks@cjkexta@halfwidth=\toks122
+\@@interclasstoks@halfwidth@cjkexta=\toks123
+\@@interclasstoks@cjkexta@fullwidth=\toks124
+\@@interclasstoks@fullwidth@cjkexta=\toks125
+\@@interclasstoks@cjkexta@alphanum=\toks126
+\@@interclasstoks@alphanum@cjkexta=\toks127
+\@@interclasstoks@cjkexta@hanzi=\toks128
+\@@interclasstoks@hanzi@cjkexta=\toks129
+\@@interclasstoks@cjkexta@openfw=\toks130
+\@@interclasstoks@openfw@cjkexta=\toks131
+\@@interclasstoks@cjkexta@closefw=\toks132
+\@@interclasstoks@closefw@cjkexta=\toks133
+\@@interclasstoks@cjkexta@judou=\toks134
+\@@interclasstoks@judou@cjkexta=\toks135
+\@@interclasstoks@cjkexta@fwpunct=\toks136
+\@@interclasstoks@fwpunct@cjkexta=\toks137
+\@@interclasstoks@cjkexta@cjkexta=\toks138
+\@@interclasstoks@cjkextb@boundary=\toks139
+\@@interclasstoks@boundary@cjkextb=\toks140
+\@@interclasstoks@cjkextb@halfwidth=\toks141
+\@@interclasstoks@halfwidth@cjkextb=\toks142
+\@@interclasstoks@cjkextb@fullwidth=\toks143
+\@@interclasstoks@fullwidth@cjkextb=\toks144
+\@@interclasstoks@cjkextb@alphanum=\toks145
+\@@interclasstoks@alphanum@cjkextb=\toks146
+\@@interclasstoks@cjkextb@hanzi=\toks147
+\@@interclasstoks@hanzi@cjkextb=\toks148
+\@@interclasstoks@cjkextb@openfw=\toks149
+\@@interclasstoks@openfw@cjkextb=\toks150
+\@@interclasstoks@cjkextb@closefw=\toks151
+\@@interclasstoks@closefw@cjkextb=\toks152
+\@@interclasstoks@cjkextb@judou=\toks153
+\@@interclasstoks@judou@cjkextb=\toks154
+\@@interclasstoks@cjkextb@fwpunct=\toks155
+\@@interclasstoks@fwpunct@cjkextb=\toks156
+\@@interclasstoks@cjkextb@cjkexta=\toks157
+\@@interclasstoks@cjkexta@cjkextb=\toks158
+\@@interclasstoks@cjkextb@cjkextb=\toks159
+\n=\count214
+\@@interclasstoks@longpunct@boundary=\toks160
+\@@interclasstoks@boundary@longpunct=\toks161
+\@@interclasstoks@longpunct@halfwidth=\toks162
+\@@interclasstoks@halfwidth@longpunct=\toks163
+\@@interclasstoks@longpunct@fullwidth=\toks164
+\@@interclasstoks@fullwidth@longpunct=\toks165
+\@@interclasstoks@longpunct@alphanum=\toks166
+\@@interclasstoks@alphanum@longpunct=\toks167
+\@@interclasstoks@longpunct@hanzi=\toks168
+\@@interclasstoks@hanzi@longpunct=\toks169
+\@@interclasstoks@longpunct@openfw=\toks170
+\@@interclasstoks@openfw@longpunct=\toks171
+\@@interclasstoks@longpunct@closefw=\toks172
+\@@interclasstoks@closefw@longpunct=\toks173
+\@@interclasstoks@longpunct@judou=\toks174
+\@@interclasstoks@judou@longpunct=\toks175
+\@@interclasstoks@longpunct@fwpunct=\toks176
+\@@interclasstoks@fwpunct@longpunct=\toks177
+\@@interclasstoks@longpunct@cjkexta=\toks178
+\@@interclasstoks@cjkexta@longpunct=\toks179
+\@@interclasstoks@longpunct@cjkextb=\toks180
+\@@interclasstoks@cjkextb@longpunct=\toks181
+\@@interclasstoks@longpunct@longpunct=\toks182
+\@@interclasstoks@hwpunct@boundary=\toks183
+\@@interclasstoks@boundary@hwpunct=\toks184
+\@@interclasstoks@hwpunct@halfwidth=\toks185
+\@@interclasstoks@halfwidth@hwpunct=\toks186
+\@@interclasstoks@hwpunct@fullwidth=\toks187
+\@@interclasstoks@fullwidth@hwpunct=\toks188
+\@@interclasstoks@hwpunct@alphanum=\toks189
+\@@interclasstoks@alphanum@hwpunct=\toks190
+\@@interclasstoks@hwpunct@hanzi=\toks191
+\@@interclasstoks@hanzi@hwpunct=\toks192
+\@@interclasstoks@hwpunct@openfw=\toks193
+\@@interclasstoks@openfw@hwpunct=\toks194
+\@@interclasstoks@hwpunct@closefw=\toks195
+\@@interclasstoks@closefw@hwpunct=\toks196
+\@@interclasstoks@hwpunct@judou=\toks197
+\@@interclasstoks@judou@hwpunct=\toks198
+\@@interclasstoks@hwpunct@fwpunct=\toks199
+\@@interclasstoks@fwpunct@hwpunct=\toks200
+\@@interclasstoks@hwpunct@cjkexta=\toks201
+\@@interclasstoks@cjkexta@hwpunct=\toks202
+\@@interclasstoks@hwpunct@cjkextb=\toks203
+\@@interclasstoks@cjkextb@hwpunct=\toks204
+\@@interclasstoks@hwpunct@longpunct=\toks205
+\@@interclasstoks@longpunct@hwpunct=\toks206
+\@@interclasstoks@hwpunct@hwpunct=\toks207
+\c@zf@famc@SimSun=\count215
+Package fontspec Info: Defining font family for 'SimSun' with options [BoldFont
+=SimHei] on input line 257.
+Package fontspec Info: Could not resolve font SimSun/I (it might not exist) on 
+input line 257.
+Package fontspec Info: Could not resolve font SimHei/I (it might not exist) on 
+input line 257.
+Package fontspec Info: Defining font family for 'SimSun' with options [] on inp
+ut line 257.
+Package fontspec Info: Could not resolve font SimSun/B (it might not exist) on 
+input line 257.
+Package fontspec Info: Could not resolve font SimSun/I (it might not exist) on 
+input line 257.
+Package fontspec Info: Could not resolve font SimSun/BI (it might not exist) on
+ input line 257.
+))
+(main.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Try loading font information for EU1+ptm on input line 27.
+LaTeX Font Info:    No file EU1ptm.fd. on input line 27.
+
+
+LaTeX Font Warning: Font shape `EU1/ptm/m/n' undefined
+(Font)              using `EU1/lmr/m/n' instead on input line 27.
+
+Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid this).
+ on input line 27.
+\symlegacymaths=\mathgroup8
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 27.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 27.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 27.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 27.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 27.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 27.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 27.
+LaTeX Font Info:    Redeclaring math accent \check on input line 27.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 27.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 27.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 27.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 27.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 27.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 27.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 27.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 27.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 27.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 27.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 27.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 27.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 27.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 27.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 27.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 27.
+LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
+(Font)              `operators' in the math version `normal' on input line 27.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> EU1/ptm/m/n on input line 27.
+LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
+(Font)              `operators' in the math version `bold' on input line 27.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> EU1/ptm/m/n on input line 27.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  EU1/ptm/m/n --> EU1/ptm/m/n on input line 27.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  EU1/ptm/m/n --> EU1/ptm/m/n on input line 27.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> EU1/ptm/m/it on input line 27.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> EU1/ptm/bx/n on input line 27.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> EU1/phv/m/n on input line 27.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> EU1/pcr/m/n on input line 27.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  EU1/ptm/m/n --> EU1/ptm/bx/n on input line 27.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
+(Font)                  EU1/ptm/m/n --> EU1/ptm/bx/n on input line 27.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> EU1/ptm/bx/it on input line 27.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> EU1/phv/bx/n on input line 27.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> EU1/pcr/bx/n on input line 27.
+-------------------- Geometry parameters
+paper: a4paper
+landscape: --
+twocolumn: --
+twoside: true
+asymmetric: --
+h-parts: 57.58313pt, 453.55pt, 86.37474pt
+v-parts: 57.95874pt, 700.15pt, 86.93811pt
+hmarginratio: 2:3
+vmarginratio: 2:3
+lines: --
+heightrounded: --
+bindingoffset: 0.0pt
+truedimen: --
+includehead: --
+includefoot: --
+includemp: --
+driver: pdftex
+-------------------- Page layout dimensions and switches
+\paperwidth  597.50787pt
+\paperheight 845.04684pt
+\textwidth  453.55pt
+\textheight 700.15pt
+\oddsidemargin  -14.68686pt
+\evensidemargin 14.10475pt
+\topmargin  -46.18504pt
+\headheight 12.0pt
+\headsep    19.8738pt
+\footskip   30.0pt
+\marginparwidth 88.0pt
+\marginparsep   7.0pt
+\columnsep  10.0pt
+\skip\footins  10.8pt plus 4.0pt minus 2.0pt
+\hoffset 0.0pt
+\voffset 0.0pt
+\mag 1000
+\@twosidetrue \@mparswitchtrue 
+(1in=72.27pt, 1cm=28.45pt)
+-----------------------
+
+Package layouts Warning: Layout scale set to 0.5 on input line 27.
+
+Package hyperref Info: Link coloring OFF on input line 27.
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\hyperref\nameref.sty"
+Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\oberdiek\refcount.sty"
+Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
+)
+\c@section@level=\count216
+LaTeX Info: Redefining \Ref on input line 394.
+)
+LaTeX Info: Redefining \ref on input line 27.
+LaTeX Info: Redefining \pageref on input line 27.
+ (main.out)
+(main.out)
+\@outlinefile=\write4
+\AtBeginShipoutBox=\box46
+LaTeX Info: Redefining \Ref on input line 27.
+ zhspacing installed.
+(setup/Definition.tex
+\c@zf@famc@Times New Roman=\count217
+Package fontspec Info: Defining font family for 'Times New Roman' with options 
+[] on input line 27.
+Package fontspec Info: Defining font family for 'SimSun' with options [BoldFont
+=SimHei, ItalicFont=KaiTi_GB2312] on input line 48.
+Package fontspec Info: Could not resolve font SimHei/I (it might not exist) on 
+input line 48.
+\c@zf@famc@SimHei=\count218
+Package fontspec Info: Defining font family for 'SimHei' with options [] on inp
+ut line 49.
+Package fontspec Info: Could not resolve font SimHei/B (it might not exist) on 
+input line 49.
+Package fontspec Info: Could not resolve font SimHei/I (it might not exist) on 
+input line 49.
+Package fontspec Info: Could not resolve font SimHei/BI (it might not exist) on
+ input line 49.
+\c@zf@famc@KaiTi_GB2312=\count219
+Package fontspec Info: Defining font family for 'KaiTi_GB2312' with options [Bo
+ldFont=SimHei] on input line 50.
+Package fontspec Info: Could not resolve font KaiTi_GB2312/I (it might not exis
+t) on input line 50.
+Package fontspec Info: Could not resolve font SimHei/I (it might not exist) on 
+input line 50.
+\c@figen=\count220
+\cftbeforefigenskip=\skip118
+\cftfigenindent=\skip119
+\cftfigennumwidth=\skip120
+\c@fendepth=\count221
+\cftbeforefentitleskip=\skip121
+\cftafterfentitleskip=\skip122
+\tempbox=\box47
+\c@tblen=\count222
+\cftbeforetblenskip=\skip123
+\cfttblenindent=\skip124
+\cfttblennumwidth=\skip125
+\c@tendepth=\count223
+\cftbeforetentitleskip=\skip126
+\cftaftertentitleskip=\skip127
+) (setup/format.tex
+\c@currdefinitionctr=\count224
+\c@enddefinitionctr=\count225
+\c@definition=\count226
+\c@currpropositionctr=\count227
+\c@endpropositionctr=\count228
+\c@currlemmactr=\count229
+\c@endlemmactr=\count230
+\c@currtheoremctr=\count231
+\c@endtheoremctr=\count232
+\c@theorem=\count233
+Normal \count register pool exhausted, switching to extended pool.
+\c@curraxiomctr=\count277
+\c@endaxiomctr=\count278
+\c@axiom=\count279
+\c@currcorollaryctr=\count280
+\c@endcorollaryctr=\count281
+\c@currexercisectr=\count282
+\c@endexercisectr=\count283
+\CJKtwospaces=\skip128
+\AphorismAuthor=\box48
+\c@hitctr=\count284
+\c@pubctr=\count285
+) (preface/cover.tex
+Package fontspec Info: Defining font family for 'KaiTi_GB2312' with options [] 
+on input line 18.
+Package fontspec Info: Could not resolve font KaiTi_GB2312/B (it might not exis
+t) on input line 18.
+Package fontspec Info: Could not resolve font KaiTi_GB2312/I (it might not exis
+t) on input line 18.
+Package fontspec Info: Could not resolve font KaiTi_GB2312/BI (it might not exi
+st) on input line 18.
+LaTeX Info: Redefining \zhfont on input line 18.
+LaTeX Font Info:    Font shape `EU1/KaiTi_GB2312(1)/bx/n' undefined
+(Font)              using `EU1/KaiTi_GB2312(1)/m/n' instead on input line 18.
+LaTeX Info: Redefining \zhfont on input line 18.
+LaTeX Font Info:    Font shape `EU1/SimSun(1)/bx/n' undefined
+(Font)              using `EU1/SimSun(1)/m/n' instead on input line 18.
+LaTeX Info: Redefining \zhfont on input line 18.
+LaTeX Font Info:    Calculating math sizes for size <16> on input line 18.
+LaTeX Font Info:    Font shape `OMX/cmex/m/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 18.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 18.
+
+("D:\GreenSoft\MiCTeX\MiKTeX 2.7\tex\latex\jknappen\ursfs.fd"
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Font shape `U/rsfs/m/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 18.
+ [1
+
+
+]
+LaTeX Info: Redefining \zhfont on input line 18.
+LaTeX Info: Redefining \zhfont on input line 18.
+ [2])
+(body/KaiTi.tex
+LaTeX Info: Redefining \zhfont on input line 4.
+LaTeX Font Info:    Try loading font information for EU1+phv on input line 4.
+LaTeX Font Info:    No file EU1phv.fd. on input line 4.
+LaTeX Font Info:    Font shape `EU1/phv/m/n' undefined
+(Font)              using `EU1/lmr/m/n' instead on input line 4.
+LaTeX Font Info:    Calculating math sizes for size <12.1> on input line 4.
+LaTeX Font Info:    Font shape `OMX/cmex/m/n' in size <8.46996> not available
+(Font)              size <8> substituted on input line 4.
+LaTeX Font Info:    Font shape `U/rsfs/m/n' in size <8.46996> not available
+(Font)              size <8> substituted on input line 4.
+LaTeX Info: Redefining \zhfont on input line 10.
+LaTeX Info: Redefining \zhfont on input line 10.
+LaTeX Info: Redefining \zhfont on input line 21.
+LaTeX Info: Redefining \zhfont on input line 21.
+LaTeX Info: Redefining \zhfont on input line 27.
+LaTeX Info: Redefining \zhfont on input line 27.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 27.
+LaTeX Font Info:    Font shape `EU1/ptm/bx/n' undefined
+(Font)              using `EU1/ptm/m/n' instead on input line 27.
+LaTeX Info: Redefining \zhfont on input line 52.
+ [3
+
+
+]
+LaTeX Font Info:    Try loading font information for EU1+pcr on input line 65.
+LaTeX Font Info:    No file EU1pcr.fd. on input line 65.
+LaTeX Font Info:    Font shape `EU1/pcr/m/n' undefined
+(Font)              using `EU1/lmr/m/n' instead on input line 65.
+LaTeX Info: Redefining \zhfont on input line 77.
+LaTeX Info: Redefining \zhfont on input line 77.
+File: figures/golfer.pdf Graphic file (type QTm)
+ <use  "figures/golfer.pdf" >
+LaTeX Info: Redefining \zhfont on input line 82.
+LaTeX Info: Redefining \zhfont on input line 82.
+LaTeX Info: Redefining \zhfont on input line 82.
+LaTeX Info: Redefining \zhfont on input line 82.
+LaTeX Info: Redefining \zhfont on input line 82.
+LaTeX Info: Redefining \zhfont on input line 90.
+LaTeX Info: Redefining \zhfont on input line 90.
+LaTeX Info: Redefining \zhfont on input line 99.
+ [4]
+File: figures/golfer.pdf Graphic file (type QTm)
+
+<use  "figures/golfer.pdf" >
+File: figures/golfer.pdf Graphic file (type QTm)
+ <use  "figures/golfer.pdf" >
+LaTeX Info: Redefining \zhfont on input line 113.
+LaTeX Info: Redefining \zhfont on input line 113.
+LaTeX Info: Redefining \zhfont on input line 113.
+LaTeX Info: Redefining \zhfont on input line 113.
+LaTeX Info: Redefining \zhfont on input line 113.
+File: figures/golfer.pdf Graphic file (type QTm)
+
+<use  "figures/golfer.pdf" >
+Overfull \hbox (6.05002pt too wide) in paragraph at lines 122--125
+ [][] 
+ []
+
+File: figures/golfer.pdf Graphic file (type QTm)
+<use  "figures/golfer.pdf" >
+Overfull \hbox (6.05002pt too wide) in paragraph at lines 128--131
+ [][] 
+ []
+
+File: figures/golfer.pdf Graphic file (type QTm)
+<use  "figures/golfer.pdf" >
+Overfull \hbox (6.05002pt too wide) in paragraph at lines 134--137
+ [][] 
+ []
+
+LaTeX Info: Redefining \zhfont on input line 138.
+LaTeX Info: Redefining \zhfont on input line 138.
+LaTeX Info: Redefining \zhfont on input line 138.
+LaTeX Info: Redefining \zhfont on input line 138.
+LaTeX Info: Redefining \zhfont on input line 138.
+LaTeX Info: Redefining \zhfont on input line 145.
+LaTeX Info: Redefining \zhfont on input line 145.
+LaTeX Info: Redefining \zhfont on input line 145.
+LaTeX Info: Redefining \zhfont on input line 145.
+LaTeX Info: Redefining \zhfont on input line 145.
+LaTeX Info: Redefining \zhfont on input line 158.
+[5]
+LaTeX Info: Redefining \zhfont on input line 158.
+ [6]
+LaTeX Info: Redefining \zhfont on input line 193.
+LaTeX Info: Redefining \zhfont on input line 193.
+
+Underfull \hbox (badness 10000) detected at line 214
+[][]
+ []
+
+LaTeX Info: Redefining \zhfont on input line 216.
+LaTeX Info: Redefining \zhfont on input line 216.
+LaTeX Info: Redefining \zhfont on input line 221.
+[7
+
+]
+LaTeX Info: Redefining \zhfont on input line 274.
+ [8]
+LaTeX Info: Redefining \zhfont on input line 277.
+LaTeX Info: Redefining \zhfont on input line 277.
+LaTeX Info: Redefining \zhfont on input line 279.
+LaTeX Info: Redefining \zhfont on input line 280.
+Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
+nput line 280.
+LaTeX Info: Redefining \zhfont on input line 283.
+LaTeX Info: Redefining \zhfont on input line 284.
+Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
+input line 284.
+LaTeX Info: Redefining \zhfont on input line 287.
+LaTeX Info: Redefining \zhfont on input line 288.
+Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
+line 288.
+LaTeX Info: Redefining \zhfont on input line 291.
+LaTeX Info: Redefining \zhfont on input line 292.
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
+t line 292.
+LaTeX Info: Redefining \zhfont on input line 295.
+LaTeX Info: Redefining \zhfont on input line 296.
+Package hyperref Info: bookmark level for unknown axiom defaults to 0 on input 
+line 296.
+LaTeX Info: Redefining \zhfont on input line 299.
+LaTeX Info: Redefining \zhfont on input line 299.
+LaTeX Info: Redefining \zhfont on input line 308.
+LaTeX Info: Redefining \zhfont on input line 309.
+LaTeX Info: Redefining \zhfont on input line 310.
+LaTeX Info: Redefining \zhfont on input line 312.
+LaTeX Info: Redefining \zhfont on input line 313.
+LaTeX Info: Redefining \zhfont on input line 314.
+LaTeX Info: Redefining \zhfont on input line 315.
+LaTeX Info: Redefining \zhfont on input line 317.
+LaTeX Info: Redefining \zhfont on input line 324.
+LaTeX Info: Redefining \zhfont on input line 331.
+ [9]
+LaTeX Info: Redefining \zhfont on input line 339.
+LaTeX Info: Redefining \zhfont on input line 339.
+LaTeX Info: Redefining \zhfont on input line 358.
+LaTeX Info: Redefining \zhfont on input line 358.
+LaTeX Info: Redefining \zhfont on input line 367.
+LaTeX Info: Redefining \zhfont on input line 367.
+LaTeX Info: Redefining \zhfont on input line 370.
+ [10]
+LaTeX Info: Redefining \zhfont on input line 370.
+LaTeX Info: Redefining \zhfont on input line 370.
+LaTeX Info: Redefining \zhfont on input line 379.
+LaTeX Info: Redefining \zhfont on input line 379.
+LaTeX Info: Redefining \zhfont on input line 380.
+LaTeX Info: Redefining \zhfont on input line 380.
+LaTeX Info: Redefining \zhfont on input line 384.
+LaTeX Info: Redefining \zhfont on input line 384.
+LaTeX Info: Redefining \zhfont on input line 387.
+LaTeX Info: Redefining \zhfont on input line 389.
+LaTeX Info: Redefining \zhfont on input line 390.
+LaTeX Info: Redefining \zhfont on input line 391.
+LaTeX Info: Redefining \zhfont on input line 392.
+LaTeX Info: Redefining \zhfont on input line 393.
+LaTeX Info: Redefining \zhfont on input line 394.
+LaTeX Info: Redefining \zhfont on input line 398.
+LaTeX Info: Redefining \zhfont on input line 400.
+LaTeX Info: Redefining \zhfont on input line 401.
+LaTeX Info: Redefining \zhfont on input line 402.
+ [11]
+LaTeX Info: Redefining \zhfont on input line 402.
+LaTeX Info: Redefining \zhfont on input line 406.
+LaTeX Info: Redefining \zhfont on input line 408.
+LaTeX Info: Redefining \zhfont on input line 409.
+) (main.bbl
+LaTeX Info: Redefining \zhfont on input line 1.
+)
+LaTeX Info: Redefining \zhfont on input line 47.
+ [12]
+\tf@thm=\write5
+ (main.aux)
+LaTeX Font Info:    Size substitutions with differences
+(Font)              up to 1.28pt have occurred.
+LaTeX Font Info:    Some font shapes were not available, defaults substituted.
+ ) 
+Here is how much of TeX's memory you used:
+ 13627 strings out of 30502
+ 201255 string characters out of 1191565
+ 358354 words of memory out of 1500000
+ 16427 multiletter control sequences out of 110000
+ 21056 words of font info for 134 fonts, out of 1200000 for 2000
+ 14 hyphenation exceptions out of 8191
+ 38i,23n,67p,316b,579s stack positions out of 5000i,500n,10000p,200000b,5000s
+
+Output written on main.pdf (12 pages).
