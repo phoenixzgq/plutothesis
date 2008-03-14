@@ -29,14 +29,19 @@
 \theoremstyle{plain} \theorembodyfont{\song\rmfamily}
 \theoremheaderfont{\hei\rmfamily} %\theoremseparator{:}
 \newtheorem{definition}{\hei 定义}[chapter]
+\newtheorem{example}{\hei 例}[chapter]
 \newtheorem{algo}{\hei 算法}[chapter]
-\newtheorem{proposition}[definition]{\hei 命题}
-\newtheorem{lemma}[definition]{\hei 引理}
 \newtheorem{theorem}{\hei 定理}[chapter]
-\newtheorem{axiom}{\hei 公理}
-\newtheorem{corollary}[definition]{\hei 推论}
-\newtheorem{exercise}[definition]{}
-
+\newtheorem{axiom}{\hei 公理}[chapter]
+\newtheorem{proposition}{\hei 命题}[chapter]
+\newtheorem{lemma}{\hei 引理}[chapter]
+\newtheorem{corollary}{\hei 推论}[chapter]
+\newtheorem{remark}{\hei 注解}[chapter]
+%\newtheorem{proposition}[definition]{\hei 命题}
+%\newtheorem{lemma}[definition]{\hei 引理}
+%\newtheorem{exercise}[definition]{}
+%\newtheorem{corollary}[definition]{\hei 推论}
+%\newtheorem{remark}[definition]{\hei 注解}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %解决原proof定理环境的两个问题：
 %  1. proof 中的item缩进不对
@@ -45,7 +50,7 @@
 %\newtheorem{proof}{\hei 证明}
 \newenvironment{proof}{\noindent{\hei 证明：}}{\hfill $ \square $ \vskip 4mm}
 \theoremsymbol{$\square$}
-\newtheorem{example}{\hei 例}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 用于中文段落缩进 和正文版式
@@ -113,7 +118,7 @@ mu$}\hfill
 \fi}
 %控制中文目录
 %\dottedcontents{chapter}[3.4em]{\vspace{0.5em}\hspace{-3.4em}\hei \bf\boldmath}{0.0em}{5pt}% 章标题后用粗点
-\titlecontents{chapter}[3.4em]{\vspace{0.5em}\hspace{-3.4em}\hei \bf\boldmath}{\contentslabel{0em}}{\hspace*{-0em}}{\normalfont\titlerule*[5pt]{.}\contentspage} %章标题后用细点
+\titlecontents{chapter}[3.92em]{\vspace{0.5em}\hspace{-3.92em}\hei \bf\boldmath}{\contentslabel{0em}}{\hspace*{-0em}}{\normalfont\titlerule*[5pt]{.}\contentspage} %章标题后用细点
 \dottedcontents{section}[1.16cm]{}{1.8em}{5pt}
 \dottedcontents{subsection}[2.00cm]{}{2.7em}{5pt}
 \dottedcontents{subsubsection}[2.86cm]{}{3.4em}{5pt}
@@ -260,11 +265,11 @@ mu$}\hfill
 % 默认字体
 \renewcommand\normalsize{%
   \@setfontsize\normalsize{12.1pt}{13pt}
-  \setlength\abovedisplayskip{10pt plus 2pt minus 2pt}
-  \setlength\abovedisplayshortskip{8pt plus 2pt minus 2pt}
+  \setlength\abovedisplayskip{8pt plus 2pt minus 2pt}
+  \setlength\abovedisplayshortskip{7pt plus 2pt minus 2pt}
   \setlength\belowdisplayskip{\abovedisplayskip}
   \setlength\belowdisplayshortskip{\abovedisplayshortskip}
-  \setlength\jot{8pt}
+  \setlength\jot{6pt}
   \let\@listi\@listI}
 \def\defaultfont{\renewcommand{\baselinestretch}{1.37}\normalsize\selectfont}
 
@@ -472,7 +477,7 @@ mu$}\hfill
 
 \def\engcontentsname{\bfseries Contents}
 \newcommand\tableofengcontents{%
-   \cleardoublepage
+   %\cleardoublepage
    \pdfbookmark[0]{Contents}{econtent}
    \if@twocolumn
      \@restonecoltrue\onecolumn
@@ -503,5 +508,13 @@ mu$}\hfill
 	\def\endlongtable{\adl@LTlastrow \adl@org@endlongtable}
 }
 \wuhaobiao
-\makeatother
 %%% 五号字表格设置 end %%%%%
+
+% 表格与下方间距
+\renewcommand\endtable{\vspace{-4mm}\end@float}
+% 算法与下方间距
+\renewcommand\endalgorithm{\@algocf@finish \ifthenelse {\equal {\algocf@float }{figure}}{\end {figure}}{
+\@algocf@term@caption \ifthenelse {\boolean {algocf@algoH}}{\end {algocf@Here}}
+{\end {algocf}}}\@algocf@term\vspace{-5mm}}
+
+\makeatother

@@ -484,50 +484,29 @@ a&emf&bcdef\\
 \BiSection{算法}{algorithm}
 这是一个算法的例子，来自~worldguy@lilacbbs~
 \begin{algorithm}
-\KwIn{training samples, {$(d_i, d_j)_q$; $\mathbf{q}_i, \mathbf{q}_j \in C$, $q\in \mathbf{Q}$} }
+\KwIn{training samples, {$(d_i, d_j)_q$; $\mathbf{q}_i, \mathbf{q}_j \in C$,
+$q\in \mathbf{Q}$} }
 \KwOut{parameter setting $\lambda^T$}
 
-Initialization : set $\lambda_0=1, \lambda_i=0$, for i=$1, \dots, N$
-
 \For{$t$=1 to $T$}
-{
-    \ForEach{training sample $(d_i, d_j)_q$}
-    {
-        \If{ $Score(q, d_j, \lambda^t) \ge Score(q, d_i, \lambda^t)$ }
-        {
-            \ForEach{$\lambda^t_n (n=1, \dots, N)$}
-            {
-                $\lambda^{t+1}_n = \lambda^t_n + \eta (f_n(q, c, d_i) - f_n(q, c, d_j))$
-            }
-        }
-    }
-}
+{   
+    $\lambda^{t+1}_n = \lambda^t_n + \eta (f_n(q, c, d_i) - f_n(q, c, d_j))$
+ }
 \end{algorithm}
 算法环境中右侧空白比较多，若想把右侧的空白框减小，可以采用minipage环境实现。把algorithm环境放到minipage环境里面，并且加上选项[H]禁止算法浮动，下面给出一个例子。需要说明的是，一般不需要进行这种处理。算法标题可有可无，若有标题的话，请使用\verb|\caption|。若想用中英文双标题，请暂且参考图表标题自己定义一下。
 
 \begin{minipage}{0.8\textwidth}
+\vspace{5mm}
 \begin{algorithm}[H]
 \caption{这是一个算法标题}
 \KwIn{training samples, {$(d_i, d_j)_q$; $\mathbf{q}_i, \mathbf{q}_j \in C$,
 $q\in \mathbf{Q}$} }
 \KwOut{parameter setting $\lambda^T$}
 
-Initialization : set $\lambda_0=1, \lambda_i=0$, for i=$1, \dots, N$
-
 \For{$t$=1 to $T$}
-{
-    \ForEach{training sample $(d_i, d_j)_q$}
-    {
-        \If{ $Score(q, d_j, \lambda^t) \ge Score(q, d_i, \lambda^t)$ }
-        {
-            \ForEach{$\lambda^t_n (n=1, \dots, N)$}
-            {
-                $\lambda^{t+1}_n = \lambda^t_n + \eta (f_n(q, c, d_i) - f_n(q,
-c, d_j))$
-            }
-        }
-    }
-}
+{   
+    $\lambda^{t+1}_n = \lambda^t_n + \eta (f_n(q, c, d_i) - f_n(q, c, d_j))$
+ }
 \end{algorithm}
 \end{minipage}
 
