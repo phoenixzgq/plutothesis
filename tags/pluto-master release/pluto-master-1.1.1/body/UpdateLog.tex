@@ -1,0 +1,65 @@
+\defaultfont
+
+\BiChapter{模板升级、修改记录}{Update Record of the Thesis Model}
+\label{Updatelog}
+
+\BiSection{说明}{Introduction}
+\label{Update:intro}
+为了更加有效的维护该论文模板，特增加此章，用以记录模板所经历的改动，
+同时此章也有助于用户更深入的了解该模板。
+
+为了让更多的同学分享到最新的论文模板，建议大家在使用模板时如果对模板
+有任何改动或者建议，都别忘了到紫丁香BBS上TeX版把自己发现或建议与大家
+分享一下。
+
+本章的记录包括版本升级、bug修复等任何涉及到模板内容的改动。
+
+目前由在~\url{http://gf.cs.hit.edu.cn}~上创立了~Pluto（冥王星）哈尔滨工
+业大学学位论文模板开源项目。大家的修改可以集中到这里。
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\BiSection{模板的诞生}{The Naissance of the Template}
+\label{version-1.0}
+本模板是网友UFO等(2004)基于清华大学博士论文模板，按照哈尔滨工业大学论
+文规范开发的\LaTeX{}论文模板。经过nebula、polar等人在完成硕士论文的过程
+中逐渐修改得到的硕士论文模板。
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\BiSection{版本升级至1.1~(by nebula)}{Version Update(by nebula)}
+\label{version-1.1}
+解决了linux+TeXlive环境下可能遇到书签乱码的问题，感谢理工大学的Huskier
+网友发现该问题并提供了解决方案，感谢水木清华网友snoopyzhao提供的gbk2uni
+程序代码。
+
+模板的改动如下：
+\begin{enumerate}
+\item 增加了一个目录~tools，其中有三个文件，其中有两个是源文件，
+gbk2uni是可执行文件，编译环境是gcc 3.2.2，如果运行有问
+题请自行编译；
+\item 改动了makefile文件；
+\item 改动了main.tex文件；
+\item 改动了本文件。
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\BiSection{版本升级至1.1.1~(by nebula)}{Version Update(by nebula)}
+\label{version-1.1.1}
+非常小的调整，改动如下：
+\begin{enumerate}
+\item 为方便linux用户自动补齐操作，将makefile文件的文件名改为Makefile；
+\item 将介绍文档放到主目录下，方便用户了解模板；
+\item 改动了本文件。
+\end{enumerate}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\BiSection{版本号说明}{The Version Control on the template}
+\begin{enumerate}
+\item 模板纳入Pluto计划时的版本为1.0版本；
+\item 随着没一次修改版本号逐渐增加；
+\item 做成真正的模板后为3.0版本，之后用``$\pi$''的值作为版本号，以后每升级一次精确度进一位，这是
+借鉴\LaTeX{}的版本记录方法，象征着趋于完美。
+\end{enumerate}

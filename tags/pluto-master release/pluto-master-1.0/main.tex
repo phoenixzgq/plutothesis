@@ -1,0 +1,167 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   LaTeX File for the Dissertation of Harbin Institute of Technology
+%   LaTeX + CJK     哈尔滨工业大学硕士学位论文模板
+%   Based on Wang Lei's Template for Tsinghua University and Xiangqian Wu's
+%            Template for Harbin Institute of Technology
+%   Version: \1.0
+%   Last Update: 2005-09-1
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    by  Qi Han (HIT BBS: nebula, SMTH BBS: neblua)
+%        hanqi_xf@hit.edu.cn
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   LaTeX File for the Dissertation of Harbin Institute of Technology
+%   LaTeX + CJK     哈尔滨工业大学硕士学位论文模板
+%   Based on Wang Lei's Template for Tsinghua University and Xiangqian Wu's
+%            Template for Harbin Institute of Technology
+%   Version: \0.1
+%   Last Update: 2004-09-22
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    by  Qi Han (HIT BBS: nebula, SMTH BBS: neblua)
+%        hanqi_xf@hit.edu.cn
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   LaTeX File for the Dissertation of Harbin Institute of Technology
+%   LaTeX + CJK     哈尔滨工业大学学位论文模板
+%   Based on Wang Lei's Template for Tsinghua University
+%   Version: \beta
+%   Last Update: 2004-04-28
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    by  Xiangqian Wu (HIT BBS: UFO, SMTH BBS: SuperUFO)
+%                  csxqwu@hotmail.com
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%draft 选项可以使插入的图形只显示外框，以加快预览速度。
+%fleqn 让公式左对齐。
+\documentclass[12pt,a4paper,openany,oneside]{book}
+%\documentclass[11pt,a4paper,openany,draft]{book}
+%\documentclass[11pt,a4paper,fleqn,openany,draft]{book}
+%\documentclass[11pt,a4paper,fleqn,openany,draft]{book}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% 引用的宏包
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{setup/package.tex}
+
+\includeonly{
+                body/chap01,
+                body/chap02,
+                body/conclusion,
+                body/appendix,
+                appendix/publications,
+                appendix/Authorization,
+                appendix/acknowledgements,
+            }
+
+
+\begin{document}
+\begin{CJK*}{GBK}{song}
+
+
+%定义所有的eps文件在 figures 子目录下
+\graphicspath{{figures/}}
+
+
+%%%%%%%%%%%%%%%%%%%   Modified By UFO   Begin  %%%%%%%%%%%%%%%%%%%%%%%
+%定义目录的语言
+%\def \language {English}
+\def \language {Chinese}
+%%%%%%%%%%%%%%%%%%%   Modified By UFO   End  %%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  文本格式定义
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{setup/Definition}
+\input{setup/format}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% 正文部分
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%--- Preface ------------------------
+\frontmatter
+
+% 解决中英文混排的断行问题，会加入间距，但不会影响断行
+\sloppy
+
+\pagenumbering{Roman}
+%\interlinepenalty -100000
+%封面
+\input{ preface/cover}
+
+
+%目录
+\renewcommand{\baselinestretch}{1.5}
+\fontsize{12pt}{12pt}\selectfont
+
+%%%%%%%%%%%%%%%%%%%   Modified By UFO   Begin  %%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%定义英文目录开始的页码
+\ifx \language \english
+\setcounter{page}{5}
+\fi
+%%%%%%%%%%%%%%%%%%%   Modified By UFO   End  %%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents
+%%%%%%%%%%%%%%%%%%%   Modified By UFO   Begin  %%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%清除目录后面空页的页眉和页脚
+\clearpage{\pagestyle{empty}\cleardoublepage}
+%%%%%%%%%%%%%%%%%%%   Modified By UFO   End  %%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter
+
+
+% 对应于小四的标准字号是 12pt
+% 可以在正文中用此命令修改所需要字体的的大小
+\defaultfont
+
+%--- body --------------------------
+
+%正文章节
+\include{body/chap01}
+\include{body/chap02}
+
+% 结论
+
+\include{body/conclusion}
+
+%附录，如果需要的话
+\include{body/appendix}
+
+\defaultfont
+%\bibliographystyle{unsrt}
+\bibliographystyle{chinesebst}
+\phantomsection
+\addcontentsline{toc}{chapter}{\hei\ReferenceName}
+\addtolength{\bibsep}{-0.8 em}
+\bibliography{reference/reference}
+%附录
+
+%\include{body/appendix}
+
+
+%\nocite{*}
+%所发文章
+\include{appendix/publications}
+%原创性申明
+\include{appendix/Authorization}
+% 致谢
+\include{appendix/acknowledgements}
+
+
+\clearpage
+\end{CJK*}
+\end{document}
+
+%%%%%%%%%%%%%%%%%% End of the file  %%%%%%%%%%%%%%%%%%%%%%%%
