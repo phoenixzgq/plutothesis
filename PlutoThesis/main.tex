@@ -1,11 +1,11 @@
 %input "reference\reference.bib" %for winedt users
-\def\version{1.8.0.20071121}         % 该变量仅用于模板文件的版本号控制
+\def\version{1.8.0.20080228}         % 该变量仅用于模板文件的版本号控制
 
-%\def \xuewei {Doctor}   % 定义学位 博士
-\def \xuewei {Master}    % 硕士
+\def \xuewei {Doctor}   % 定义学位 博士
+%\def \xuewei {Master}    % 硕士
 
-%\def\oneortwoside{twoside} %定义单双面打印，只对硕士学位论文有效；
-\def\oneortwoside{oneside} % 硕士单面打印
+\def\oneortwoside{twoside} %定义单双面打印，只对硕士学位论文有效；
+%\def\oneortwoside{oneside} % 硕士单面打印
 
 \def\xueke{Engineering} % 定义学科 工学
 %\def\xueke{Science}      % 理学
@@ -53,11 +53,11 @@
 %% 中英目录
 \renewcommand{\baselinestretch}{1}
 \fontsize{12pt}{12pt}\selectfont
-\cleardoublepage
+\clearpage{\pagestyle{empty}\cleardoublepage}
 \pdfbookmark[0]{目~~~~录}{mulu}
 \tableofcontents    % 中文目录
 \ifxueweidoctor     % 英文目录右开
-  \clearpage{\pagestyle{empty}\cleardoublepage}
+  %\clearpage{\pagestyle{empty}\cleardoublepage}
 \else%
   \ifoneortwoside\clearpage{\pagestyle{empty}\cleardoublepage}\fi
 \fi
