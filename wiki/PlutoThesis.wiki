@@ -1,4 +1,4 @@
-#PlutoThesis学位论文模板介绍
+#summary PlutoThesis学位论文模板介绍
 
 = Introduction =
 
