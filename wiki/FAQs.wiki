@@ -2,21 +2,21 @@
 = Pluto 模板使用 FAQs =
 相应内容在学位论文模板的 readme.pdf 中也有
 
-*Q1：三级标题后重起一段，怎样设置阿？
+*Q1：三级标题后重起一段，怎样设置阿？*
 A1：根据研究生院出的《论文规范》，三级标题后，是接着写而不是像二级标题那样重启一段。如果需*要，可以在format.tex 中寻找如下代码：
 \titleformat{\subsubsection} [runin] {\hei\sf\xiaosi}{\thesubsubsection}{0.5em}{}[\;\;]
 改为：\titleformat{\subsubsection} [hang] {\hei\sf\xiaosi}{\thesubsubsection}{0.5em}{}
 
-*Q2：图题和子图题之间距离怎么调整？感觉有点大
+*Q2：图题和子图题之间距离怎么调整？感觉有点大*
 A2：手动吧，\vspace*{-8pt} \FigureBiCaption 
 
-*Q3：参考文献中标题的大小写有问题，明明写的大写，怎么转成小写了？
+*Q3：参考文献中标题的大小写有问题，明明写的大写，怎么转成小写了？*
 A3：参考文献的标题的实词首字母自动大写，其他字母小写。对于一些特殊词，比如：{IEEEtran \LaTeX} 应该写成{IEEEtran} {\LaTeX}；\lambda 应该写成{$\lambda$}；BaTiO3 写为 {BaTiO3} 。
 
-*Q4：子图标题用[ 或] 符号时，总是出错呀
+*Q4：子图标题用[ 或] 符号时，总是出错呀*
 A4：在用subfigure 时，如果子图标题含有[ ，需要用{ 和 } 包围，比如$\beta\in{[0,\,\pi]}$
 
-*Q5：请问表格中的顶端和低端的”粗线”怎么打？
+*Q5：请问表格中的顶端和低端的”粗线”怎么打？*
 A5：原来用两\hline的地方，现在用\toprule，下面用\bottomrule，或者\specialrule{1pt}{0pt}{0pt}。
 
 *Q6：怎么统计论文的字数？
