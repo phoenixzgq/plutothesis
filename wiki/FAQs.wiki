@@ -8,10 +8,10 @@ A1：根据研究生院出的《论文规范》，三级标题后，是接着写
 改为：\titleformat{\subsubsection} [hang] {\hei\sf\xiaosi}{\thesubsubsection}{0.5em}{}
 
 Q2：图题和子图题之间距离怎么调整？感觉有点大
-A2：手动吧，\vspace*{-8pt}\FigureBiCaption
+A2：手动吧，\vspace*{-8pt} \FigureBiCaption 
 
 Q3：参考文献中标题的大小写有问题，明明写的大写，怎么转成小写了？
-A3：参考文献的标题的实词首字母自动大写，其他字母小写。对于一些特殊词，比如：{IEEEtran \LaTeX} 应该写成{IEEEtran} {\LaTeX}；\lambda 应该写成{$\lambda$}；BaTiO3 写为{BaTiO3}。
+A3：参考文献的标题的实词首字母自动大写，其他字母小写。对于一些特殊词，比如：{IEEEtran \LaTeX} 应该写成{IEEEtran} {\LaTeX}；\lambda 应该写成{$\lambda$}；BaTiO3 写为 {BaTiO3} 。
 
 Q4：子图标题用[ 或] 符号时，总是出错呀
 A4：在用subfigure 时，如果子图标题含有[ ，需要用{ 和 } 包围，比如$\beta\in{[0,\,\pi]}$
@@ -46,9 +46,9 @@ A13: Windows 下直接运行 make.bat 就可以编译，linux下是 makefile 。
 Q14: 多个附录的问题？
 A14: 如果是 1.8.0.20071121（含） 之后的版本，示例如下：
 \defaultfont\appendix
-\BiAppChapter{附录一}{the first appendix}
+\BiAppChapter {附录一}{the first appendix}
 。。。。。
-\BiAppChapter{附录二}{the second appendix}
+\BiAppChapter {附录二}{the second appendix}
 。。。。
 
 Q15：文献引用的问题？ 
