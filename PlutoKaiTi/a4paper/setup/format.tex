@@ -141,7 +141,7 @@
 \setdescription{itemindent=38pt,leftmargin=0pt,itemsep=-0.4ex,listparindent=26pt,partopsep=0pt,parsep=0.5ex,topsep=-0.25ex}
 
 %%参考文献
-\renewcommand\bibsection{\section*{\centerline{\refname}}\vspace{-6pt}} %居中，与下文间距
+\renewcommand\bibsection{\section*{\centerline{\refname}}\vspace{-6pt}\markboth{哈尔滨工业大学\cxueke\cxuewei 学位论文开题报告}{\refname}} %居中，与下文间距
 \renewcommand\@biblabel[1]{[#1]\hspace{0.5em}} %参考文献里标号两边的括号
 \newcommand{\ucite}[1]{$^{\mbox{\scriptsize \cite{#1}}}$} % 增加 \ucite 命令使显示的引用为上标形式
 \newcommand{\citeup}[1]{$^{\mbox{\scriptsize \cite{#1}}}$} % for WinEdt users
@@ -291,7 +291,6 @@
     \end{center}
 }
 
-\iffalse
 %%定义内封
 \newpage
 \thispagestyle{empty}
@@ -331,10 +330,9 @@
     \ifoneortwoside
     \else
         \setboolean{@twoside}{false}
-    \fi \fi
+    \fi 
 \wuhaobiao }%\makecover
 \fi
-
 
 \ifxueweimaster
 \def\makecover{ \normalbiao
@@ -371,7 +369,6 @@
     \end{center}
 }
 
-\iffalse
 %%定义内封
 \newpage
 \thispagestyle{empty}
@@ -412,7 +409,7 @@
     \ifoneortwoside
     \else
         \setboolean{@twoside}{false}
-    \fi \fi
+    \fi 
 \wuhaobiao}
 \fi
 \makeatother
@@ -423,16 +420,16 @@
 \let\tpltable\longtable
 \makeatletter
 \gdef\wuhaobiao{%五号字
-	\def\tabular{\wuhao\gdef\@halignto{}\@tabular}
-	\def\endtabular{\endarray $\egroup \defaultfont}
-	\def\longtable{\wuhao\tpltable}
-	\def\endlongtable{\adl@LTlastrow \adl@org@endlongtable\defaultfont}
+    \def\tabular{\wuhao\gdef\@halignto{}\@tabular}
+    \def\endtabular{\endarray $\egroup \defaultfont}
+    \def\longtable{\wuhao\tpltable}
+    \def\endlongtable{\adl@LTlastrow \adl@org@endlongtable\defaultfont}
 }
 \gdef\normalbiao{%正常字号
-	\def\tabular{\gdef\@halignto{}\@tabular}
-	\def\endtabular{\endarray $\egroup}
-	\def\longtable{\tpltable}
-	\def\endlongtable{\adl@LTlastrow \adl@org@endlongtable}
+    \def\tabular{\gdef\@halignto{}\@tabular}
+    \def\endtabular{\endarray $\egroup}
+    \def\longtable{\tpltable}
+    \def\endlongtable{\adl@LTlastrow \adl@org@endlongtable}
 }
 \wuhaobiao
 \makeatother
