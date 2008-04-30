@@ -108,9 +108,10 @@
 \pagestyle{fancyplain}
 
 %去掉章节标题中的数字
-%%不要注销这一行，否则页眉会变成：“第1章1  绪论”样式
-\renewcommand{\chaptermark}[1]{\markboth{\chaptertitlename~~ \ #1}{}}
- \fancyhf{}
+%%不要注销这一行，否则在有chapter,twoside情况下，第一页没页眉 
+\renewcommand{\chaptermark}[1]{\relax}
+\renewcommand{\sectionmark}[1]{\markright{#1}}%\markright{\thesection .\ #1}
+\fancyhf{}
 
 %在book文件类别下,\leftmark自动存录各章之章名,\rightmark记录节标题
 %% 页眉字号 工大要求 小五
@@ -330,7 +331,7 @@
     \ifoneortwoside
     \else
         \setboolean{@twoside}{false}
-    \fi 
+    \fi
 \wuhaobiao }%\makecover
 \fi
 
@@ -409,7 +410,7 @@
     \ifoneortwoside
     \else
         \setboolean{@twoside}{false}
-    \fi 
+    \fi
 \wuhaobiao}
 \fi
 \makeatother
