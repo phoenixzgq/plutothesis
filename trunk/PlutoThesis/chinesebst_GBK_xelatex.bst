@@ -1,4 +1,4 @@
-\XeTeXinputencoding "gb2312"
+\XeTeXinputencoding "gbk"
 %%
 %% This is file `chinabst.bst',
 %%
