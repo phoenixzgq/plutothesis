@@ -1,8 +1,25 @@
+% 若xelatex编译非UTF8文件，需在每个文件中指定字符编码;
+% main.tex中手动制定了\atemp和\usewhat参数；
+\ifx\atempxetex\usewhat 
+\XeTeXinputencoding "gb2312"
+\fi
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 重定义字体命令
 % 注意win2000,没有 simsun,　最好到网上找一个
 % 一些字体是office2000 带的
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ifx\atempxetex\usewhat %xelatex调用系统字体；
+\setmainfont{Times New Roman}   % 正文中的英文 采用 Times New Roman 字体；											
+\setCJKmainfont{SimSun}
+\setCJKsansfont{SimHei}
+\setCJKmonofont{LiSu}
+\setCJKfamilyfont{song}{SimSun}
+\setCJKfamilyfont{hei}{SimHei}
+\setCJKfamilyfont{fs}{FangSong_GB2312}
+\setCJKfamilyfont{kai}{KaiTi_GB2312}
+\setCJKfamilyfont{li}{LiSu}
+\fi
 \newcommand{\song}{\CJKfamily{song}}    % 宋体   (Windows自带simsun.ttf)
 \newcommand{\fs}{\CJKfamily{fs}}        % 仿宋体 (Windows自带simfs.ttf)
 \newcommand{\kai}{\CJKfamily{kai}}      % 楷体   (Windows自带simkai.ttf)
