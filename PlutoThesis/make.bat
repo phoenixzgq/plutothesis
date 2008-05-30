@@ -1,6 +1,7 @@
 type main.tex | find "\def\usewhat{dvipspdf}" && goto dvipspdf
 type main.tex | find "\def\usewhat{dvipdfmx}" && goto dvipdfmx
 type main.tex | find "\def\usewhat{pdflatex}" && goto pdflatex
+type main.tex | find "\def\usewhat{xelatex}" && goto xelatex
 type main.tex | find "\def\usewhat{yap}" && goto yap
 
 :dvipspdf
@@ -39,6 +40,20 @@ pdflatex main.tex
 ren main.pdf main_pdflatex.pdf
 del *.aux *.bbl *.blg *.out *.thm *.toc *.lof *.fen *.toe *.lot *.ten *.log /s
 start main_pdflatex.pdf
+exit
+
+:xelatex
+del main_xelatex.pdf
+xelatex main.tex
+bibtex main
+copy /b fixbbl.txt+main.bbl  main2.bbl
+del main.bbl
+ren main2.bbl main.bbl
+xelatex main.tex
+xelatex main.tex
+ren main.pdf main_xelatex.pdf
+del *.aux *.bbl *.blg *.out *.thm *.toc *.lof *.fen *.toe *.lot *.ten *.log /s
+start main_xelatex.pdf
 exit
 
 :yap

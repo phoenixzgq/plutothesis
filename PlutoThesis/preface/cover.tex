@@ -1,3 +1,9 @@
+% 若xelatex编译非UTF8文件，需在每个文件中指定字符编码;
+% main.tex中手动制定了\atemp和\usewhat参数；
+\ifx\atempxetex\usewhat 
+\XeTeXinputencoding "gb2312"
+\fi
+
 \newcommand{\chinesethesistitle}{哈尔滨工业大学硕博士学位论文~\LaTeX~模板~(\version~版)} %授权书用，无需断行
 \newcommand{\englishthesistitle}{\LaTeX~Dissertation Template of \\Harbin Institute of Technology~(Version \version)}
 \newcommand{\chinesethesistime}{2007~年~6~月}  %封面底部的日期中文形式

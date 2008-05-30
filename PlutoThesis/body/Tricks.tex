@@ -1,3 +1,8 @@
+% 若xelatex编译非UTF8文件，需在每个文件中指定字符编码;
+% main.tex中手动制定了\atemp和\usewhat参数；
+\ifx\atempxetex\usewhat 
+\XeTeXinputencoding "gb2312"
+\fi
 \defaultfont
 
 \BiChapter{模板选择及使用中的一些技巧}{Some Tricks of Using this Template}
@@ -140,12 +145,12 @@ setup       & 存放设置文件的目录，其中package.tex 包含对宏包的引
 readme.pdf  & 一个编译后得到的完整论文示例及论文模板使用及更新说明 \\
 make.bat    & 在~Windows下自动选用~dvips 、~dvipdfm 和~pdfLaTeX 完整编译和自动清理无用文件的脚本文件
               ，建议了解其中命令\\
-clean.bat   & 用来删除所有编辑和编译时产生的临时文件，pdf文件除外\\
+clean.bat   & 用来删除所有编辑和编译时产生的临时文件，pdf 文件除外\\
 chinesebst.bst & 生成包括中文参考文献的标准形式的定义文件\\
 makefile    & linux下用来自动编译和清除无用的文件\\
 gb\_452.cap & aloft的gb.cap的4.5.2版，包含了中文格式有关的基本定义。
               BaconChina对原始版本进行了少量修改，所以请勿用其它版本覆盖\\
-gb\_452.cpx & 与gb\_452.cap内容完全一样的文件。不同的\LaTeX系统要求
+gb\_452.cpx & 与gb\_452.cap 内容完全一样的文件。不同的\LaTeX 系统要求
               不同的文件后缀，两个文件保证了兼容性\\
 \specialrule{1pt}{0pt}{0pt}%
 \end{tabular}
@@ -480,6 +485,7 @@ a&emf&bcdef\\
 %a&emf&bcdef\\
 \end{longtable}
 
+%\iffalse
 
 \BiSection{算法}{algorithm}
 这是一个算法的例子，来自~worldguy@lilacbbs~
@@ -711,3 +717,4 @@ E=mc^2
 \noindent \textbf{Q15}：\textcolor{blue}{文献引用的问题？ }\\
 \textbf{A15}：\verb+\cite+ 是常规形式引用，\verb+\citeup+或\verb+\ucite+是上标形式引用;
 
+%\fi

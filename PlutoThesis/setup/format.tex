@@ -1,3 +1,9 @@
+% 若xelatex编译非UTF8文件，需在每个文件中指定字符编码;
+% main.tex中手动制定了\atemp和\usewhat参数；
+\ifx\atempxetex\usewhat 
+\XeTeXinputencoding "gb2312"
+\fi
+
 %论文版芯大小一般应为145mm×210mm（包括页眉及页码则为145mm×230mm）
 %页码在版芯下边线之下隔行居中放置；
 %% 左右
@@ -55,17 +61,30 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 用于中文段落缩进 和正文版式
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\CJKcaption{GB_aloft}
+
+\ifx\atempxetex\usewhat 
+\newcommand{\CJKcaption}[1]{
+  \ifx\CJK@actualBinding \@empty
+    \PackageError{CJK}{
+      You must be inside of a CJK environment to use \protect\CJKcaption}{}
+  \else
+    \makeatletter
+    \InputIfFileExists{#1.cpx}{}{
+      \PackageError{CJK}{
+        Can't find #1.cpx}{
+        The default captions are used if you continue.}}
+    \makeatother
+  \fi}  
+\CJKcaption{gb_452_GBK_xelatex}
+\else
 \CJKcaption{gb_452}
-
 \newlength \CJKtwospaces
-
 \def\CJKindent{
     \settowidth\CJKtwospaces{\CJKchar{"0A1}{"0A1}\CJKchar{"0A1}{"0A1}}%
     \parindent\CJKtwospaces
 }
-
 \CJKtilde  \CJKindent
+\fi
 
 \setlength{\parindent}{26pt} %由于工大论文的每行的字距加大了，需要增加段首缩2pt
 
@@ -111,7 +130,7 @@
 {#4}\nobreak
  \leaders\hbox{$\m@th
 \mkern \@dotsep mu\hbox{\ifnum1=#1 \bf\fi.}\mkern \@dotsep
-mu$}\hfill
+mu$}\hfill 
  \nobreak
 \hb@xt@\@pnumwidth{\hfil  \normalfont \normalcolor \ifnum1=#1 \bf\fi#5}%目录层为1时，页码粗体
 \par}%
@@ -145,11 +164,11 @@ mu$}\hfill
 %根据单双面打印设置不同的页眉；
 \ifoneortwoside
   \fancyhead[CO]{\CJKfamily{song}\xiaowu\leftmark}
-  \fancyhead[CE]{\CJKfamily{song}\xiaowu哈尔滨工业大学\cxueke\cxuewei学位论文 }%
+  \fancyhead[CE]{\CJKfamily{song}\xiaowu 哈尔滨工业大学\cxueke\cxuewei 学位论文 }%
   \fancyfoot[C,C]{\xiaowu --~\thepage~--} %\if@mainmatter \fi
 \else%
-  \fancyhead[CO]{\CJKfamily{song}\xiaowu哈尔滨工业大学\cxueke\cxuewei学位论文}
-  \fancyhead[CE]{\CJKfamily{song}\xiaowu哈尔滨工业大学\cxueke\cxuewei学位论文}%
+  \fancyhead[CO]{\CJKfamily{song}\xiaowu 哈尔滨工业大学\cxueke\cxuewei 学位论文}
+  \fancyhead[CE]{\CJKfamily{song}\xiaowu 哈尔滨工业大学\cxueke\cxuewei 学位论文}%
   \fancyfoot[C,C]{\xiaowu --~\thepage~--} %\if@mainmatter   \fi
 \fi
 
@@ -282,8 +301,8 @@ mu$}\hfill
 \def\csubject#1{\def\@csubject{#1}}\def\@csubject{}
 \def\cauthor#1{\def\@cauthor{#1}}\def\@cauthor{}
 \def\csupervisor#1{\def\@csupervisor{#1}}\def\@csupervisor{}
-\def\cassosupervisor#1{\def\@cassosupervisor{~ & {\hei 副\hfill导\hfill师：} & #1\\}}\def\@cassosupervisor{}
-\def\ccosupervisor#1{\def\@ccosupervisor{~ & {\hei 联\hfill合\hfill导\hfill师：} & #1\\}}\def\@ccosupervisor{}
+\def\cassosupervisor#1{\def\@cassosupervisor{~ & {\hei 副 \hfill 导 \hfill 师：} & #1\\}}\def\@cassosupervisor{}
+\def\ccosupervisor#1{\def\@ccosupervisor{~ & {\hei 联 \hfill 合\hfill 导 \hfill 师：} & #1\\}}\def\@ccosupervisor{}
 \def\cdate#1{\def\@cdate{#1}}\def\@cdate{}
 \long\def\cabstract#1{\long\def\@cabstract{#1}}\long\def\@cabstract{}
 \def\ckeywords#1{\def\@ckeywords{#1}}\def\@ckeywords{}
@@ -368,7 +387,7 @@ mu$}\hfill
                   国际图书分类号： \@internatclassifiedindex }
 
     \parbox[t][2.7cm][b]{\textwidth}{\xiaoer
-    \begin{center} {\song  \@cdegree学位论文 }\end{center} }
+    \begin{center} {\song  \@cdegree 学位论文 }\end{center} }
 
     \setlength{\baselineskip}{1.5\baselineskip}
     \parbox[t][3.0cm][b]{\textwidth}{\erhao
@@ -380,14 +399,14 @@ mu$}\hfill
     \parbox[t][6cm][c]{\textwidth}{ {\sihao
     \begin{center} \song
     \begin{tabular}{lll@{\extracolsep{0em}}l}
-    ~ & {\hei \xueweishort \hfill士\hfill研究生：}           & \@cauthor\\
-    ~ & {\hei 导\hfill师：}                       & \@csupervisor\\
+    ~ & {\hei \xueweishort \hfill 士\hfill 研究生：}           & \@cauthor\\
+    ~ & {\hei 导\hfill 师：}                       & \@csupervisor\\
     \@ccosupervisor
     \@cassosupervisor
-    ~ & {\hei 申\hfill请\hspace{1em}学\hfill位：} & \@cdegree\\
-    ~ & {\hei 学\hfill科、专\hfill业：}           & \@csubject\\
-    ~ & {\hei 所\hfill在\hspace{1em}单\hfill位：} & \@caffil\\
-    ~ & {\hei 答\hfill辩\hspace{1em}日\hfill期：} & \@cdate\\
+    ~ & {\hei 申\hfill 请\hspace{1em}学\hfill 位：} & \@cdegree\\
+    ~ & {\hei 学\hfill 科、专\hfill 业：}           & \@csubject\\
+    ~ & {\hei 所\hfill 在\hspace{1em}单\hfill 位：} & \@caffil\\
+    ~ & {\hei 答\hfill 辩\hspace{1em}日\hfill 期：} & \@cdate\\
     ~ & {\hei 授予学位单位：}                     & 哈尔滨工业大学
     \end{tabular}
     \end{center} } }
