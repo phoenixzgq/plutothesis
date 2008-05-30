@@ -7,7 +7,7 @@
 %
 % $Id: gb_452.cap,v 1.2 2006/08/14 11:48:05 luckyfox Exp $
 %
-\XeTeXinputencoding "gb2312"
+\XeTeXinputencoding "gbk"
 
 \def\fileversion{4.5.2}
 \def\filedate{2003/05/18}

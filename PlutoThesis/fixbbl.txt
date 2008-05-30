@@ -1,2 +1,2 @@
-\XeTeXinputencoding "gb2312"
+\XeTeXinputencoding "gbk"
  
