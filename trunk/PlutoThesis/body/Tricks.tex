@@ -102,15 +102,11 @@ pineapple@hit
 软件安装方便，集成了大多数常用的软件，如果不想考虑太多软件本身的问题
 而只想专注于论文的话，CTeX 是个不错的选择，http://www.ctex.org 是~ CTeX 的主
 页，在这里可以获得最新的消息、关于~TeX 的帮助~(CTeX
-论坛)和最新的软件；
-\item WindowsNT/2000/XP+ChinaTeX：ChinaTeX 是又一中文~ TeX 发行版，主要由李树钧
-博士~ (hooklee) 维护，ChinaTeX 是以~ iso 形式发放的，除了~ TeX 系统，还有一些非常
-有用的软件和资料。ChinaTeX 的设计思路和~ CTeX 有所不同，目前版本的采用~ MiKTeX
-Direct CD 方式，用户有更多的自由去配置~ChinaTeX。ChinaTeX 的主页是~
-http://www.chinatex.org，那里也有相关的论坛，不过基本已经废弃；
+论坛)和最新的软件；需要说明的是，CTeX 2.4 基于 miktex 2.4，支持PlutoThesis的dvipspdf，dvipdfmx和pdflatex的中文处理方式，不支持xelatex 字体处理方式，还请注意。
+\item WindowsNT/2000/XP/vista+MiCTeX：由于 ctex 套装在最近的两三年内没有更新，仍然是基于MikTeX2.4版，而MiKTeX 2.5版之前都已不再维护，目前最新为2.7版，具有不少新特性，尤其是 直接利用系统字体的XeTeX的字体处理方式和对vista的良好支持。所以 instanton@ctex 在MiKTeX 2.7的基础上加上了dvipspdf，dvipdfmx和pdflatex中文处理，发布了 MiCTeX，可以在ctex论坛上找到发布和下载信息，241 ftp上可能也有不保证最新的版本下载。 MiCTeX配置的编辑器是scite，对于新手来说不如winedt好用，可以在安装 mictex后直接安装winedt做为编辑器，无需额外配置；
+\item windows2000/XP/vista+MiKTeX：若是用户只是用xelatex处理中文，或者是只处理英文文档，可以考虑安装MiKTeX最新版；
 \item Linux+TeXlive：TeXlive 是一个著名的~ TeX 发行版，支持众多的操作系统，
-但是没有对中文的直接支持，需要自行配置字体，具体配置方法可以参考：
-http://learn.tsinghua.edu.cn:8080/2001315450/tex\_frame.html；
+但是没有对中文的直接支持，需要自行配置字体；请关注ctex论文，tex@newsmth和241 ftp去获取最新的版本。
 \end{hitlist}
 
 以上软件环境均经过测试，可以正常编译该模板，在其它软件环境下可能遇到的
@@ -143,7 +139,7 @@ setup       & 存放设置文件的目录，其中package.tex 包含对宏包的引
               Definition.tex 包含另外一些相关的定义；figtab.tex
               是图表索引；type.tex是硕博类型分类，以上这些用户一般无需改动。\\
 readme.pdf  & 一个编译后得到的完整论文示例及论文模板使用及更新说明 \\
-make.bat    & 在~Windows下自动选用~dvips 、~dvipdfm 和~pdfLaTeX 完整编译和自动清理无用文件的脚本文件
+make.bat    & 在~Windows下自动选用~dvips 、~dvipdfm、~pdfLaTeX、xelatex 完整编译和自动清理无用文件的脚本文件
               ，建议了解其中命令\\
 clean.bat   & 用来删除所有编辑和编译时产生的临时文件，pdf 文件除外\\
 chinesebst.bst & 生成包括中文参考文献的标准形式的定义文件\\
@@ -203,9 +199,13 @@ chinesebst.bst, gb\_452.cap, gb\_452.cpx, Authorization.tex 替换掉即可
 
 选择论文的编译方式：\vspace{-5pt}
 \begin{verbatim}
-    \def\usewhat{dvipdfmx}    % 你喜欢哪种编译方式，pdflatex dvipdfmx dvipspdf yap
+    \def\usewhat{dvipdfmx}    % 你喜欢哪种编译方式，pdflatex dvipdfmx dvipspdf xelatex yap
 \end{verbatim}
 无论选择哪一个，只要运行~make.bat 脚本，就会自动按照你选择的方式进行完整编译，生成最终文件。
+
+采用pdflatex， dvipdfmx， dvipspdf编译时，由于latex没有times new roman字体，所以只能用times宏包仿times new roman，得到的pdf文件中不是真正的times new roman字体。而用xelatex可以直接调用系统的times new roman字体。
+
+需要着重指出的是，本模板采用GBK编码，若选用xelatex编译，在含有参考文献的情况下，需在bibtex生成的bbl文件中头文件处指明编码，目前系统不能自动生成此编码说明，从而导致参考文献乱码。使用make.bat编译时，已经用fixbbl.txt和bbl文件进行合并的方式进行了自动修正，生成参考文献正常，所以推荐用make.bat编译，或者是参考make.bat的命令，各取所需。
 
 用户自己的章节文件和图片路径文件，可以通过修改~main.tex 中下列命令的内容实现。\vspace{-5pt}
 \begin{verbatim}
