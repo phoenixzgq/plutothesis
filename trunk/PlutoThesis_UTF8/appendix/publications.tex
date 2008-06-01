@@ -1,0 +1,16 @@
+% 若xelatex编译非UTF8文件，需在每个文件中指定字符编码;
+% main.tex中手动制定了\atemp和\usewhat参数；
+\ifx\atempxetex\usewhat 
+\XeTeXinputencoding "gbk"
+\fi
+\defaultfont
+\BiAppendixChapter{攻读\cxuewei 学位期间发表的学术论文} {Papers
+Published in the Period of PH. D. Education}
+
+\begin{publist}
+\item 作者. 题目. 期刊. 年, 卷(期): 页码
+
+\item 作者. 题目. 期刊. 年, 卷(期): 页码
+
+\item 作者. 题目. 期刊. 年, 卷(期): 页码
+\end{publist}
