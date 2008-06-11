@@ -1,16 +1,11 @@
-% Èôxelatex±àÒë·ÇUTF8ÎÄ¼ş£¬ĞèÔÚÃ¿¸öÎÄ¼şÖĞÖ¸¶¨×Ö·û±àÂë;
-% main.texÖĞÊÖ¶¯ÖÆ¶¨ÁË\atempºÍ\usewhat²ÎÊı£»
-\ifx\atempxetex\usewhat 
-\XeTeXinputencoding "gbk"
-\fi
 
-%ÂÛÎÄ°æĞ¾´óĞ¡Ò»°ãÓ¦Îª145mm¡Á210mm£¨°üÀ¨Ò³Ã¼¼°Ò³ÂëÔòÎª145mm¡Á230mm£©
-%Ò³ÂëÔÚ°æĞ¾ÏÂ±ßÏßÖ®ÏÂ¸ôĞĞ¾ÓÖĞ·ÅÖÃ£»
-%% ×óÓÒ
+%è®ºæ–‡ç‰ˆèŠ¯å¤§å°ä¸€èˆ¬åº”ä¸º145mmÃ—210mmï¼ˆåŒ…æ‹¬é¡µçœ‰åŠé¡µç åˆ™ä¸º145mmÃ—230mmï¼‰
+%é¡µç åœ¨ç‰ˆèŠ¯ä¸‹è¾¹çº¿ä¹‹ä¸‹éš”è¡Œå±…ä¸­æ”¾ç½®ï¼›
+%% å·¦å³
 \setlength{\textwidth}{14.5cm}
-\setlength{\oddsidemargin}{0.71cm}   % ×ó±ß 3.25cm=0.71+2.54
+\setlength{\oddsidemargin}{0.71cm}   % å·¦è¾¹ 3.25cm=0.71+2.54
 \setlength{\evensidemargin}{0.71cm}
-%  ÉÏÏÂ
+%  ä¸Šä¸‹
 \setlength{\topmargin}{0.42cm}       % 3.3=2.54+0.76
 \setlength{\headheight}{0.80cm}      % 0.8
 \setlength{\headsep}{0.40cm}         % 0.4
@@ -18,48 +13,48 @@
 \setlength{\footskip}{1.1cm}        %1.1
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%ÔÊĞí¹«Ê½»»Ò³ÏÔÊ¾,·ñÔò´óĞÍÍÆµ¼¹«Ê½¶¼ÔÚÒ»Ò³ÄÚ£¬
-%Ò»Ò³ÏÔÊ¾²»ÏÂ·Åµ½µÚ¶şÒ³£¬µ¼ÖÂºÜ´óµÄ¿Õ°×¿Õ¼ä£¬ºÜ²»ºÃ¿´
+%å…è®¸å…¬å¼æ¢é¡µæ˜¾ç¤º,å¦åˆ™å¤§å‹æ¨å¯¼å…¬å¼éƒ½åœ¨ä¸€é¡µå†…ï¼Œ
+%ä¸€é¡µæ˜¾ç¤ºä¸ä¸‹æ”¾åˆ°ç¬¬äºŒé¡µï¼Œå¯¼è‡´å¾ˆå¤§çš„ç©ºç™½ç©ºé—´ï¼Œå¾ˆä¸å¥½çœ‹
 \allowdisplaybreaks[4]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%ÏÂÃæÕâ×éÃüÁîÊ¹¸¡¶¯¶ÔÏóµÄÈ±Ê¡ÖµÉÔÎ¢¿íËÉÒ»µã£¬´Ó¶ø·ÀÖ¹·ù¶È
-%¶ÔÏóÕ¼¾İ¹ı¶àµÄÎÄ±¾Ò³Ãæ£¬Ò²¿ÉÒÔ·ÀÖ¹ÔÚºÜ´ó¿Õ°×µÄ¸¡¶¯Ò³ÉÏ·ÅÖÃºÜĞ¡µÄÍ¼ĞÎ¡£
+%ä¸‹é¢è¿™ç»„å‘½ä»¤ä½¿æµ®åŠ¨å¯¹è±¡çš„ç¼ºçœå€¼ç¨å¾®å®½æ¾ä¸€ç‚¹ï¼Œä»è€Œé˜²æ­¢å¹…åº¦
+%å¯¹è±¡å æ®è¿‡å¤šçš„æ–‡æœ¬é¡µé¢ï¼Œä¹Ÿå¯ä»¥é˜²æ­¢åœ¨å¾ˆå¤§ç©ºç™½çš„æµ®åŠ¨é¡µä¸Šæ”¾ç½®å¾ˆå°çš„å›¾å½¢ã€‚
 \renewcommand{\topfraction}{0.9999999}
 \renewcommand{\textfraction}{0.0000001}
 \renewcommand{\floatpagefraction}{0.9999}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% ÖØ¶¨ÒåÒ»Ğ©ÕıÎÄÏà¹Ø±êÌâ
+% é‡å®šä¹‰ä¸€äº›æ­£æ–‡ç›¸å…³æ ‡é¢˜
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \theoremstyle{plain} \theorembodyfont{\song\rmfamily}
 \theoremheaderfont{\hei\rmfamily} %\theoremseparator{:}
-\newtheorem{definition}{\hei ¶¨Òå}[chapter]
-\newtheorem{example}{\hei Àı}[chapter]
-\newtheorem{algo}{\hei Ëã·¨}[chapter]
-\newtheorem{theorem}{\hei ¶¨Àí}[chapter]
-\newtheorem{axiom}{\hei ¹«Àí}[chapter]
-\newtheorem{proposition}{\hei ÃüÌâ}[chapter]
-\newtheorem{lemma}{\hei ÒıÀí}[chapter]
-\newtheorem{corollary}{\hei ÍÆÂÛ}[chapter]
-\newtheorem{remark}{\hei ×¢½â}[chapter]
-%\newtheorem{proposition}[definition]{\hei ÃüÌâ}
-%\newtheorem{lemma}[definition]{\hei ÒıÀí}
+\newtheorem{definition}{\hei å®šä¹‰}[chapter]
+\newtheorem{example}{\hei ä¾‹}[chapter]
+\newtheorem{algo}{\hei ç®—æ³•}[chapter]
+\newtheorem{theorem}{\hei å®šç†}[chapter]
+\newtheorem{axiom}{\hei å…¬ç†}[chapter]
+\newtheorem{proposition}{\hei å‘½é¢˜}[chapter]
+\newtheorem{lemma}{\hei å¼•ç†}[chapter]
+\newtheorem{corollary}{\hei æ¨è®º}[chapter]
+\newtheorem{remark}{\hei æ³¨è§£}[chapter]
+%\newtheorem{proposition}[definition]{\hei å‘½é¢˜}
+%\newtheorem{lemma}[definition]{\hei å¼•ç†}
 %\newtheorem{exercise}[definition]{}
-%\newtheorem{corollary}[definition]{\hei ÍÆÂÛ}
-%\newtheorem{remark}[definition]{\hei ×¢½â}
+%\newtheorem{corollary}[definition]{\hei æ¨è®º}
+%\newtheorem{remark}[definition]{\hei æ³¨è§£}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%½â¾öÔ­proof¶¨Àí»·¾³µÄÁ½¸öÎÊÌâ£º
-%  1. proof ÖĞµÄitemËõ½ø²»¶Ô
-%  2. proof ÖĞµÄ×îºóÒ»¸ö¹«Ê½ÏÂ³öÏÖÒ»¸öºÚ·½¿é¡£
+%è§£å†³åŸproofå®šç†ç¯å¢ƒçš„ä¸¤ä¸ªé—®é¢˜ï¼š
+%  1. proof ä¸­çš„itemç¼©è¿›ä¸å¯¹
+%  2. proof ä¸­çš„æœ€åä¸€ä¸ªå…¬å¼ä¸‹å‡ºç°ä¸€ä¸ªé»‘æ–¹å—ã€‚
 %\theoremsymbol{$\blacksquare$}
-%\newtheorem{proof}{\hei Ö¤Ã÷}
-\newenvironment{proof}{\noindent{\hei Ö¤Ã÷£º}}{\hfill $ \square $ \vskip 4mm}
+%\newtheorem{proof}{\hei è¯æ˜}
+\newenvironment{proof}{\noindent{\hei è¯æ˜ï¼š}}{\hfill $ \square $ \vskip 4mm}
 \theoremsymbol{$\square$}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% ÓÃÓÚÖĞÎÄ¶ÎÂäËõ½ø ºÍÕıÎÄ°æÊ½
+% ç”¨äºä¸­æ–‡æ®µè½ç¼©è¿› å’Œæ­£æ–‡ç‰ˆå¼
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \ifx\atempxetex\usewhat 
@@ -75,25 +70,25 @@
         The default captions are used if you continue.}}
     \makeatother
   \fi}  
-\CJKcaption{gb_452_GBK_xelatex}
+\CJKcaption{gb_452_UTF8}
 \else
-\CJKcaption{gb_452}
+\CJKcaption{gb_452} %_UTF8
 \newlength \CJKtwospaces
 \def\CJKindent{
     \settowidth\CJKtwospaces{\CJKchar{"0A1}{"0A1}\CJKchar{"0A1}{"0A1}}%
     \parindent\CJKtwospaces
 }
-\CJKtilde  \CJKindent
+%\CJKtilde  \CJKindent
 \fi
 
-\setlength{\parindent}{26pt} %ÓÉÓÚ¹¤´óÂÛÎÄµÄÃ¿ĞĞµÄ×Ö¾à¼Ó´óÁË£¬ĞèÒªÔö¼Ó¶ÎÊ×Ëõ2pt
+\setlength{\parindent}{26pt} %ç”±äºå·¥å¤§è®ºæ–‡çš„æ¯è¡Œçš„å­—è·åŠ å¤§äº†ï¼Œéœ€è¦å¢åŠ æ®µé¦–ç¼©2pt
 
-\renewcommand\contentsname{\hei Ä¿~~~~Â¼}
+\renewcommand\contentsname{\hei ç›®~~~~å½•}
 
-%%%%%%ÕÂ½Ú±êÌâÎª¡°µÚ1ÕÂ¡±µÄĞÎÊ½
+%%%%%%ç« èŠ‚æ ‡é¢˜ä¸ºâ€œç¬¬1ç« â€çš„å½¢å¼
 \renewcommand\chaptername{\CJKprechaptername~\thechapter~\CJKchaptername}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%¶¨Òå¶ÎÂäÕÂ½ÚµÄ±êÌâºÍÄ¿Â¼ÏîµÄ¸ñÊ½
+%å®šä¹‰æ®µè½ç« èŠ‚çš„æ ‡é¢˜å’Œç›®å½•é¡¹çš„æ ¼å¼
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setcounter{secnumdepth}{4} \setcounter{tocdepth}{2}
 
@@ -109,15 +104,15 @@
 \titleformat{\subsubsection}[runin]{\hei\sf\xiaosi\boldmath}{\thesubsubsection}{0.5em}{}[\;\;]
 \titlespacing{\subsubsection}{0pt}{3pt}{2pt}
 
-% °´¹¤´ó±ê×¼, ËõĞ¡Ä¿Â¼ÖĞ¸÷¼¶±êÌâÖ®¼äµÄËõ½ø£¬Ê¹ËüÃÇÏà¸ôÒ»¸ö×Ö·û¾àÀë£¬Ò²¾ÍÊÇ12pt
+% æŒ‰å·¥å¤§æ ‡å‡†, ç¼©å°ç›®å½•ä¸­å„çº§æ ‡é¢˜ä¹‹é—´çš„ç¼©è¿›ï¼Œä½¿å®ƒä»¬ç›¸éš”ä¸€ä¸ªå­—ç¬¦è·ç¦»ï¼Œä¹Ÿå°±æ˜¯12pt
 \makeatletter
-\renewcommand*\l@chapter{\@dottedtocline{0}{0em}{4.84em}}%¿ØÖÆÓ¢ÎÄÄ¿Â¼£º Ï¸µã\@dottedtocline  ´Öµã\@dottedtoclinebold
+\renewcommand*\l@chapter{\@dottedtocline{0}{0em}{4.84em}}%æ§åˆ¶è‹±æ–‡ç›®å½•ï¼š ç»†ç‚¹\@dottedtocline  ç²—ç‚¹\@dottedtoclinebold
 \renewcommand*\l@section{\@dottedtocline{1}{12pt}{18pt}}
 \renewcommand*\l@subsection{\@dottedtocline{2}{24pt}{27pt}}
 \renewcommand*\l@subsubsection{\@dottedtocline{3}{36pt}{39pt}}
 \renewcommand*\l@paragraph{\@dottedtocline{4}{48pt}{48pt}}
 \renewcommand*\l@subparagraph{\@dottedtocline{5}{60pt}{60pt}}
-% Ó¢ÎÄÄ¿Â¼ÖĞÕÂ±êÌâ¶ÔÓ¦µÄµãºÅ¼°ÏàÓ¦Ò³ÂëÎªºÚÌå
+% è‹±æ–‡ç›®å½•ä¸­ç« æ ‡é¢˜å¯¹åº”çš„ç‚¹å·åŠç›¸åº”é¡µç ä¸ºé»‘ä½“
 \def\@dottedtoclinebold#1#2#3#4#5{%
  \ifnum #1>\c@tocdepth \else
  \vskip \z@ \@plus.2\p@
@@ -132,18 +127,18 @@
 \mkern \@dotsep mu\hbox{\ifnum1=#1 \bf\fi.}\mkern \@dotsep
 mu$}\hfill 
  \nobreak
-\hb@xt@\@pnumwidth{\hfil  \normalfont \normalcolor \ifnum1=#1 \bf\fi#5}%Ä¿Â¼²ãÎª1Ê±£¬Ò³Âë´ÖÌå
+\hb@xt@\@pnumwidth{\hfil  \normalfont \normalcolor \ifnum1=#1 \bf\fi#5}%ç›®å½•å±‚ä¸º1æ—¶ï¼Œé¡µç ç²—ä½“
 \par}%
 \fi}
-%¿ØÖÆÖĞÎÄÄ¿Â¼
-%\dottedcontents{chapter}[3.4em]{\vspace{0.5em}\hspace{-3.4em}\hei \bf\boldmath}{0.0em}{5pt}% ÕÂ±êÌâºóÓÃ´Öµã
-\titlecontents{chapter}[3.92em]{\vspace{0.5em}\hspace{-3.92em}\hei \bf\boldmath}{\contentslabel{0em}}{\hspace*{-0em}}{\normalfont\titlerule*[5pt]{.}\contentspage} %ÕÂ±êÌâºóÓÃÏ¸µã
+%æ§åˆ¶ä¸­æ–‡ç›®å½•
+%\dottedcontents{chapter}[3.4em]{\vspace{0.5em}\hspace{-3.4em}\hei \bf\boldmath}{0.0em}{5pt}% ç« æ ‡é¢˜åç”¨ç²—ç‚¹
+\titlecontents{chapter}[3.92em]{\vspace{0.5em}\hspace{-3.92em}\hei \bf\boldmath}{\contentslabel{0em}}{\hspace*{-0em}}{\normalfont\titlerule*[5pt]{.}\contentspage} %ç« æ ‡é¢˜åç”¨ç»†ç‚¹
 \dottedcontents{section}[1.16cm]{}{1.8em}{5pt}
 \dottedcontents{subsection}[2.00cm]{}{2.7em}{5pt}
 \dottedcontents{subsubsection}[2.86cm]{}{3.4em}{5pt}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% ¶¨ÒåÒ³Ã¼ºÍÒ³½Å Ê¹ÓÃfancyhdr ºê°ü
+% å®šä¹‰é¡µçœ‰å’Œé¡µè„š ä½¿ç”¨fancyhdr å®åŒ…
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\makeheadrule}{%
 \makebox[-3pt][l]{\rule[.7\baselineskip]{\headwidth}{0.4pt}}
@@ -154,21 +149,21 @@ mu$}\hfill
 
 \pagestyle{fancyplain}
 
-%È¥µôÕÂ½Ú±êÌâÖĞµÄÊı×Ö
-%%²»Òª×¢ÏúÕâÒ»ĞĞ£¬·ñÔòÒ³Ã¼»á±ä³É£º¡°µÚ1ÕÂ1  Ğ÷ÂÛ¡±ÑùÊ½
+%å»æ‰ç« èŠ‚æ ‡é¢˜ä¸­çš„æ•°å­—
+%%ä¸è¦æ³¨é”€è¿™ä¸€è¡Œï¼Œå¦åˆ™é¡µçœ‰ä¼šå˜æˆï¼šâ€œç¬¬1ç« 1  ç»ªè®ºâ€æ ·å¼
 \renewcommand{\chaptermark}[1]{\markboth{\chaptertitlename~~ \ #1}{}}
  \fancyhf{}
 
-%ÔÚbookÎÄ¼şÀà±ğÏÂ,\leftmark×Ô¶¯´æÂ¼¸÷ÕÂÖ®ÕÂÃû,\rightmark¼ÇÂ¼½Ú±êÌâ
-%% Ò³Ã¼×ÖºÅ ¹¤´óÒªÇó Ğ¡Îå
-%¸ù¾İµ¥Ë«Ãæ´òÓ¡ÉèÖÃ²»Í¬µÄÒ³Ã¼£»
+%åœ¨bookæ–‡ä»¶ç±»åˆ«ä¸‹,\leftmarkè‡ªåŠ¨å­˜å½•å„ç« ä¹‹ç« å,\rightmarkè®°å½•èŠ‚æ ‡é¢˜
+%% é¡µçœ‰å­—å· å·¥å¤§è¦æ±‚ å°äº”
+%æ ¹æ®å•åŒé¢æ‰“å°è®¾ç½®ä¸åŒçš„é¡µçœ‰ï¼›
 \ifoneortwoside
-  \fancyhead[CO]{\CJKfamily{song}\xiaowu\leftmark}
-  \fancyhead[CE]{\CJKfamily{song}\xiaowu ¹ş¶û±õ¹¤Òµ´óÑ§\cxueke\cxuewei Ñ§Î»ÂÛÎÄ }%
+  \fancyhead[CO]{\song \xiaowu\leftmark}
+  \fancyhead[CE]{\song \xiaowu å“ˆå°”æ»¨å·¥ä¸šå¤§å­¦\cxueke\cxuewei å­¦ä½è®ºæ–‡ }%
   \fancyfoot[C,C]{\xiaowu --~\thepage~--} %\if@mainmatter \fi
 \else%
-  \fancyhead[CO]{\CJKfamily{song}\xiaowu ¹ş¶û±õ¹¤Òµ´óÑ§\cxueke\cxuewei Ñ§Î»ÂÛÎÄ}
-  \fancyhead[CE]{\CJKfamily{song}\xiaowu ¹ş¶û±õ¹¤Òµ´óÑ§\cxueke\cxuewei Ñ§Î»ÂÛÎÄ}%
+  \fancyhead[CO]{\song \xiaowu å“ˆå°”æ»¨å·¥ä¸šå¤§å­¦\cxueke\cxuewei å­¦ä½è®ºæ–‡}
+  \fancyhead[CE]{\song \xiaowu å“ˆå°”æ»¨å·¥ä¸šå¤§å­¦\cxueke\cxuewei å­¦ä½è®ºæ–‡}%
   \fancyfoot[C,C]{\xiaowu --~\thepage~--} %\if@mainmatter   \fi
 \fi
 
@@ -177,37 +172,37 @@ mu$}\hfill
   \@mainmatterfalse
   \pagenumbering{Roman}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% ÉèÖÃĞĞ¾àºÍ¶ÎÂä¼ä´¹Ö±¾àÀë
+% è®¾ç½®è¡Œè·å’Œæ®µè½é—´å‚ç›´è·ç¦»
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\renewcommand{\CJKglue}{\hskip 0.3pt plus 0.08\baselineskip}%¼Ó´ó×Ö¼ä¾à£¬Ê¹Ã¿ĞĞ33¸ö×Ö
-%\setlength{\belowcaptionskip}{10pt}   % ¼Ó´ó±êÌâºÍ±í¸ñÖ®¼äµÄ¾àÀë \abovecaptionskip Ä¬ÈÏÊÇ10pt
-\setlength{\parskip}{3pt plus1pt minus1pt} % ¶ÎÂäÖ®¼äµÄÊúÖ±¾àÀë
-\renewcommand{\baselinestretch}{1.2}% ¶¨ÒåĞĞ¾à
+\renewcommand{\CJKglue}{\hskip 0.3pt plus 0.08\baselineskip}%åŠ å¤§å­—é—´è·ï¼Œä½¿æ¯è¡Œ33ä¸ªå­—
+%\setlength{\belowcaptionskip}{10pt}   % åŠ å¤§æ ‡é¢˜å’Œè¡¨æ ¼ä¹‹é—´çš„è·ç¦» \abovecaptionskip é»˜è®¤æ˜¯10pt
+\setlength{\parskip}{3pt plus1pt minus1pt} % æ®µè½ä¹‹é—´çš„ç«–ç›´è·ç¦»
+\renewcommand{\baselinestretch}{1.2}% å®šä¹‰è¡Œè·
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% µ÷ÕûÁĞ±í»·¾³µÄ´¹Ö±¼ä¾à
+% è°ƒæ•´åˆ—è¡¨ç¯å¢ƒçš„å‚ç›´é—´è·
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setitemize{itemindent=38pt,leftmargin=0pt,itemsep=-0.4ex,listparindent=26pt,partopsep=0pt,parsep=0.5ex,topsep=-0.25ex}
 \setenumerate{itemindent=38pt,leftmargin=0pt,itemsep=-0.4ex,listparindent=26pt,partopsep=0pt,parsep=0.5ex,topsep=-0.25ex}
 \setdescription{itemindent=38pt,leftmargin=0pt,itemsep=-0.4ex,listparindent=26pt,partopsep=0pt,parsep=0.5ex,topsep=-0.25ex}
 
 
-\renewcommand\@biblabel[1]{#1\hspace{0.5em}} %È¥³ı²Î¿¼ÎÄÏ×Àï±êºÅÁ½±ßµÄÀ¨ºÅ
-\newcommand{\ucite}[1]{$^{\mbox{\scriptsize \cite{#1}}}$} % Ôö¼Ó \ucite ÃüÁîÊ¹ÏÔÊ¾µÄÒıÓÃÎªÉÏ±êĞÎÊ½
+\renewcommand\@biblabel[1]{#1\hspace{0.5em}} %å»é™¤å‚è€ƒæ–‡çŒ®é‡Œæ ‡å·ä¸¤è¾¹çš„æ‹¬å·
+\newcommand{\ucite}[1]{$^{\mbox{\scriptsize \cite{#1}}}$} % å¢åŠ  \ucite å‘½ä»¤ä½¿æ˜¾ç¤ºçš„å¼•ç”¨ä¸ºä¸Šæ ‡å½¢å¼
 \newcommand{\citeup}[1]{$^{\mbox{\scriptsize \cite{#1}}}$} % for WinEdt users
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% ¶¨ÖÆ¸¡¶¯Í¼ĞÎºÍ±í¸ñ±êÌâÑùÊ½ %ÕâÀïÓÃccaptionÍêÈ«´úÌæÁËcaption2µÄ¹¦ÄÜ
-\captionstyle{\centering}   %²»Í¬µÄÍ¼±êÌâĞÎÊ½²ÉÓÃ²»Í¬µÄÃüÁî
-%\indentcaption{0pt}           %²Î¼ûccaption
+% å®šåˆ¶æµ®åŠ¨å›¾å½¢å’Œè¡¨æ ¼æ ‡é¢˜æ ·å¼ %è¿™é‡Œç”¨ccaptionå®Œå…¨ä»£æ›¿äº†caption2çš„åŠŸèƒ½
+\captionstyle{\centering}   %ä¸åŒçš„å›¾æ ‡é¢˜å½¢å¼é‡‡ç”¨ä¸åŒçš„å‘½ä»¤
+%\indentcaption{0pt}           %å‚è§ccaption
 \hangcaption
-\captionnamefont{\CJKfamily{song}\rmfamily\wuhao\selectfont}
-\captiontitlefont{\CJKfamily{song}\rmfamily\wuhao\selectfont}
+\captionnamefont{\song \rmfamily\wuhao\selectfont}
+\captiontitlefont{\song \rmfamily\wuhao\selectfont}
 \captiondelim{~} %~
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% ¶¨ÒåÌâÍ·¸ñÑÔµÄ¸ñÊ½
-% ÓÃ·¨ \begin{Aphorism}{author}
+% å®šä¹‰é¢˜å¤´æ ¼è¨€çš„æ ¼å¼
+% ç”¨æ³• \begin{Aphorism}{author}
 %         aphorism
 %      \end{Aphorism}
 \newsavebox{\AphorismAuthor}
@@ -219,18 +214,18 @@ mu$}\hfill
 \end{quote}
 \end{sloppypar}\vspace{0.5cm}}
 
-%×Ô¶¨ÒåÒ»¸ö¿ÕÃüÁî£¬ÓÃÓÚ×¢ÊÍµôÎÄ±¾ÖĞ²»ĞèÒªµÄ²¿·Ö¡£
+%è‡ªå®šä¹‰ä¸€ä¸ªç©ºå‘½ä»¤ï¼Œç”¨äºæ³¨é‡Šæ‰æ–‡æœ¬ä¸­ä¸éœ€è¦çš„éƒ¨åˆ†ã€‚
 \newcommand{\comment}[1]{}
 
-\renewcommand\contentsname{\hei Ä¿~~~~Â¼}
-\renewcommand\listfigurename{\hei ²å~~~~Í¼}
-\renewcommand\listtablename{\hei ±í~~~~¸ñ}
+\renewcommand\contentsname{\hei ç›®~~~~å½•}
+\renewcommand\listfigurename{\hei æ’~~~~å›¾}
+\renewcommand\listtablename{\hei è¡¨~~~~æ ¼}
 
-%%%%%%½«ÕÂ±êÌâÖĞµÄÖĞÎÄÊı×Ö£¨Ò»¡¢¶ş¡¢Èı£©±äÎª°¢À­²®Êı×Ö(1,2,3)
+%%%%%%å°†ç« æ ‡é¢˜ä¸­çš„ä¸­æ–‡æ•°å­—ï¼ˆä¸€ã€äºŒã€ä¸‰ï¼‰å˜ä¸ºé˜¿æ‹‰ä¼¯æ•°å­—(1,2,3)
 \renewcommand\CJKthechapter{%\CJKnumber
 {\@arabic\c@chapter}}
 
-%%%%%%²»ÒªÀ­´óĞĞ¾àÊ¹µÃÒ³Ãæ³äÂú
+%%%%%%ä¸è¦æ‹‰å¤§è¡Œè·ä½¿å¾—é¡µé¢å……æ»¡
 \raggedbottom
 
 % This is the flag for longer version
@@ -242,46 +237,46 @@ mu$}\hfill
 \def\gs{1.0}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% ×Ô¶¨ÒåÏîÄ¿ÁĞ±í±êÇ©¼°¸ñÊ½ \begin{hitlist} ÁĞ±íÏî \end{hitlist}
+% è‡ªå®šä¹‰é¡¹ç›®åˆ—è¡¨æ ‡ç­¾åŠæ ¼å¼ \begin{hitlist} åˆ—è¡¨é¡¹ \end{hitlist}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcounter{hitctr} %×Ô¶¨ÒåĞÂ¼ÆÊıÆ÷
-\newenvironment{hitlist}{%%%%%¶¨ÒåĞÂ»·¾³
-\begin{list}{{\hei (\arabic{hitctr})}} %%±êÇ©¸ñÊ½
+\newcounter{hitctr} %è‡ªå®šä¹‰æ–°è®¡æ•°å™¨
+\newenvironment{hitlist}{%%%%%å®šä¹‰æ–°ç¯å¢ƒ
+\begin{list}{{\hei (\arabic{hitctr})}} %%æ ‡ç­¾æ ¼å¼
     {
      \usecounter{hitctr}
-     \setlength{\leftmargin}{0cm}     %×ó±ß½ç
-     \setlength{\parsep}{0ex}         %¶ÎÂä¼ä¾à
-     \setlength{\topsep}{0pt}         %ÁĞ±íµ½ÉÏÏÂÎÄµÄ´¹Ö±¾àÀë
-     \setlength{\itemsep}{0ex}        %±êÇ©¼ä¾à
-     \setlength{\labelsep}{0.3em}     %±êºÅºÍÁĞ±íÏîÖ®¼äµÄ¾àÀë,Ä¬ÈÏ0.5em
-     \setlength{\itemindent}{46pt}    %±êÇ©Ëõ½øÁ¿
-     \setlength{\listparindent}{27pt} %¶ÎÂäËõ½øÁ¿
+     \setlength{\leftmargin}{0cm}     %å·¦è¾¹ç•Œ
+     \setlength{\parsep}{0ex}         %æ®µè½é—´è·
+     \setlength{\topsep}{0pt}         %åˆ—è¡¨åˆ°ä¸Šä¸‹æ–‡çš„å‚ç›´è·ç¦»
+     \setlength{\itemsep}{0ex}        %æ ‡ç­¾é—´è·
+     \setlength{\labelsep}{0.3em}     %æ ‡å·å’Œåˆ—è¡¨é¡¹ä¹‹é—´çš„è·ç¦»,é»˜è®¤0.5em
+     \setlength{\itemindent}{46pt}    %æ ‡ç­¾ç¼©è¿›é‡
+     \setlength{\listparindent}{27pt} %æ®µè½ç¼©è¿›é‡
     }}
 {\end{list}}%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% ×Ô¶¨ÒåÏîÄ¿ÁĞ±í±êÇ©¼°¸ñÊ½ \begin{publist} ÁĞ±íÏî \end{publist}
+% è‡ªå®šä¹‰é¡¹ç›®åˆ—è¡¨æ ‡ç­¾åŠæ ¼å¼ \begin{publist} åˆ—è¡¨é¡¹ \end{publist}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcounter{pubctr} %×Ô¶¨ÒåĞÂ¼ÆÊıÆ÷
-\newenvironment{publist}{%%%%%¶¨ÒåĞÂ»·¾³
-\begin{list}{\arabic{pubctr}} %%±êÇ©¸ñÊ½
+\newcounter{pubctr} %è‡ªå®šä¹‰æ–°è®¡æ•°å™¨
+\newenvironment{publist}{%%%%%å®šä¹‰æ–°ç¯å¢ƒ
+\begin{list}{\arabic{pubctr}} %%æ ‡ç­¾æ ¼å¼
     {
      \usecounter{pubctr}
-     \setlength{\leftmargin}{2em}     % ×ó±ß½ç \leftmargin =\itemindent + \labelwidth + \labelsep
-     \setlength{\itemindent}{0em}     % ±êºÅËõ½øÁ¿
-     \setlength{\labelwidth}{1em}     % ±êºÅ¿í¶È
-     \setlength{\labelsep}{1em}       % ±êºÅºÍÁĞ±íÏîÖ®¼äµÄ¾àÀë,Ä¬ÈÏ0.5em
-     \setlength{\rightmargin}{0em}    % ÓÒ±ß½ç
-     \setlength{\topsep}{0ex}         % ÁĞ±íµ½ÉÏÏÂÎÄµÄ´¹Ö±¾àÀë
-%     \setlength{\partopsep}{0ex}      % ÁĞ±íÊÇÒ»¸öĞÂµÄ¶ÎÂäÊ±£¬¼ÓµÄ¶îÍâµ½ÉÏÏÂÎÄµÄ¾àÀë
-     \setlength{\parsep}{0ex}         % ¶ÎÂä¼ä¾à
-     \setlength{\itemsep}{0ex}        % ±êÇ©¼ä¾à
-     \setlength{\listparindent}{26pt} % ¶ÎÂäËõ½øÁ¿
+     \setlength{\leftmargin}{2em}     % å·¦è¾¹ç•Œ \leftmargin =\itemindent + \labelwidth + \labelsep
+     \setlength{\itemindent}{0em}     % æ ‡å·ç¼©è¿›é‡
+     \setlength{\labelwidth}{1em}     % æ ‡å·å®½åº¦
+     \setlength{\labelsep}{1em}       % æ ‡å·å’Œåˆ—è¡¨é¡¹ä¹‹é—´çš„è·ç¦»,é»˜è®¤0.5em
+     \setlength{\rightmargin}{0em}    % å³è¾¹ç•Œ
+     \setlength{\topsep}{0ex}         % åˆ—è¡¨åˆ°ä¸Šä¸‹æ–‡çš„å‚ç›´è·ç¦»
+%     \setlength{\partopsep}{0ex}      % åˆ—è¡¨æ˜¯ä¸€ä¸ªæ–°çš„æ®µè½æ—¶ï¼ŒåŠ çš„é¢å¤–åˆ°ä¸Šä¸‹æ–‡çš„è·ç¦»
+     \setlength{\parsep}{0ex}         % æ®µè½é—´è·
+     \setlength{\itemsep}{0ex}        % æ ‡ç­¾é—´è·
+     \setlength{\listparindent}{26pt} % æ®µè½ç¼©è¿›é‡
     }}
 {\end{list}}%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Ä¬ÈÏ×ÖÌå
+% é»˜è®¤å­—ä½“
 \renewcommand\normalsize{%
   \@setfontsize\normalsize{12.1pt}{13pt}
   \setlength\abovedisplayskip{8pt plus 2pt minus 2pt}
@@ -291,18 +286,18 @@ mu$}\hfill
   \setlength\jot{6pt}
   \let\@listi\@listI}
 \def\defaultfont{\renewcommand{\baselinestretch}{1.37}\normalsize\selectfont}
-\predisplaypenalty=0  %¹«Ê½Ö®Ç°¿ÉÒÔ»»Ò³£¬¹«Ê½³öÏÖÔÚÒ³Ãæ¶¥²¿
+\predisplaypenalty=0  %å…¬å¼ä¹‹å‰å¯ä»¥æ¢é¡µï¼Œå…¬å¼å‡ºç°åœ¨é¡µé¢é¡¶éƒ¨
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% ·âÃæ¡¢ÕªÒª¡¢°æÈ¨¡¢ÖÂĞ»¸ñÊ½¶¨Òå
+% å°é¢ã€æ‘˜è¦ã€ç‰ˆæƒã€è‡´è°¢æ ¼å¼å®šä¹‰
 \def\ctitle#1{\def\@ctitle{#1}}\def\@ctitle{}
 \def\cdegree#1{\def\@cdegree{#1}}\def\@cdegree{}
 \def\caffil#1{\def\@caffil{#1}}\def\@caffil{}
 \def\csubject#1{\def\@csubject{#1}}\def\@csubject{}
 \def\cauthor#1{\def\@cauthor{#1}}\def\@cauthor{}
 \def\csupervisor#1{\def\@csupervisor{#1}}\def\@csupervisor{}
-\def\cassosupervisor#1{\def\@cassosupervisor{~ & {\hei ¸± \hfill µ¼ \hfill Ê¦£º} & #1\\}}\def\@cassosupervisor{}
-\def\ccosupervisor#1{\def\@ccosupervisor{~ & {\hei Áª \hfill ºÏ\hfill µ¼ \hfill Ê¦£º} & #1\\}}\def\@ccosupervisor{}
+\def\cassosupervisor#1{\def\@cassosupervisor{~ & {\hei å‰¯ \hfill å¯¼ \hfill å¸ˆï¼š} & #1\\}}\def\@cassosupervisor{}
+\def\ccosupervisor#1{\def\@ccosupervisor{~ & {\hei è” \hfill åˆ\hfill å¯¼ \hfill å¸ˆï¼š} & #1\\}}\def\@ccosupervisor{}
 \def\cdate#1{\def\@cdate{#1}}\def\@cdate{}
 \long\def\cabstract#1{\long\def\@cabstract{#1}}\long\def\@cabstract{}
 \def\ckeywords#1{\def\@ckeywords{#1}}\def\@ckeywords{}
@@ -325,15 +320,15 @@ mu$}\hfill
 \def\internatclassifiedindex#1{\def\@internatclassifiedindex{#1}}\def\@internatclassifiedindex{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% ¶¨Òå·âÃæ
+% å®šä¹‰å°é¢
 \def\makecover{
-    \normalbiao %±í¸ñ×ÖºÅÉèÖÃ
-    %%%%%%%%%%%%%·âÃæÒ»
+    \normalbiao %è¡¨æ ¼å­—å·è®¾ç½®
+    %%%%%%%%%%%%%å°é¢ä¸€
     \begin{titlepage}
     \begin{center}
 
     \parbox[t][1cm][b]{\textwidth}{\erhao
-    \begin{center} {\song \ifxueweimaster\cxueke\fi\cxuewei Ñ§Î»ÂÛÎÄ }\end{center} }
+    \begin{center} {\song \ifxueweimaster\cxueke\fi\cxuewei å­¦ä½è®ºæ–‡ }\end{center} }
 
     \parbox[t][0.8cm][t]{\textwidth}{
     \begin{center} \end{center} }
@@ -361,21 +356,21 @@ mu$}\hfill
     \fi
 
     \parbox[t][1.2cm][t]{\textwidth}{\xiaoer
-    \begin{center} {\kai  ¹ş¶û±õ¹¤Òµ´óÑ§}  \end{center} }
+    \begin{center} {\kai  å“ˆå°”æ»¨å·¥ä¸šå¤§å­¦}  \end{center} }
 
     \parbox[t][0.5cm][t]{\textwidth}{
     \begin{center} {\song \sanhao \@cdate} \end{center} }
 
     \end{center}
 
-    % ·â¶ş ¿Õ°×Ò³
+    % å°äºŒ ç©ºç™½é¡µ
     \ifoneortwoside
       \newpage
       ~~~\vspace{1em}
       \thispagestyle{empty}
     \fi
 
-    %ÄÚ·â
+    %å†…å°
     \newpage
     \thispagestyle{empty}
     \begin{center}
@@ -383,11 +378,11 @@ mu$}\hfill
     \begin{center} \end{center}}
 
     \parbox[t][2.2cm][t]{\textwidth}{
-    \song \xiaosi ¹úÄÚÍ¼Êé·ÖÀàºÅ£º \@natclassifiedindex \\
-                  ¹ú¼ÊÍ¼Êé·ÖÀàºÅ£º \@internatclassifiedindex }
+    \song \xiaosi å›½å†…å›¾ä¹¦åˆ†ç±»å·ï¼š \@natclassifiedindex \\
+                  å›½é™…å›¾ä¹¦åˆ†ç±»å·ï¼š \@internatclassifiedindex }
 
     \parbox[t][2.7cm][b]{\textwidth}{\xiaoer
-    \begin{center} {\song  \@cdegree Ñ§Î»ÂÛÎÄ }\end{center} }
+    \begin{center} {\song  \@cdegree å­¦ä½è®ºæ–‡ }\end{center} }
 
     \setlength{\baselineskip}{1.5\baselineskip}
     \parbox[t][3.0cm][b]{\textwidth}{\erhao
@@ -399,27 +394,27 @@ mu$}\hfill
     \parbox[t][6cm][c]{\textwidth}{ {\sihao
     \begin{center} \song
     \begin{tabular}{lll@{\extracolsep{0em}}l}
-    ~ & {\hei \xueweishort \hfill Ê¿\hfill ÑĞ¾¿Éú£º}           & \@cauthor\\
-    ~ & {\hei µ¼\hfill Ê¦£º}                       & \@csupervisor\\
+    ~ & {\hei \xueweishort \hfill å£«\hfill ç ”ç©¶ç”Ÿï¼š}           & \@cauthor\\
+    ~ & {\hei å¯¼\hfill å¸ˆï¼š}                       & \@csupervisor\\
     \@ccosupervisor
     \@cassosupervisor
-    ~ & {\hei Éê\hfill Çë\hspace{1em}Ñ§\hfill Î»£º} & \@cdegree\\
-    ~ & {\hei Ñ§\hfill ¿Æ¡¢×¨\hfill Òµ£º}           & \@csubject\\
-    ~ & {\hei Ëù\hfill ÔÚ\hspace{1em}µ¥\hfill Î»£º} & \@caffil\\
-    ~ & {\hei ´ğ\hfill ±ç\hspace{1em}ÈÕ\hfill ÆÚ£º} & \@cdate\\
-    ~ & {\hei ÊÚÓèÑ§Î»µ¥Î»£º}                     & ¹ş¶û±õ¹¤Òµ´óÑ§
+    ~ & {\hei ç”³\hfill è¯·\hspace{1em}å­¦\hfill ä½ï¼š} & \@cdegree\\
+    ~ & {\hei å­¦\hfill ç§‘ã€ä¸“\hfill ä¸šï¼š}           & \@csubject\\
+    ~ & {\hei æ‰€\hfill åœ¨\hspace{1em}å•\hfill ä½ï¼š} & \@caffil\\
+    ~ & {\hei ç­”\hfill è¾©\hspace{1em}æ—¥\hfill æœŸï¼š} & \@cdate\\
+    ~ & {\hei æˆäºˆå­¦ä½å•ä½ï¼š}                     & å“ˆå°”æ»¨å·¥ä¸šå¤§å­¦
     \end{tabular}
     \end{center} } }
 \end{center}
 
-%%%%%%Ôö¼ÓÒ»¿Õ°×Ò³
+%%%%%%å¢åŠ ä¸€ç©ºç™½é¡µ
   \ifoneortwoside
     \newpage
     ~~~\vspace{1em}
     \thispagestyle{empty}
   \fi
 
-    % Ó¢ÎÄ·âÃæ
+    % è‹±æ–‡å°é¢
     \newpage
     \thispagestyle{empty}
     \begin{center}
@@ -458,14 +453,14 @@ mu$}\hfill
     \end{center}
     \end{titlepage}
 
-%%%%%%Ôö¼ÓÒ»¿Õ°×Ò³
+%%%%%%å¢åŠ ä¸€ç©ºç™½é¡µ
   \ifoneortwoside
     \newpage
     ~~~\vspace{1em}
     \thispagestyle{empty}
   \fi
 %%%%%%%%%%%%%%%%%%%   Abstract and keywords  %%%%%%%%%%%%%%%%%%%%%%%
-\clearpage \BiAppendixChapter{Õª~~~~Òª}{Abstract (in Chinese)} %²»ÒªÅ²µ½ÏÂÒ»ĞĞ£¬Éú³ÉÕıÈ·µÄÕªÒªtoc
+\clearpage \BiAppendixChapter{æ‘˜~~~~è¦}{Abstract (in Chinese)} %ä¸è¦æŒªåˆ°ä¸‹ä¸€è¡Œï¼Œç”Ÿæˆæ­£ç¡®çš„æ‘˜è¦toc
 \setcounter{page}{1}
 \song \normalsize
 \defaultfont
@@ -473,22 +468,22 @@ mu$}\hfill
 \vspace{1em}
 
 \hangafter1\hangindent4.28em\noindent
-{\hei ¹Ø¼ü´Ê} \quad \@ckeywords
+{\hei å…³é”®è¯} \quad \@ckeywords
 
 %%%%%%%%%%%%%%%%%%%   English Abstract  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
-\defaultfont \BiAppendixChapter{\textbf{Abstract}}{Abstract (in English)} %²»ÒªÅ²µ½ÏÂÒ»ĞĞ£¬Éú³ÉÕıÈ·µÄÕªÒªtoc
+\defaultfont \BiAppendixChapter{\textbf{Abstract}}{Abstract (in English)} %ä¸è¦æŒªåˆ°ä¸‹ä¸€è¡Œï¼Œç”Ÿæˆæ­£ç¡®çš„æ‘˜è¦toc
 \@eabstract
 \vspace{1em}
 
 \hangafter1\hangindent5.5em\noindent
 {\textbf{Keywords}} \quad \@ekeywords
-\wuhaobiao  %ÕıÎÄ±í¸ñÉèÖÃ
+\wuhaobiao  %æ­£æ–‡è¡¨æ ¼è®¾ç½®
 }  %\makecover
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Ó¢ÎÄÄ¿Â¼¸ñÊ½
-\def\@dotsep{1}           % ¶¨ÒåÓ¢ÎÄÄ¿Â¼µÄµã¼ä¾à
+% è‹±æ–‡ç›®å½•æ ¼å¼
+\def\@dotsep{1}           % å®šä¹‰è‹±æ–‡ç›®å½•çš„ç‚¹é—´è·
 \setlength\leftmargini {0pt}
 \setlength\leftmarginii {0pt}
 \setlength\leftmarginiii {0pt}
@@ -504,40 +499,40 @@ mu$}\hfill
      \@restonecoltrue\onecolumn
    \else
      \@restonecolfalse
-   \fi   \chapter*{\engcontentsname  %chapter*ÉÏÒÆÒ»ĞĞ£¬±ÜÃâÔÚtocÖĞ³öÏÖ¡£
+   \fi   \chapter*{\engcontentsname  %chapter*ä¸Šç§»ä¸€è¡Œï¼Œé¿å…åœ¨tocä¸­å‡ºç°ã€‚
        \@mkboth{%
           \engcontentsname}{\engcontentsname}}
    \@starttoc{toe}%
    \if@restonecol\twocolumn\fi
    }
 
-\urlstyle{same}  %ÂÛÎÄÖĞÒıÓÃµÄÍøÖ·µÄ×ÖÌåÄ¬ÈÏÓëÕıÎÄÖĞ×ÖÌå²»Ò»ÖÂ£¬ÕâÀïĞŞÕıÎªÒ»ÖÂµÄ¡£
+%\urlstyle{same}  %è®ºæ–‡ä¸­å¼•ç”¨çš„ç½‘å€çš„å­—ä½“é»˜è®¤ä¸æ­£æ–‡ä¸­å­—ä½“ä¸ä¸€è‡´ï¼Œè¿™é‡Œä¿®æ­£ä¸ºä¸€è‡´çš„ã€‚
 
-%Ö÷Òª·ûºÅ±í \NotationList
-\long\def\notation{\clearpage \BiAppendixChapter{Ö÷Òª·ûºÅ±í}{Main Symbol Table}\normalbiao\@NotationList\wuhaobiao}
+%ä¸»è¦ç¬¦å·è¡¨ \NotationList
+\long\def\notation{\clearpage \BiAppendixChapter{ä¸»è¦ç¬¦å·è¡¨}{Main Symbol Table}\normalbiao\@NotationList\wuhaobiao}
 
-%%% ÎåºÅ×Ö±í¸ñÉèÖÃ start %%%%%
+%%% äº”å·å­—è¡¨æ ¼è®¾ç½® start %%%%%
 \gdef\tpltable{\relax}
 \let\tpltable\longtable
-\gdef\wuhaobiao{%ÎåºÅ×Ö
+\gdef\wuhaobiao{%äº”å·å­—
     \def\tabular{\wuhao\gdef\@halignto{}\@tabular}
     \def\endtabular{\endarray $\egroup \defaultfont}
     \def\longtable{\wuhao\tpltable}
     \def\endlongtable{\adl@LTlastrow \adl@org@endlongtable\defaultfont}
 }
-\gdef\normalbiao{%Õı³£×ÖºÅ
+\gdef\normalbiao{%æ­£å¸¸å­—å·
     \def\tabular{\gdef\@halignto{}\@tabular}
     \def\endtabular{\endarray $\egroup}
     \def\longtable{\tpltable}
     \def\endlongtable{\adl@LTlastrow \adl@org@endlongtable}
 }
 \wuhaobiao
-%%% ÎåºÅ×Ö±í¸ñÉèÖÃ end %%%%%
-%\renewcommand{\arraystretch}{1.4} %±í¸ñÖĞĞĞ¾à £¬µ¼ÖÂ¹«Ê½ bmatrix ¼ä¾àÔö´ó¡£
+%%% äº”å·å­—è¡¨æ ¼è®¾ç½® end %%%%%
+%\renewcommand{\arraystretch}{1.4} %è¡¨æ ¼ä¸­è¡Œè· ï¼Œå¯¼è‡´å…¬å¼ bmatrix é—´è·å¢å¤§ã€‚
 
-% ±í¸ñÓëÏÂ·½¼ä¾à
+% è¡¨æ ¼ä¸ä¸‹æ–¹é—´è·
 \renewcommand\endtable{\vspace{-4mm}\end@float}
-% Ëã·¨ÓëÏÂ·½¼ä¾à
+% ç®—æ³•ä¸ä¸‹æ–¹é—´è·
 \renewcommand\endalgorithm{\@algocf@finish \ifthenelse {\equal {\algocf@float }{figure}}{\end {figure}}{
 \@algocf@term@caption \ifthenelse {\boolean {algocf@algoH}}{\end {algocf@Here}}
 {\end {algocf}}}\@algocf@term\vspace{-5mm}}

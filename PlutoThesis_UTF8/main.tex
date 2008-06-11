@@ -1,33 +1,25 @@
-\def\usewhat{dvipspdf}    % ÄãÏ²»¶ÄÄÖÖ±àÒë·½Ê½£¬pdflatex dvipdfmx dvipspdf xelatex yap
-
-%ÈôÓÃxelatex±àÒë£¬Ä¬ÈÏÓÃUTF8±àÂë£¬·ÇUTF8ÎÄ¼şÊ±£¬ĞèÔÚÃ¿¸öÎÄ¼şÖĞÖ¸¶¨×Ö·û±àÂë;
-%±¾¶ÎÎŞĞè¸Ä¶¯£¬Ğè·ÅÔÚÊäÈëÖĞÎÄÖ®Ç°£»
-\def\atempxetex{xelatex}\ifx\atempxetex\usewhat 
-\XeTeXinputencoding "gbk" 
-\fi
+\def\usewhat{xelatex}    % ä½ å–œæ¬¢å“ªç§ç¼–è¯‘æ–¹å¼ï¼Œpdflatex dvipdfmx dvipspdf xelatex yap
 
 %input "reference\reference.bib" %for winedt users
-\def\version{1.8.2.20080601}         % ¸Ã±äÁ¿½öÓÃÓÚÄ£°åÎÄ¼şµÄ°æ±¾ºÅ¿ØÖÆ
+\def\version{1.8.2.20080601}         % è¯¥å˜é‡ä»…ç”¨äºæ¨¡æ¿æ–‡ä»¶çš„ç‰ˆæœ¬å·æ§åˆ¶
 
-\def \xuewei {Doctor}   % ¶¨ÒåÑ§Î» ²©Ê¿
-%\def \xuewei {Master}    % Ë¶Ê¿
+\def \xuewei {Doctor}   % å®šä¹‰å­¦ä½ åšå£«
+%\def \xuewei {Master}    % ç¡•å£«
 
-\def\oneortwoside{twoside} %¶¨Òåµ¥Ë«Ãæ´òÓ¡£¬Ö»¶ÔË¶Ê¿Ñ§Î»ÂÛÎÄÓĞĞ§£»
-%\def\oneortwoside{oneside} % Ë¶Ê¿µ¥Ãæ´òÓ¡
+\def\oneortwoside{twoside} %å®šä¹‰å•åŒé¢æ‰“å°ï¼Œåªå¯¹ç¡•å£«å­¦ä½è®ºæ–‡æœ‰æ•ˆï¼›
+%\def\oneortwoside{oneside} % ç¡•å£«å•é¢æ‰“å°
 
-\def\xueke{Engineering} % ¶¨ÒåÑ§¿Æ ¹¤Ñ§
-%\def\xueke{Science}      % ÀíÑ§
-%\def\xueke{Management}   % ¹ÜÀíÑ§
-%\def\xueke{Arts}         % ÒÕÊõÑ§
+\def\xueke{Engineering} % å®šä¹‰å­¦ç§‘ å·¥å­¦
+%\def\xueke{Science}      % ç†å­¦
+%\def\xueke{Management}   % ç®¡ç†å­¦
+%\def\xueke{Arts}         % è‰ºæœ¯å­¦
 
-\input{setup/type.tex}    % Ë¶²©ÀàĞÍ
-
-%ÏÂÃæµÄbookÑ¡ÏîÖĞ¿ÉÒÔÊ¹ÓÃ draft Ñ¡Ïî£¬Ê¹²åÈëµÄÍ¼ĞÎÖ»ÏÔÊ¾Íâ¿ò£¬ÒÔ¼Ó¿ìÔ¤ÀÀËÙ¶È¡£
+%ä¸‹é¢çš„booké€‰é¡¹ä¸­å¯ä»¥ä½¿ç”¨ draft é€‰é¡¹ï¼Œä½¿æ’å…¥çš„å›¾å½¢åªæ˜¾ç¤ºå¤–æ¡†ï¼Œä»¥åŠ å¿«é¢„è§ˆé€Ÿåº¦ã€‚
 \documentclass[12pt,a4paper,openany,\oneortwoside]{book}
 
-\input{setup/package.tex} % ÒıÓÃµÄºê°ü
+\input{setup/package.tex} % å¼•ç”¨çš„å®åŒ…
 
-% ÂÛÎÄ°üº¬µÄÄÚÈİ
+% è®ºæ–‡åŒ…å«çš„å†…å®¹
 \includeonly{
                 body/Introduction,
                 body/Tricks,
@@ -41,88 +33,89 @@
                 appendix/acknowledgements,
                 appendix/Resume
             }
-\graphicspath{{figures/}} %¶¨ÒåËùÓĞµÄepsÎÄ¼şÔÚ figures ×ÓÄ¿Â¼ÏÂ
+\graphicspath{{figures/}} %å®šä¹‰æ‰€æœ‰çš„epsæ–‡ä»¶åœ¨ figures å­ç›®å½•ä¸‹
 
 \begin{document}
 \ifx\atempxetex\usewhat\else
-\begin{CJK*}{GBK}{song}
+\begin{CJK}{UTF8}{song}
 \fi
 
-\input{setup/Definition} % ÎÄ±¾¸ñÊ½¶¨Òå
+\input{setup/type.tex}    % ç¡•åšç±»å‹
+\input{setup/Definition} % æ–‡æœ¬æ ¼å¼å®šä¹‰
 \input{setup/format}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% ÕıÎÄ²¿·Ö
+% æ­£æ–‡éƒ¨åˆ†
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frontmatter
-\sloppy % ½â¾öÖĞÓ¢ÎÄ»ìÅÅµÄ¶ÏĞĞÎÊÌâ£¬»á¼ÓÈë¼ä¾à£¬µ«²»»áÓ°Ïì¶ÏĞĞ
+\sloppy % è§£å†³ä¸­è‹±æ–‡æ··æ’çš„æ–­è¡Œé—®é¢˜ï¼Œä¼šåŠ å…¥é—´è·ï¼Œä½†ä¸ä¼šå½±å“æ–­è¡Œ
 %\interlinepenalty -100000
-\input{ preface/cover} % ·âÃæ
+\input{ preface/cover} % å°é¢
 
-%% ÖĞÓ¢Ä¿Â¼
+%% ä¸­è‹±ç›®å½•
 \renewcommand{\baselinestretch}{1}
 \fontsize{12pt}{12pt}\selectfont
 \clearpage{\pagestyle{empty}\cleardoublepage}
-\pdfbookmark[0]{Ä¿~~~~Â¼}{mulu}
-\tableofcontents    % ÖĞÎÄÄ¿Â¼
-\ifxueweidoctor     % Ó¢ÎÄÄ¿Â¼ÓÒ¿ª
-  %\clearpage{\pagestyle{empty}\cleardoublepage}
+\pdfbookmark[0]{ç›®~~~~å½•}{mulu}
+\tableofcontents    % ä¸­æ–‡ç›®å½•
+\ifxueweidoctor     % è‹±æ–‡ç›®å½•å³å¼€
+  \clearpage{\pagestyle{empty}\cleardoublepage}
 \else%
   \ifoneortwoside\clearpage{\pagestyle{empty}\cleardoublepage}\fi
 \fi
 \renewcommand{\baselinestretch}{1.3}
 \fontsize{12pt}{12pt}\selectfont
-\ifxueweidoctor %Ë¶Ê¿Ñ§Î»ÂÛÎÄÃ»ÓĞÓ¢ÎÄÄ¿Â¼
-  \tableofengcontents % Ó¢ÎÄÄ¿Â¼
+\ifxueweidoctor %ç¡•å£«å­¦ä½è®ºæ–‡æ²¡æœ‰è‹±æ–‡ç›®å½•
+  \tableofengcontents % è‹±æ–‡ç›®å½•
 \fi
 
-%\input{setup/figtab.tex}  %Í¼±íË÷Òı, Èç¹û²»ĞèÒªÍ¼±íË÷Òı£¬×¢ÊÍµôÕâÒ»¾ä¼´¿É£»
-% \notation  %Ö÷Òª·ûºÅ±í
-\addtocontents{toc}{\protect\vskip1\baselineskip} % ÖĞÎÄÄ¿Â¼Ôö¼Ó¿ÕĞĞ
-\addtocontents{toe}{\protect\vskip1\baselineskip} % Ó¢ÎÄÄ¿Â¼Ôö¼Ó¿ÕĞĞ
+%\input{setup/figtab.tex}  %å›¾è¡¨ç´¢å¼•, å¦‚æœä¸éœ€è¦å›¾è¡¨ç´¢å¼•ï¼Œæ³¨é‡Šæ‰è¿™ä¸€å¥å³å¯ï¼›
+% \notation  %ä¸»è¦ç¬¦å·è¡¨
+\addtocontents{toc}{\protect\vskip1\baselineskip} % ä¸­æ–‡ç›®å½•å¢åŠ ç©ºè¡Œ
+\addtocontents{toe}{\protect\vskip1\baselineskip} % è‹±æ–‡ç›®å½•å¢åŠ ç©ºè¡Œ
 
 \ifxueweidoctor
-  \clearpage{\pagestyle{empty}\cleardoublepage}   % Çå³ıÄ¿Â¼ºóÃæ¿ÕÒ³µÄÒ³Ã¼ºÍÒ³½Å
+  \clearpage{\pagestyle{empty}\cleardoublepage}   % æ¸…é™¤ç›®å½•åé¢ç©ºé¡µçš„é¡µçœ‰å’Œé¡µè„š
 \else%
-  \ifoneortwoside\clearpage{\pagestyle{empty}\cleardoublepage}\fi  % Çå³ıÄ¿Â¼ºóÃæ¿ÕÒ³µÄÒ³Ã¼ºÍÒ³½Å
-\fi                                               %  µÚÒ»ÕÂ ÊÇ·ñÓÒ¿ª
+  \ifoneortwoside\clearpage{\pagestyle{empty}\cleardoublepage}\fi  % æ¸…é™¤ç›®å½•åé¢ç©ºé¡µçš„é¡µçœ‰å’Œé¡µè„š
+\fi                                               %  ç¬¬ä¸€ç«  æ˜¯å¦å³å¼€
 
 \mainmatter
-\defaultfont % ¶ÔÓ¦ÓÚĞ¡ËÄµÄ±ê×¼×ÖºÅÊÇ 12pt, ¿ÉÒÔÔÚÕıÎÄÖĞÓÃ´ËÃüÁîĞŞ¸ÄËùĞèÒª×ÖÌåµÄµÄ´óĞ¡
+\defaultfont % å¯¹åº”äºå°å››çš„æ ‡å‡†å­—å·æ˜¯ 12pt, å¯ä»¥åœ¨æ­£æ–‡ä¸­ç”¨æ­¤å‘½ä»¤ä¿®æ”¹æ‰€éœ€è¦å­—ä½“çš„çš„å¤§å°
 
 \include{body/Introduction}
 \include{body/Tricks}
 \include{body/UpdateLog}
 \include{body/ToTemplateMaintainers}
 \include{body/copyright}
-\include{body/conclusion}   % ½áÂÛ
+\include{body/conclusion}   % ç»“è®º
 
-%²Î¿¼ÎÄÏ×
+%å‚è€ƒæ–‡çŒ®
 \defaultfont
 \ifx\atempxetex\usewhat
-\bibliographystyle{chinesebst_GBK_xelatex}
+\bibliographystyle{chinesebst_UTF8}
 \else
-\bibliographystyle{chinesebst}
+\bibliographystyle{chinesebst_UTF8}
 \fi
-\addcontentsline{toc}{chapter}{\hei \ReferenceCName}      % ²Î¿¼ÎÄÏ×¼ÓÈëµ½ÖĞÎÄÄ¿Â¼
-\addcontentsline{toe}{chapter}{\bfseries \ReferenceEName} % ²Î¿¼ÎÄÏ×¼ÓÈëµ½Ó¢ÎÄÄ¿Â¼
+\addcontentsline{toc}{chapter}{\hei \ReferenceCName}      % å‚è€ƒæ–‡çŒ®åŠ å…¥åˆ°ä¸­æ–‡ç›®å½•
+\addcontentsline{toe}{chapter}{\bfseries \ReferenceEName} % å‚è€ƒæ–‡çŒ®åŠ å…¥åˆ°è‹±æ–‡ç›®å½•
 \addtolength{\bibsep}{-0.8 em} \nocite{*}
 \bibliography{reference/reference}
 
 %\addtocontents{fen}{\protect\vskip1\baselineskip}
 %\addtocontents{ten}{\protect\vskip1\baselineskip}
-%Ó¢ÎÄÍ¼ĞÎºÍ±í¸ñË÷ÒıÀï¼ÓÈë¿Õ°×ĞĞ£¬Í¨³£·ÅÔÚ \include{appendix/appA}% ¸½Â¼AÖ®Ç°¡£
-%Çø·Ö¿ªÕıÎÄºÍ¸½Â¼µÄÍ¼ĞÎºÍ±í¸ñ£¬Ò»°ãÃ»ÓĞÕâ¸ö±ØÒª¡£
+%è‹±æ–‡å›¾å½¢å’Œè¡¨æ ¼ç´¢å¼•é‡ŒåŠ å…¥ç©ºç™½è¡Œï¼Œé€šå¸¸æ”¾åœ¨ \include{appendix/appA}% é™„å½•Aä¹‹å‰ã€‚
+%åŒºåˆ†å¼€æ­£æ–‡å’Œé™„å½•çš„å›¾å½¢å’Œè¡¨æ ¼ï¼Œä¸€èˆ¬æ²¡æœ‰è¿™ä¸ªå¿…è¦ã€‚
 
-\include{appendix/appA}            % ¸½Â¼A
-\include{appendix/publications}    % Ëù·¢ÎÄÕÂ
-\include{appendix/Authorization}   % Ô­´´ĞÔÉêÃ÷
-\include{appendix/acknowledgements}% ÖÂĞ»
-\include{appendix/Resume}          % ¸öÈË¼òÀú
+\include{appendix/appA}            % é™„å½•A
+\include{appendix/publications}    % æ‰€å‘æ–‡ç« 
+\include{appendix/Authorization}   % åŸåˆ›æ€§ç”³æ˜
+\include{appendix/acknowledgements}% è‡´è°¢
+\include{appendix/Resume}          % ä¸ªäººç®€å†
 
 \clearpage
 \ifx\atempxetex\usewhat\else
-\end{CJK*}
+\end{CJK}
 \fi
 
 \end{document}

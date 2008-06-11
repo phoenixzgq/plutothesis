@@ -1,13 +1,8 @@
-% Èôxelatex±àÒë·ÇUTF8ÎÄ¼ş£¬ĞèÔÚÃ¿¸öÎÄ¼şÖĞÖ¸¶¨×Ö·û±àÂë;
-% main.texÖĞÊÖ¶¯ÖÆ¶¨ÁË\atempºÍ\usewhat²ÎÊı£»
-\ifx\atempxetex\usewhat 
-\XeTeXinputencoding "gbk"
-\fi
 
-% Í¼ĞÎÖ§³Öºê°ü ÎªÁËÊ¹ÓÃpdftex ĞèÒª×÷ÏàÓ¦ÅĞ¶Ï
-\usepackage{etex}%Ôö¼Ó¼ÆÊıÆ÷×ÜÊı£¨Ô­À´ÊÇ256£¬ºê°ü¶à£¬¿ÉÄÜ²»¹»ÓÃ£©£¬±àÒëĞè»ùÓÚeTeX
+% å›¾å½¢æ”¯æŒå®åŒ… ä¸ºäº†ä½¿ç”¨pdftex éœ€è¦ä½œç›¸åº”åˆ¤æ–­
+\usepackage{etex}%å¢åŠ è®¡æ•°å™¨æ€»æ•°ï¼ˆåŸæ¥æ˜¯256ï¼Œå®åŒ…å¤šï¼Œå¯èƒ½ä¸å¤Ÿç”¨ï¼‰ï¼Œç¼–è¯‘éœ€åŸºäºeTeX
 \usepackage{ifpdf}
-%¶¨ÒåÒ»¸öĞÂÅĞ¶ÏÃüÁî %ÓĞÒ»¸öºê°üifpdf ¿ÉÒÔÍê³ÉÕâ¼şÊÂ£¬Ó¦¸Ã±ÈÕâ¸öÑÏ½÷
+%å®šä¹‰ä¸€ä¸ªæ–°åˆ¤æ–­å‘½ä»¤ %æœ‰ä¸€ä¸ªå®åŒ…ifpdf å¯ä»¥å®Œæˆè¿™ä»¶äº‹ï¼Œåº”è¯¥æ¯”è¿™ä¸ªä¸¥è°¨
 %\newif\ifpdf
 %\ifx\pdfoutput\undefined
 %   \pdffalse
@@ -16,7 +11,7 @@
 %   \pdftrue
 %\fi
 
-%%%%%%%%²ÊÉ«ÒıÓÃºÍÊéÇ©%%%%%%
+%%%%%%%%å½©è‰²å¼•ç”¨å’Œä¹¦ç­¾%%%%%%
 \ifx\atempxetex\usewhat 
 	\usepackage[dvipdfm]{graphicx}
 \else
@@ -27,82 +22,82 @@
 	\fi
 \fi
 
-\usepackage[%paperwidth=18.4cm, paperheight= 26cm,  % °æÃæ¿ØÖÆºê°ü£¬¶¨Òå¹æ¶¨µÄ°æÃæ³ß´ç
-            body={14.5true cm,21true cm},           %ÂÛÎÄ°æĞ¾145mm¡Á210mm£¨°üÀ¨Ò³Ã¼¼°Ò³ÂëÔòÎª145mm¡Á230mm£©
-            twosideshift=0 pt,                      %Ò³ÂëÔÚ°æĞ¾ÏÂ±ßÏßÖ®ÏÂ¸ôĞĞ¾ÓÖĞ·ÅÖÃ£»
+\usepackage[%paperwidth=18.4cm, paperheight= 26cm,  % ç‰ˆé¢æ§åˆ¶å®åŒ…ï¼Œå®šä¹‰è§„å®šçš„ç‰ˆé¢å°ºå¯¸
+            body={14.5true cm,21true cm},           %è®ºæ–‡ç‰ˆèŠ¯145mmÃ—210mmï¼ˆåŒ…æ‹¬é¡µçœ‰åŠé¡µç åˆ™ä¸º145mmÃ—230mmï¼‰
+            twosideshift=0 pt,                      %é¡µç åœ¨ç‰ˆèŠ¯ä¸‹è¾¹çº¿ä¹‹ä¸‹éš”è¡Œå±…ä¸­æ”¾ç½®ï¼›
             %headheight=1.0true cm
             ]{geometry}
-\usepackage{layouts}                    % ´òÓ¡µ±Ç°Ò³Ãæ¸ñÊ½µÄºê°ü
-\usepackage[sf]{titlesec}               % ¿ØÖÆ±êÌâµÄºê°ü
-\usepackage{titletoc}                   % ¿ØÖÆÄ¿Â¼µÄºê°ü
-\usepackage[perpage,symbol]{footmisc}   % ½Å×¢¿ØÖÆ
-\usepackage{fancyhdr}                   % fancyhdrºê°ü Ò³Ã¼ºÍÒ³½ÅµÄÏà¹Ø¶¨Òå
+\usepackage{layouts}                    % æ‰“å°å½“å‰é¡µé¢æ ¼å¼çš„å®åŒ…
+\usepackage[sf]{titlesec}               % æ§åˆ¶æ ‡é¢˜çš„å®åŒ…
+\usepackage{titletoc}                   % æ§åˆ¶ç›®å½•çš„å®åŒ…
+\usepackage[perpage,symbol]{footmisc}   % è„šæ³¨æ§åˆ¶
+\usepackage{fancyhdr}                   % fancyhdrå®åŒ… é¡µçœ‰å’Œé¡µè„šçš„ç›¸å…³å®šä¹‰
 \usepackage{fancyref}
-\usepackage{array}          %ÔöÇ¿±í¸ñµÄ¹¦ÄÜ %¿ÉÄÜÓëxeCJKºê°ü³åÍ»£¬Ğè·ÅÔÚxeCJKÖ®Ç°¡£
+\usepackage{array}          %å¢å¼ºè¡¨æ ¼çš„åŠŸèƒ½ %å¯èƒ½ä¸xeCJKå®åŒ…å†²çªï¼Œéœ€æ”¾åœ¨xeCJKä¹‹å‰ã€‚
 
 \ifx\atempxetex\usewhat
 \usepackage[slantfont,boldfont,CJKaddspaces]{xeCJK} %
 \CJKlanguage{zh-cn}
 \else
-\usepackage{CJK,CJKpunct}   % ÖĞÎÄÖ§³Öºê°ü
-\usepackage{times}          % Ê¹ÓÃTimes×ÖÌåµÄºê°ü
+   %\usepackage{fontenc} %[T1]
+\usepackage{CJKutf8}   % ä¸­æ–‡æ”¯æŒå®åŒ… ,CJKpunct
+\usepackage{times}          % ä½¿ç”¨Timeså­—ä½“çš„å®åŒ…
 \fi
 
-\usepackage{type1cm}        % tex1cmºê°ü£¬¿ØÖÆ×ÖÌåµÄ´óĞ¡
-\usepackage{indentfirst}    % Ê×ĞĞËõ½øºê°ü
-\usepackage{color}          % Ö§³Ö²ÊÉ«
+\usepackage{type1cm}        % tex1cmå®åŒ…ï¼Œæ§åˆ¶å­—ä½“çš„å¤§å°
+\usepackage{indentfirst}    % é¦–è¡Œç¼©è¿›å®åŒ…
+\usepackage{color}          % æ”¯æŒå½©è‰²
 
-\usepackage{amsmath}        % AMSLaTeXºê°ü ÓÃÀ´ÅÅ³ö¸ü¼ÓÆ¯ÁÁµÄ¹«Ê½
-\usepackage{relsize}            % µ÷Õû¹«Ê½×ÖÌå´óĞ¡ \mathsmaller \mathlarger
+\usepackage{amsmath}        % AMSLaTeXå®åŒ… ç”¨æ¥æ’å‡ºæ›´åŠ æ¼‚äº®çš„å…¬å¼
+\usepackage{relsize}            % è°ƒæ•´å…¬å¼å­—ä½“å¤§å° \mathsmaller \mathlarger
 \usepackage{amssymb}
-\usepackage{textcomp}   	  % Ç§·ÖºÅµÈÌØÊâ·ûºÅ
-\usepackage{mathrsfs}       % ²»Í¬ÓÚ\mathcal or \mathfrak Ö®ÀàµÄÓ¢ÎÄ»¨Ìå×ÖÌå
-\usepackage{bm}              % ´¦ÀíÊıÑ§¹«Ê½ÖĞµÄºÚĞ±ÌåµÄºê°ü
-\usepackage[amsmath,thmmarks,hyperref]{ntheorem}% ¶¨ÀíÀà»·¾³ºê°ü£¬ÆäÖĞ amsmath Ñ¡ÏîÓÃÀ´¼æÈİ AMS LaTeX µÄºê°ü
-\usepackage{epsfig}         % epsÍ¼Ïñ
-\usepackage[below]{placeins}%ÔÊĞíÉÏÒ»¸ösectionµÄ¸¡¶¯Í¼ĞÎ³öÏÖÔÚÏÂÒ»¸ösectionµÄ¿ªÊ¼²¿·Ö,»¹Ìá¹©\FloatBarrierÃüÁî,Ê¹ËùÓĞÎ´´¦ÀíµÄ¸¡¶¯Í¼ĞÎÁ¢¼´±»´¦Àí
-%\usepackage{psfrag}        %Ìæ»»epsÍ¼ĞÎÖĞµÄÎÄ×Ö
-\usepackage{floatflt}       % Í¼ÎÄ»ìÅÅÓÃºê°ü
-\usepackage{rotating}       % Í¼ĞÎºÍ±í¸ñµÄ¿ØÖÆ
-%\usepackage{endfloat}      %¿É½«¸¡¶¯¶ÔÏó·ÅÖÃµ½ÎÄ¼şµÄ×îºó
-\usepackage{setspace}       % ¶¨ÖÆ±í¸ñºÍÍ¼ĞÎµÄ¶àĞĞ±êÌâĞĞ¾à
-\usepackage{flafter}       % Ê¹µÃËùÓĞ¸¡¶¯Ìå²»ÄÜ±»·ÅÖÃÔÚÆä¸¡¶¯»·¾³Ö®Ç°£¬ÒÔÃâ¸¡¶¯ÌåÔÚÒıÊöËüµÄÎÄ±¾Ö®Ç°³öÏÖ.
-\usepackage{multirow}       %Ê¹ÓÃMultirowºê°ü£¬Ê¹µÃ±í¸ñ¿ÉÒÔºÏ²¢¶à¸örow¸ñ
-\usepackage{booktabs}       % ±í¸ñ£¬ºáµÄ´ÖÏß£»\specialrule{1pt}{0pt}{0pt}
-\usepackage{longtable}      %Ö§³Ö¿çÒ³µÄ±í¸ñ¡£
-%\usepackage[centerlast]{caption2}       %¸¡¶¯Í¼ĞÎºÍ±í¸ñ±êÌâÑùÊ½£¬ÕâÀïÒÑ±»ccaptionÍêÈ«Ìæ´ú¡£
-\usepackage[hang,center]{subfigure}%Ö§³Ö×ÓÍ¼ %centerlast ÉèÖÃ×îºóÒ»ĞĞÊÇ·ñ¾ÓÖĞ
+\usepackage{textcomp}   	  % åƒåˆ†å·ç­‰ç‰¹æ®Šç¬¦å·
+\usepackage{mathrsfs}       % ä¸åŒäº\mathcal or \mathfrak ä¹‹ç±»çš„è‹±æ–‡èŠ±ä½“å­—ä½“
+\usepackage{bm}              % å¤„ç†æ•°å­¦å…¬å¼ä¸­çš„é»‘æ–œä½“çš„å®åŒ…
+\usepackage[amsmath,thmmarks,hyperref]{ntheorem}% å®šç†ç±»ç¯å¢ƒå®åŒ…ï¼Œå…¶ä¸­ amsmath é€‰é¡¹ç”¨æ¥å…¼å®¹ AMS LaTeX çš„å®åŒ…
+\usepackage{epsfig}         % epså›¾åƒ
+\usepackage[below]{placeins}%å…è®¸ä¸Šä¸€ä¸ªsectionçš„æµ®åŠ¨å›¾å½¢å‡ºç°åœ¨ä¸‹ä¸€ä¸ªsectionçš„å¼€å§‹éƒ¨åˆ†,è¿˜æä¾›\FloatBarrierå‘½ä»¤,ä½¿æ‰€æœ‰æœªå¤„ç†çš„æµ®åŠ¨å›¾å½¢ç«‹å³è¢«å¤„ç†
+%\usepackage{psfrag}        %æ›¿æ¢epså›¾å½¢ä¸­çš„æ–‡å­—
+\usepackage{floatflt}       % å›¾æ–‡æ··æ’ç”¨å®åŒ…
+\usepackage{rotating}       % å›¾å½¢å’Œè¡¨æ ¼çš„æ§åˆ¶
+%\usepackage{endfloat}      %å¯å°†æµ®åŠ¨å¯¹è±¡æ”¾ç½®åˆ°æ–‡ä»¶çš„æœ€å
+\usepackage{setspace}       % å®šåˆ¶è¡¨æ ¼å’Œå›¾å½¢çš„å¤šè¡Œæ ‡é¢˜è¡Œè·
+\usepackage{flafter}       % ä½¿å¾—æ‰€æœ‰æµ®åŠ¨ä½“ä¸èƒ½è¢«æ”¾ç½®åœ¨å…¶æµ®åŠ¨ç¯å¢ƒä¹‹å‰ï¼Œä»¥å…æµ®åŠ¨ä½“åœ¨å¼•è¿°å®ƒçš„æ–‡æœ¬ä¹‹å‰å‡ºç°.
+\usepackage{multirow}       %ä½¿ç”¨Multirowå®åŒ…ï¼Œä½¿å¾—è¡¨æ ¼å¯ä»¥åˆå¹¶å¤šä¸ªrowæ ¼
+\usepackage{booktabs}       % è¡¨æ ¼ï¼Œæ¨ªçš„ç²—çº¿ï¼›\specialrule{1pt}{0pt}{0pt}
+\usepackage{longtable}      %æ”¯æŒè·¨é¡µçš„è¡¨æ ¼ã€‚
+%\usepackage[centerlast]{caption2}       %æµ®åŠ¨å›¾å½¢å’Œè¡¨æ ¼æ ‡é¢˜æ ·å¼ï¼Œè¿™é‡Œå·²è¢«ccaptionå®Œå…¨æ›¿ä»£ã€‚
+\usepackage[hang,center]{subfigure}%æ”¯æŒå­å›¾ %centerlast è®¾ç½®æœ€åä¸€è¡Œæ˜¯å¦å±…ä¸­
 \usepackage[subfigure]{ccaption} %,caption2,
 
-%\usepackage{cite}          % Ö§³ÖÒıÓÃµÄºê°ü
-\usepackage[sort&compress,numbers]{natbib}% Ö§³ÖÒıÓÃËõĞ´µÄºê°ü
+%\usepackage{cite}          % æ”¯æŒå¼•ç”¨çš„å®åŒ…
+\usepackage[sort&compress,numbers]{natbib}% æ”¯æŒå¼•ç”¨ç¼©å†™çš„å®åŒ…
 \usepackage{hypernat}
 
-\usepackage{enumitem}       %Ê¹ÓÃenumitemºê°ü,¸Ä±äÁĞ±íÏîµÄ¸ñÊ½
-\usepackage{calc}           %³¤¶È¿ÉÒÔÓÃ+ - * / ½øĞĞ¼ÆËã
-\usepackage[boxed,linesnumbered,algochapter]{algorithm2e}    % Ëã·¨µÄºê°ü
+\usepackage{enumitem}       %ä½¿ç”¨enumitemå®åŒ…,æ”¹å˜åˆ—è¡¨é¡¹çš„æ ¼å¼
+\usepackage{calc}           %é•¿åº¦å¯ä»¥ç”¨+ - * / è¿›è¡Œè®¡ç®—
+\usepackage[boxed,linesnumbered,algochapter]{algorithm2e}    % ç®—æ³•çš„å®åŒ…
 
-% Éú³ÉÓĞÊéÇ©µÄpdf¼°Æä¿ª¹Ø, ¸Ãºê°üÓ¦·ÅÔÚËùÓĞºê°üµÄ×îºó, ºê°üÖ®¼äÓĞ³åÍ»
+% ç”Ÿæˆæœ‰ä¹¦ç­¾çš„pdfåŠå…¶å¼€å…³, è¯¥å®åŒ…åº”æ”¾åœ¨æ‰€æœ‰å®åŒ…çš„æœ€å, å®åŒ…ä¹‹é—´æœ‰å†²çª
 \def\atemp{dvipspdf}\ifx\atemp\usewhat
-\usepackage[dvips,
-            CJKbookmarks=true,
-            bookmarksnumbered=true,
-            bookmarksopen=true,
-            colorlinks=false,    % ×îºó´òÓ¡µÄÊ±ºò¿ÉÒÔ¸Ä³Éfalse£¬ÕâÑù×ÖÌå¶¼ÊÇºÚÉ«
-            pdfborder={0 0 1},   % È¥µôÁ´½ÓµÄ±ß¿ò
-            citecolor=blue,
-            linkcolor=red,
-            anchorcolor=green,
-            urlcolor=blue,
-            unicode,
-            breaklinks=true
-            ]{hyperref}
-\usepackage{breakurl} %Ïû³ıdvipsµÄÊ±ºòÍøÒ³Á´½Ó¶ÏĞĞÊ§Ğ§µÄÎÊÌâ¡£
+\usepackage[dvips, %unicode,
+           %CJKbookmarks=true,
+           %bookmarksnumbered=true,
+           %bookmarksopen=true,
+           %colorlinks=false,    % æœ€åæ‰“å°çš„æ—¶å€™å¯ä»¥æ”¹æˆfalseï¼Œè¿™æ ·å­—ä½“éƒ½æ˜¯é»‘è‰²
+           %pdfborder={0 0 1},   % å»æ‰é“¾æ¥çš„è¾¹æ¡†
+           %citecolor=blue,
+           %linkcolor=red,
+           %anchorcolor=green,
+           %urlcolor=blue,            
+           %breaklinks=true
+           ]{hyperref}
+\usepackage{breakurl} %æ¶ˆé™¤dvipsçš„æ—¶å€™ç½‘é¡µé“¾æ¥æ–­è¡Œå¤±æ•ˆçš„é—®é¢˜ã€‚
 \fi
 
 \def\atemp{dvipdfmx}\ifx\atemp\usewhat
-\usepackage[dvipdfm, %dvi-->pdf Éú³ÉÊéÇ©
-            CJKbookmarks=true,
+\usepackage[dvipdfm, unicode,%dvi-->pdf ç”Ÿæˆä¹¦ç­¾
+            %CJKbookmarks=true,
             bookmarksnumbered=true,
             bookmarksopen=true,
             colorlinks=false,
@@ -113,13 +108,13 @@
             urlcolor=blue,
             breaklinks=true
             ]{hyperref}
-\AtBeginDvi{\special{pdf:tounicode GBK-EUC-UCS2}} % GBK -> Unicode,´ËÊ±¿ÉÒÔ²»ÓÃgbk2uni
+%\AtBeginDvi{\special{pdf:tounicode GBK-EUC-UCS2}} % GBK -> Unicode,æ­¤æ—¶å¯ä»¥ä¸ç”¨gbk2uni
 \fi
 
 \def\atemp{pdflatex}\ifx\atemp\usewhat
-\usepackage{cmap}                       %pdflatex±àÒëÊ±£¬¿ÉÒÔÉú³É¿É¸´ÖÆ¡¢Õ³ÌùµÄÖĞÎÄPDFÎÄµµ
-\usepackage[pdftex,
-            CJKbookmarks=true,
+\usepackage{cmap}                       %pdflatexç¼–è¯‘æ—¶ï¼Œå¯ä»¥ç”Ÿæˆå¯å¤åˆ¶ã€ç²˜è´´çš„ä¸­æ–‡PDFæ–‡æ¡£
+\usepackage[pdftex,unicode,
+            %CJKbookmarks=true,
             bookmarksnumbered=true,
             bookmarksopen=true,
             colorlinks=false,
@@ -127,15 +122,14 @@
             citecolor=blue,
             linkcolor=red,
             anchorcolor=green,
-            urlcolor=blue,
-            unicode,
+            urlcolor=blue,           
             breaklinks=true
             ]{hyperref}
 \fi
 
 \def\atemp{yap}\ifx\atemp\usewhat
-\usepackage[dvipdf,  %¿¼ÂÇµ½yap¿ÉÒÔÕı·´ÏòËÑË÷£¬dvipdfÊ¹yapÖĞµÄÁ´½ÓÓĞĞ§¡£
-            CJKbookmarks=true,
+\usepackage[dvipdf,  %è€ƒè™‘åˆ°yapå¯ä»¥æ­£åå‘æœç´¢ï¼Œdvipdfä½¿yapä¸­çš„é“¾æ¥æœ‰æ•ˆã€‚
+            %CJKbookmarks=true,
             bookmarksnumbered=true,
             bookmarksopen=true,
             colorlinks=false,
@@ -143,15 +137,14 @@
             citecolor=blue,
             linkcolor=red,
             anchorcolor=green,
-            urlcolor=blue,
-            unicode,
+            urlcolor=blue,       
             breaklinks=true
             ]{hyperref}
 \fi
 
-\ifx\atempxetex\usewhat %\def\atempxetex{xelatex} main.texÖĞÒÑ¶¨Òå;
+\ifx\atempxetex\usewhat %\def\atempxetex{xelatex} main.texä¸­å·²å®šä¹‰;
 \usepackage[xetex,
-            CJKbookmarks=true,
+            %CJKbookmarks=true,
             bookmarksnumbered=true,
             bookmarksopen=true,
             colorlinks=false,
@@ -161,8 +154,8 @@
             anchorcolor=green,
             urlcolor=blue,
             breaklinks=true,           
-            naturalnames  %Óëalgorithm2eºê°üĞ­µ÷
+            naturalnames  %ä¸algorithm2eå®åŒ…åè°ƒ
             ]{hyperref}  
 \fi
 
-\usepackage{arydshln}       %·Ö¿é¾ØÕó»­ĞéÏß£¬Í¦ºÃÓÃ
+\usepackage{arydshln}       %åˆ†å—çŸ©é˜µç”»è™šçº¿ï¼ŒæŒºå¥½ç”¨
