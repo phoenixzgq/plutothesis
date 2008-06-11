@@ -1,60 +1,55 @@
-% Èôxelatex±àÒë·ÇUTF8ÎÄ¼ş£¬ĞèÔÚÃ¿¸öÎÄ¼şÖĞÖ¸¶¨×Ö·û±àÂë;
-% main.texÖĞÊÖ¶¯ÖÆ¶¨ÁË\atempºÍ\usewhat²ÎÊı£»
-\ifx\atempxetex\usewhat 
-\XeTeXinputencoding "gbk"
-\fi
 
-\newcommand{\chinesethesistitle}{¹ş¶û±õ¹¤Òµ´óÑ§Ë¶²©Ê¿Ñ§Î»ÂÛÎÄ~\LaTeX~Ä£°å~(\version~°æ)} %ÊÚÈ¨ÊéÓÃ£¬ÎŞĞè¶ÏĞĞ
+\newcommand{\chinesethesistitle}{å“ˆå°”æ»¨å·¥ä¸šå¤§å­¦ç¡•åšå£«å­¦ä½è®ºæ–‡~\LaTeX~æ¨¡æ¿~(\version~ç‰ˆ)} %æˆæƒä¹¦ç”¨ï¼Œæ— éœ€æ–­è¡Œ
 \newcommand{\englishthesistitle}{\LaTeX~Dissertation Template of \\Harbin Institute of Technology~(Version \version)}
-\newcommand{\chinesethesistime}{2008~Äê~6~ÔÂ}  %·âÃæµ×²¿µÄÈÕÆÚÖĞÎÄĞÎÊ½
-\newcommand{\englishthesistime}{June, 2006}    %·âÃæµ×²¿µÄÈÕÆÚÓ¢ÎÄĞÎÊ½
+\newcommand{\chinesethesistime}{2008~å¹´~6~æœˆ}  %å°é¢åº•éƒ¨çš„æ—¥æœŸä¸­æ–‡å½¢å¼
+\newcommand{\englishthesistime}{June, 2006}    %å°é¢åº•éƒ¨çš„æ—¥æœŸè‹±æ–‡å½¢å¼
 
-\ctitle{¹ş¶û±õ¹¤Òµ´óÑ§Ë¶²©Ê¿Ñ§Î»ÂÛÎÄ\\ \LaTeX~Ä£°å~(\version~°æ)}  %·âÃæÓÃÂÛÎÄ±êÌâ£¬×Ô¼º¿ÉÊÖ¶¯¶ÏĞĞ
+\ctitle{å“ˆå°”æ»¨å·¥ä¸šå¤§å­¦ç¡•åšå£«å­¦ä½è®ºæ–‡\\ \LaTeX~æ¨¡æ¿~(\version~ç‰ˆ)}  %å°é¢ç”¨è®ºæ–‡æ ‡é¢˜ï¼Œè‡ªå·±å¯æ‰‹åŠ¨æ–­è¡Œ
 \cdegree{\cxueke\cxuewei}
-\csubject{¼ÆËã»úÏµÍ³½á¹¹}                 %(~°´¶ş¼¶Ñ§¿ÆÌîĞ´~)
-\caffil{¼ÆËã»ú¿ÆÑ§Óë¼¼ÊõÑ§Ôº} %£¨ÔÚĞ£ÉúÌîËùÔÚÏµÃû³Æ£¬Í¬µÈÑ§Á¦ÈËÔ±Ìî¹¤×÷µ¥Î»£©
-\cauthor{Ä³~~Ä³~~Ä³}
-\csupervisor{Ä³~~Ä³~~Ä³~~~~½Ì~~ÊÚ} %µ¼Ê¦Ãû×Ö
-%\cassosupervisor{Ä³~~~~~~Ä³~~~~½Ì~~ÊÚ}     %(~ÈçÎŞ¸±µ¼Ê¦¿ÉÒÔ²»ÁĞ´ËÏî~)
-%\ccosupervisor{Ä³~~Ä³~~Ä³~~~~½Ì~~ÊÚ~} %(~ÈçÎŞÁªºÏÅàÑøµ¼Ê¦Ôò²»ÁĞ´ËÏî~)
+\csubject{è®¡ç®—æœºç³»ç»Ÿç»“æ„}                 %(~æŒ‰äºŒçº§å­¦ç§‘å¡«å†™~)
+\caffil{è®¡ç®—æœºç§‘å­¦ä¸æŠ€æœ¯å­¦é™¢} %ï¼ˆåœ¨æ ¡ç”Ÿå¡«æ‰€åœ¨ç³»åç§°ï¼ŒåŒç­‰å­¦åŠ›äººå‘˜å¡«å·¥ä½œå•ä½ï¼‰
+\cauthor{æŸ~~æŸ~~æŸ}
+\csupervisor{æŸ~~æŸ~~æŸ~~~~æ•™~~æˆ} %å¯¼å¸ˆåå­—
+%\cassosupervisor{æŸ~~~~~~æŸ~~~~æ•™~~æˆ}     %(~å¦‚æ— å‰¯å¯¼å¸ˆå¯ä»¥ä¸åˆ—æ­¤é¡¹~)
+%\ccosupervisor{æŸ~~æŸ~~æŸ~~~~æ•™~~æˆ~} %(~å¦‚æ— è”åˆåŸ¹å…»å¯¼å¸ˆåˆ™ä¸åˆ—æ­¤é¡¹~)
 \cdate{\chinesethesistime}
 
 \etitle{\englishthesistitle}
 \edegree{\exuewei \ of \exueke}
-\esubject{Microelectronics \hfill and \hfill Solid-State\newline Electronics}  %Ó¢ÎÄ¶ş¼¶Ñ§¿ÆÃû
-\eaffil{Dept.\hfill of\hfill Microelectronics\hfill Science\newline and Technology}%Ó¢ÎÄµ¥Î» %»»ĞĞÓÃ\newline£¬²»ÒªÓÃ\\
-\eauthor{Alice}                   %×÷ÕßĞÕÃû £¨Ó¢ÎÄ£©
-\esupervisor{Professor Bob}       % µ¼Ê¦ĞÕÃû £¨Ó¢ÎÄ£©
+\esubject{Microelectronics \hfill and \hfill Solid-State\newline Electronics}  %è‹±æ–‡äºŒçº§å­¦ç§‘å
+\eaffil{Dept.\hfill of\hfill Microelectronics\hfill Science\newline and Technology}%è‹±æ–‡å•ä½ %æ¢è¡Œç”¨\newlineï¼Œä¸è¦ç”¨\\
+\eauthor{Alice}                   %ä½œè€…å§“å ï¼ˆè‹±æ–‡ï¼‰
+\esupervisor{Professor Bob}       % å¯¼å¸ˆå§“å ï¼ˆè‹±æ–‡ï¼‰
 %\ecosupervisor{Professor X}
 %\eassosupervisor{Professor Y}
 \edate{\englishthesistime}
 
-\natclassifiedindex{TP309}  %¹úÄÚÍ¼Êé·ÖÀàºÅ
-\internatclassifiedindex{681.324}  %¹ú¼ÊÍ¼Êé·ÖÀàºÅ
+\natclassifiedindex{TP309}  %å›½å†…å›¾ä¹¦åˆ†ç±»å·
+\internatclassifiedindex{681.324}  %å›½é™…å›¾ä¹¦åˆ†ç±»å·
 
 \iffalse
-\BiAppendixChapter{Õª~~~~Òª}{}  %Ê¹ÓÃwinedt±à¼­Ê±ÎÄµµ½á¹¹Í¼£¨toc£©ÖĞÎªÁËÏÔÊ¾ÕªÒª£¬¹ÊÔö¼Ó´Ë¾ä£»
+\BiAppendixChapter{æ‘˜~~~~è¦}{}  %ä½¿ç”¨winedtç¼–è¾‘æ—¶æ–‡æ¡£ç»“æ„å›¾ï¼ˆtocï¼‰ä¸­ä¸ºäº†æ˜¾ç¤ºæ‘˜è¦ï¼Œæ•…å¢åŠ æ­¤å¥ï¼›
 \fi
 \cabstract{
-ÕâÊÇ¸ù¾İ¹ş¶û±õ¹¤Òµ´óÑ§Ñ§Î»ÂÛÎÄ¹æ·¶ÖÆ×÷µÄ\LaTeX{}Ë¶²©Ê¿Ñ§Î»ÂÛÎÄÄ£°å¡£
+è¿™æ˜¯æ ¹æ®å“ˆå°”æ»¨å·¥ä¸šå¤§å­¦å­¦ä½è®ºæ–‡è§„èŒƒåˆ¶ä½œçš„\LaTeX{}ç¡•åšå£«å­¦ä½è®ºæ–‡æ¨¡æ¿ã€‚
 
-±¾Ä£°åÊÇÍøÓÑUFOµÈ(2004)»ùÓÚÇå»ª´óÑ§²©Ê¿ÂÛÎÄÄ£°å°´ÕÕ¹ş¶û±õ¹¤Òµ´óÑ§ÂÛ
-ÎÄ¹æ·¶¿ª·¢µÄ\LaTeX{}ÂÛÎÄÄ£°å£¬¾­¹ıcucme¡¢Stanley¡¢TeX¡¢nebulaµÈ(2005)
-¼°jdg¡¢LaTeX¡¢luckyfox(2006)ÍøÓÑµÄÍêÉÆºÍĞŞ¸Ä£¬Ä¿Ç°ÒÑ¾­``¼¸ºõÈ«²¿''Âú×ãÁËÂÛÎÄ¹æ·¶µÄÒªÇó£¬
-¶øÇÒÒ×ÓÃĞÔ´ó´óÌá¸ß£¬¹¦ÄÜÒ²Ô½À´Ô½Ç¿´ó£¬µ«¿ÉÄÜ»¹´æÔÚÒ»Ğ©ÎÊÌâ£¬Ï£Íû´ó¼Ò¼ÌĞøÅ¬Á¦·´À¡ÎÊÌâ£¬½øĞĞ¸Ä½ø¡£
+æœ¬æ¨¡æ¿æ˜¯ç½‘å‹UFOç­‰(2004)åŸºäºæ¸…åå¤§å­¦åšå£«è®ºæ–‡æ¨¡æ¿æŒ‰ç…§å“ˆå°”æ»¨å·¥ä¸šå¤§å­¦è®º
+æ–‡è§„èŒƒå¼€å‘çš„\LaTeX{}è®ºæ–‡æ¨¡æ¿ï¼Œç»è¿‡cucmeã€Stanleyã€TeXã€nebulaç­‰(2005)
+åŠjdgã€LaTeXã€luckyfox(2006)ç½‘å‹çš„å®Œå–„å’Œä¿®æ”¹ï¼Œç›®å‰å·²ç»``å‡ ä¹å…¨éƒ¨''æ»¡è¶³äº†è®ºæ–‡è§„èŒƒçš„è¦æ±‚ï¼Œ
+è€Œä¸”æ˜“ç”¨æ€§å¤§å¤§æé«˜ï¼ŒåŠŸèƒ½ä¹Ÿè¶Šæ¥è¶Šå¼ºå¤§ï¼Œä½†å¯èƒ½è¿˜å­˜åœ¨ä¸€äº›é—®é¢˜ï¼Œå¸Œæœ›å¤§å®¶ç»§ç»­åŠªåŠ›åé¦ˆé—®é¢˜ï¼Œè¿›è¡Œæ”¹è¿›ã€‚
 
-µ±È»Õâ¸öÄ£°åÎÄ¼ş½ö½öÊÇÒ»¸ö¿ªÊ¼£¬
-Ï£ÍûÓĞ``Å£ÈË''ÄÜ¹»×ÛºÏÕâĞ©ÉèÖÃĞÎ³ÉÕæÕıµÄÎÄµµÀàĞÎÊ½(cls)µÄÄ£°åÎÄ¼ş£¬Ôì¸£ÒÔºóµÄĞÖµÜ½ãÃÃÃÇ¡£
-²»¹ı²¹³äÒ»ÏÂ£¬ ÔÚÄ¿Ç°ĞèÒª¶àÈË²ÎÓëÎ¬»¤µÄÇé¿öÏÂ£¬bookÀàµÄÎÄµµÒ²¾ßÓĞÒ»Ğ©×Ô¼ºµÄÓÅÊÆ£¬
-´ó¼Ò¶¼ºÜÈİÒ×¿´¶®´úÂë£¬ÉÏÊÖĞŞ¸Ä¡£¶şÕß¸÷ÓĞÌØÉ«°É¡£×ÜÌåÉÏÀ´Ëµ£¬µ±Ç°Õâ¸öÄ£°å»¹ÊÇºÜÖµµÃÍÆ¼öÊ¹ÓÃµÄ¡£ :-)
+å½“ç„¶è¿™ä¸ªæ¨¡æ¿æ–‡ä»¶ä»…ä»…æ˜¯ä¸€ä¸ªå¼€å§‹ï¼Œ
+å¸Œæœ›æœ‰``ç‰›äºº''èƒ½å¤Ÿç»¼åˆè¿™äº›è®¾ç½®å½¢æˆçœŸæ­£çš„æ–‡æ¡£ç±»å½¢å¼(cls)çš„æ¨¡æ¿æ–‡ä»¶ï¼Œé€ ç¦ä»¥åçš„å…„å¼Ÿå§å¦¹ä»¬ã€‚
+ä¸è¿‡è¡¥å……ä¸€ä¸‹ï¼Œ åœ¨ç›®å‰éœ€è¦å¤šäººå‚ä¸ç»´æŠ¤çš„æƒ…å†µä¸‹ï¼Œbookç±»çš„æ–‡æ¡£ä¹Ÿå…·æœ‰ä¸€äº›è‡ªå·±çš„ä¼˜åŠ¿ï¼Œ
+å¤§å®¶éƒ½å¾ˆå®¹æ˜“çœ‹æ‡‚ä»£ç ï¼Œä¸Šæ‰‹ä¿®æ”¹ã€‚äºŒè€…å„æœ‰ç‰¹è‰²å§ã€‚æ€»ä½“ä¸Šæ¥è¯´ï¼Œå½“å‰è¿™ä¸ªæ¨¡æ¿è¿˜æ˜¯å¾ˆå€¼å¾—æ¨èä½¿ç”¨çš„ã€‚ :-)
 
 
-±¾Ä£°åµÄÄ¿µÄÖ¼ÔÚÍÆ¹ã\LaTeX{}ÕâÒ»ÓÅĞãµÄÅÅ°æÈí¼şÔÚ¹ş¹¤´óµÄÓ¦ÓÃ£¬Îª¹ã´óÍ¬
-Ñ§Ìá¹©Ò»¸ö·½±ã¡¢ÃÀ¹ÛµÄÂÛÎÄÄ£°å£¬¼õÉÙÂÛÎÄ×«Ğ´·½ÃæµÄÂé·³¡£
+æœ¬æ¨¡æ¿çš„ç›®çš„æ—¨åœ¨æ¨å¹¿\LaTeX{}è¿™ä¸€ä¼˜ç§€çš„æ’ç‰ˆè½¯ä»¶åœ¨å“ˆå·¥å¤§çš„åº”ç”¨ï¼Œä¸ºå¹¿å¤§åŒ
+å­¦æä¾›ä¸€ä¸ªæ–¹ä¾¿ã€ç¾è§‚çš„è®ºæ–‡æ¨¡æ¿ï¼Œå‡å°‘è®ºæ–‡æ’°å†™æ–¹é¢çš„éº»çƒ¦ã€‚
 
 }
 
-\ckeywords{\LaTeX; ÂÛÎÄÄ£°å}
+\ckeywords{\LaTeX; è®ºæ–‡æ¨¡æ¿}
 
 \eabstract{
 This is a \LaTeX{} dissertation template of Harbin Institute of Technology, which is built according to the required format.
@@ -62,9 +57,9 @@ This is a \LaTeX{} dissertation template of Harbin Institute of Technology, whic
 
 \ekeywords{\LaTeX; dissertation template}
 
-\NotationList{\begin{tabular}{ll} %Ö÷Òª·ûºÅ±í
+\NotationList{\begin{tabular}{ll} %ä¸»è¦ç¬¦å·è¡¨
 A & a matrix\\
-B &  µÇ¸ß\\
+B &  ç™»é«˜\\
 \end{tabular}}
-\makecover
+%\makecover
 \clearpage

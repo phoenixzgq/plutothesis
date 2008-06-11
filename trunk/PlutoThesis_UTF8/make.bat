@@ -9,11 +9,10 @@ del main_dvipspdf.pdf main.dvi main.ps
 latex main.tex
 bibtex main
 latex main.tex
-gbk2uni main.out
 latex main.tex
 dvips  -G0 -ta4 main.dvi
 ps2pdf main.ps main_dvipspdf.pdf
-del *.aux *.bbl *.blg *.out *.thm *.toc *.lof *.fen *.toe *.lot *.ten *.log *.ps *.dvi /s
+rem del *.aux *.bbl *.blg *.out *.thm *.toc *.lof *.fen *.toe *.lot *.ten *.log *.ps *.dvi /s
 start main_dvipspdf.pdf
 exit
 
@@ -46,9 +45,6 @@ exit
 del main_xelatex.pdf
 xelatex main.tex
 bibtex main
-copy /b fixbbl.txt+main.bbl  main2.bbl
-del main.bbl
-ren main2.bbl main.bbl
 xelatex main.tex
 xelatex main.tex
 ren main.pdf main_xelatex.pdf

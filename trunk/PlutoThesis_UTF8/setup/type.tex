@@ -1,19 +1,13 @@
-% Èôxelatex±àÒë·ÇUTF8ÎÄ¼ş£¬ĞèÔÚÃ¿¸öÎÄ¼şÖĞÖ¸¶¨×Ö·û±àÂë;
-% main.texÖĞÊÖ¶¯ÖÆ¶¨ÁË\atempºÍ\usewhat²ÎÊı£»
-\ifx\atempxetex\usewhat 
-\XeTeXinputencoding "gbk"
-\fi
+% ç¡•åšç±»å‹ çš„ä¸€äº›å®šä¹‰
 
-% Ë¶²©ÀàĞÍ µÄÒ»Ğ©¶¨Òå
-
-% µ¼ÑÔÇøÊ¹ÓÃÖĞÎÄ
+% å¯¼è¨€åŒºä½¿ç”¨ä¸­æ–‡
 \makeatletter
 \@tempcnta=128
 \loop \catcode\@tempcnta=13 \ifnum\@tempcnta<255 \advance \@tempcnta \@ne
 \repeat
 \makeatother
 
-\newif\ifxueweidoctor %ÅĞ¶ÏÂÛÎÄÀàĞÍ
+\newif\ifxueweidoctor %åˆ¤æ–­è®ºæ–‡ç±»å‹
 \newif\ifxueweimaster
 \def\temp{Doctor}
 \ifx\temp\xuewei
@@ -25,17 +19,17 @@
 \fi
 
 \ifxueweidoctor
-  \newcommand{\cxuewei}{²©Ê¿}
+  \newcommand{\cxuewei}{åšå£«}
   \newcommand{\exuewei}{Doctor}
   \newcommand{\exueweier}{Doctoral}
-  \newcommand{\xueweishort}{²©}
+  \newcommand{\xueweishort}{åš}
 \fi
 
 \ifxueweimaster
-  \newcommand{\cxuewei}{Ë¶Ê¿}
+  \newcommand{\cxuewei}{ç¡•å£«}
   \newcommand{\exuewei}{Master}
   \newcommand{\exueweier}{Master}
-  \newcommand{\xueweishort}{Ë¶}
+  \newcommand{\xueweishort}{ç¡•}
 \fi
 
 

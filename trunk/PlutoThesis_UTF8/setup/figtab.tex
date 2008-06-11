@@ -1,34 +1,29 @@
-% Èôxelatex±àÒë·ÇUTF8ÎÄ¼ş£¬ĞèÔÚÃ¿¸öÎÄ¼şÖĞÖ¸¶¨×Ö·û±àÂë;
-% main.texÖĞÊÖ¶¯ÖÆ¶¨ÁË\atempºÍ\usewhat²ÎÊı£»
-\ifx\atempxetex\usewhat 
-\XeTeXinputencoding "gbk"
-\fi
 
-%% ÖĞÓ¢ÎÄÍ¼ĞÎ±í¸ñË÷Òı   %Ë¶²©Ê¿Ñ§Î»ÂÛÎÄ¹æ·¶¾ù²»ÒªÇóÕâÒ»Ïî£¬ÇëÕıÊ½´òÓ¡µÄÊ±ºòÆÁ±ÎµôÕâÒ»¶Î£»
+%% ä¸­è‹±æ–‡å›¾å½¢è¡¨æ ¼ç´¢å¼•   %ç¡•åšå£«å­¦ä½è®ºæ–‡è§„èŒƒå‡ä¸è¦æ±‚è¿™ä¸€é¡¹ï¼Œè¯·æ­£å¼æ‰“å°çš„æ—¶å€™å±è”½æ‰è¿™ä¸€æ®µï¼›
 \ifxueweidoctor
-  %\clearpage{\pagestyle{empty}\cleardoublepage}   % Çå³ıÄ¿Â¼ºóÃæ¿ÕÒ³µÄÒ³Ã¼ºÍÒ³½Å
+  %\clearpage{\pagestyle{empty}\cleardoublepage}   % æ¸…é™¤ç›®å½•åé¢ç©ºé¡µçš„é¡µçœ‰å’Œé¡µè„š
 \else%
-  {\ifoneortwoside\clearpage{\pagestyle{empty}\cleardoublepage}\else\newpage\fi} % Çå³ıÄ¿Â¼ºóÃæ¿ÕÒ³µÄÒ³Ã¼ºÍÒ³½Å
+  {\ifoneortwoside\clearpage{\pagestyle{empty}\cleardoublepage}\else\newpage\fi} % æ¸…é™¤ç›®å½•åé¢ç©ºé¡µçš„é¡µçœ‰å’Œé¡µè„š
 \fi
-\addcontentsline{toc}{chapter}{\hei ²å~~~~Í¼}   % ÖĞÎÄ²åÍ¼¼ÓÈëµ½ÖĞÎÄÄ¿Â¼
-\listoffigures                                  % Éú³ÉÖĞÎÄ Í¼ĞÎË÷Òı
-\ifxueweidoctor                                 %Ë¶Ê¿Ñ§Î»ÂÛÎÄÃ»ÓĞÓ¢ÎÄÄ¿Â¼
-%\clearpage{\pagestyle{empty}\cleardoublepage}   % Ó¢ÎÄÍ¼ĞÎË÷Òı ÓÒ¿ª £¿ĞèÒªÂğ£¿
+\addcontentsline{toc}{chapter}{\hei æ’~~~~å›¾}   % ä¸­æ–‡æ’å›¾åŠ å…¥åˆ°ä¸­æ–‡ç›®å½•
+\listoffigures                                  % ç”Ÿæˆä¸­æ–‡ å›¾å½¢ç´¢å¼•
+\ifxueweidoctor                                 %ç¡•å£«å­¦ä½è®ºæ–‡æ²¡æœ‰è‹±æ–‡ç›®å½•
+%\clearpage{\pagestyle{empty}\cleardoublepage}   % è‹±æ–‡å›¾å½¢ç´¢å¼• å³å¼€ ï¼Ÿéœ€è¦å—ï¼Ÿ
 \pdfbookmark[0]{List of Figures}{listfigure}
-\addcontentsline{toe}{chapter}{\bfseries List of Figures} % Ó¢ÎÄ²åÍ¼¼ÓÈëµ½Ó¢ÎÄÄ¿Â¼
-\listoffigen                                    % Éú³ÉÓ¢ÎÄÍ¼Ë÷Òı
+\addcontentsline{toe}{chapter}{\bfseries List of Figures} % è‹±æ–‡æ’å›¾åŠ å…¥åˆ°è‹±æ–‡ç›®å½•
+\listoffigen                                    % ç”Ÿæˆè‹±æ–‡å›¾ç´¢å¼•
 \fi
 \ifxueweidoctor
-  %\clearpage{\pagestyle{empty}\cleardoublepage}   % Çå³ıÄ¿Â¼ºóÃæ¿ÕÒ³µÄÒ³Ã¼ºÍÒ³½Å
+  %\clearpage{\pagestyle{empty}\cleardoublepage}   % æ¸…é™¤ç›®å½•åé¢ç©ºé¡µçš„é¡µçœ‰å’Œé¡µè„š
 \else%
-  {\ifoneortwoside\clearpage{\pagestyle{empty}\cleardoublepage}\else\newpage\fi}   % Çå³ıÄ¿Â¼ºóÃæ¿ÕÒ³µÄÒ³Ã¼ºÍÒ³½Å
+  {\ifoneortwoside\clearpage{\pagestyle{empty}\cleardoublepage}\else\newpage\fi}   % æ¸…é™¤ç›®å½•åé¢ç©ºé¡µçš„é¡µçœ‰å’Œé¡µè„š
 \fi
-\addcontentsline{toc}{chapter}{\hei ±í~~~~¸ñ}   % ÖĞÎÄ±í¸ñ¼ÓÈëµ½ÖĞÎÄÄ¿Â¼
-\listoftables                                   % Éú³ÉÖĞÎÄ ±í¸ñË÷Òı
-\ifxueweidoctor                                 %Ë¶Ê¿Ñ§Î»ÂÛÎÄÃ»ÓĞÓ¢ÎÄÄ¿Â¼
-  %\clearpage{\pagestyle{empty}\cleardoublepage}   % Ó¢ÎÄ±í¸ñË÷Òı ÓÒ¿ª £¿ĞèÒªÂğ£¿
-  \addcontentsline{toe}{chapter}{\bfseries List of Tables} % Ó¢ÎÄ±í¸ñ¼ÓÈëµ½Ó¢ÎÄÄ¿Â¼
+\addcontentsline{toc}{chapter}{\hei è¡¨~~~~æ ¼}   % ä¸­æ–‡è¡¨æ ¼åŠ å…¥åˆ°ä¸­æ–‡ç›®å½•
+\listoftables                                   % ç”Ÿæˆä¸­æ–‡ è¡¨æ ¼ç´¢å¼•
+\ifxueweidoctor                                 %ç¡•å£«å­¦ä½è®ºæ–‡æ²¡æœ‰è‹±æ–‡ç›®å½•
+  %\clearpage{\pagestyle{empty}\cleardoublepage}   % è‹±æ–‡è¡¨æ ¼ç´¢å¼• å³å¼€ ï¼Ÿéœ€è¦å—ï¼Ÿ
+  \addcontentsline{toe}{chapter}{\bfseries List of Tables} % è‹±æ–‡è¡¨æ ¼åŠ å…¥åˆ°è‹±æ–‡ç›®å½•
   \pdfbookmark[0]{List of Tables}{listtable}
-  \listoftblen                                    % Éú³ÉÓ¢ÎÄ ±í¸ñË÷Òı
+  \listoftblen                                    % ç”Ÿæˆè‹±æ–‡ è¡¨æ ¼ç´¢å¼•
 \fi
-%% Èç¹û²»ĞèÒªÍ¼±íË÷Òı£¬×¢ÊÍµôÉÏÃæµÄ¼´¿É
+%% å¦‚æœä¸éœ€è¦å›¾è¡¨ç´¢å¼•ï¼Œæ³¨é‡Šæ‰ä¸Šé¢çš„å³å¯

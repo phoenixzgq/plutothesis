@@ -1,17 +1,12 @@
-% Èôxelatex±àÒë·ÇUTF8ÎÄ¼ş£¬ĞèÔÚÃ¿¸öÎÄ¼şÖĞÖ¸¶¨×Ö·û±àÂë;
-% main.texÖĞÊÖ¶¯ÖÆ¶¨ÁË\atempºÍ\usewhat²ÎÊı£»
-\ifx\atempxetex\usewhat 
-\XeTeXinputencoding "gbk"
-\fi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% ÖØ¶¨Òå×ÖÌåÃüÁî
-% ×¢Òâwin2000,Ã»ÓĞ simsun,¡¡×îºÃµ½ÍøÉÏÕÒÒ»¸ö
-% Ò»Ğ©×ÖÌåÊÇoffice2000 ´øµÄ
+% é‡å®šä¹‰å­—ä½“å‘½ä»¤
+% æ³¨æ„win2000,æ²¡æœ‰ simsun,ã€€æœ€å¥½åˆ°ç½‘ä¸Šæ‰¾ä¸€ä¸ª
+% ä¸€äº›å­—ä½“æ˜¯office2000 å¸¦çš„
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\ifx\atempxetex\usewhat %xelatexµ÷ÓÃÏµÍ³×ÖÌå£»
-\setmainfont{Times New Roman}   % ÕıÎÄÖĞµÄÓ¢ÎÄ ²ÉÓÃ Times New Roman ×ÖÌå£»
-\setsansfont{SimHei}   % ÕıÎÄÖĞµÄÓ¢ÎÄ ²ÉÓÃ Times New Roman ×ÖÌå£»
+\ifx\atempxetex\usewhat %xelatexè°ƒç”¨ç³»ç»Ÿå­—ä½“ï¼›
+\setmainfont{Times New Roman}   % æ­£æ–‡ä¸­çš„è‹±æ–‡ é‡‡ç”¨ Times New Roman å­—ä½“ï¼›
+\setsansfont{SimHei}   % æ­£æ–‡ä¸­çš„è‹±æ–‡ é‡‡ç”¨ Times New Roman å­—ä½“ï¼›
 \setCJKmainfont{SimSun}
 \setCJKsansfont{SimHei}
 \setCJKmonofont{LiSu}
@@ -21,42 +16,42 @@
 \setCJKfamilyfont{kai}{KaiTi_GB2312}
 \setCJKfamilyfont{li}{LiSu}
 \fi
-\newcommand{\song}{\CJKfamily{song}}    % ËÎÌå   (Windows×Ô´øsimsun.ttf)
-\newcommand{\fs}{\CJKfamily{fs}}        % ·ÂËÎÌå (Windows×Ô´øsimfs.ttf)
-\newcommand{\kai}{\CJKfamily{kai}}      % ¿¬Ìå   (Windows×Ô´øsimkai.ttf)
-\newcommand{\hei}{\CJKfamily{hei}}      % ºÚÌå   (Windows×Ô´øsimhei.ttf)
-\newcommand{\li}{\CJKfamily{li}}        % Á¥Êé   (Windows×Ô´øsimli.ttf)
+\newcommand{\song}{\CJKfamily{gbsn}}    % å®‹ä½“   (Windowsè‡ªå¸¦simsun.ttf) song
+\newcommand{\fs}{\CJKfamily{gbsn}}        % ä»¿å®‹ä½“ (Windowsè‡ªå¸¦simfs.ttf) fs
+\newcommand{\kai}{\CJKfamily{gbsn}}      % æ¥·ä½“   (Windowsè‡ªå¸¦simkai.ttf) kai
+\newcommand{\hei}{\CJKfamily{gbsn}}      % é»‘ä½“   (Windowsè‡ªå¸¦simhei.ttf) hei
+\newcommand{\li}{\CJKfamily{li}}        % éš¶ä¹¦   (Windowsè‡ªå¸¦simli.ttf)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% ÖØ¶¨Òå×ÖºÅÃüÁî
+% é‡å®šä¹‰å­—å·å‘½ä»¤
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\yihao}{\fontsize{26pt}{26pt}\selectfont}       % Ò»ºÅ, 1.±¶ĞĞ¾à
-\newcommand{\erhao}{\fontsize{22pt}{22pt}\selectfont}       % ¶şºÅ, 1.±¶ĞĞ¾à
-\newcommand{\xiaoer}{\fontsize{18pt}{18pt}\selectfont}      % Ğ¡¶ş, µ¥±¶ĞĞ¾à
-\newcommand{\sanhao}{\fontsize{16pt}{16pt}\selectfont}      % ÈıºÅ, 1.±¶ĞĞ¾à
-\newcommand{\xiaosan}{\fontsize{15pt}{15pt}\selectfont}     % Ğ¡Èı, 1.±¶ĞĞ¾à
-\newcommand{\sihao}{\fontsize{14pt}{14pt}\selectfont}       % ËÄºÅ, 1.0±¶ĞĞ¾à
-\newcommand{\banxiaosi}{\fontsize{13pt}{13pt}\selectfont}   % °ëĞ¡ËÄ, 1.0±¶ĞĞ¾à
-\newcommand{\xiaosi}{\fontsize{12pt}{12pt}\selectfont}      % Ğ¡ËÄ, 1.±¶ĞĞ¾à
-\newcommand{\dawuhao}{\fontsize{11.5pt}{11.5pt}\selectfont} % ´óÎåºÅ, µ¥±¶ĞĞ¾à
-\newcommand{\wuhao}{\fontsize{10.5pt}{10.5pt}\selectfont}   % ÎåºÅ, µ¥±¶ĞĞ¾à
-\newcommand{\xiaowu}{\fontsize{9.5pt}{9.5pt}\selectfont}    % ÎåºÅ, µ¥±¶ĞĞ¾à
-\newcommand{\banbanxiaosi}{\fontsize{12pt}{12pt}\selectfont}% °ë°ëĞ¡ËÄ, 1.0±¶ĞĞ¾à
+\newcommand{\yihao}{\fontsize{26pt}{26pt}\selectfont}       % ä¸€å·, 1.å€è¡Œè·
+\newcommand{\erhao}{\fontsize{22pt}{22pt}\selectfont}       % äºŒå·, 1.å€è¡Œè·
+\newcommand{\xiaoer}{\fontsize{18pt}{18pt}\selectfont}      % å°äºŒ, å•å€è¡Œè·
+\newcommand{\sanhao}{\fontsize{16pt}{16pt}\selectfont}      % ä¸‰å·, 1.å€è¡Œè·
+\newcommand{\xiaosan}{\fontsize{15pt}{15pt}\selectfont}     % å°ä¸‰, 1.å€è¡Œè·
+\newcommand{\sihao}{\fontsize{14pt}{14pt}\selectfont}       % å››å·, 1.0å€è¡Œè·
+\newcommand{\banxiaosi}{\fontsize{13pt}{13pt}\selectfont}   % åŠå°å››, 1.0å€è¡Œè·
+\newcommand{\xiaosi}{\fontsize{12pt}{12pt}\selectfont}      % å°å››, 1.å€è¡Œè·
+\newcommand{\dawuhao}{\fontsize{11.5pt}{11.5pt}\selectfont} % å¤§äº”å·, å•å€è¡Œè·
+\newcommand{\wuhao}{\fontsize{10.5pt}{10.5pt}\selectfont}   % äº”å·, å•å€è¡Œè·
+\newcommand{\xiaowu}{\fontsize{9.5pt}{9.5pt}\selectfont}    % äº”å·, å•å€è¡Œè·
+\newcommand{\banbanxiaosi}{\fontsize{12pt}{12pt}\selectfont}% åŠåŠå°å››, 1.0å€è¡Œè·
 
-%±ÜÃâºê°ü hyperref ºÍ arydshln ²»¼æÈİ´øÀ´µÄÄ¿Â¼Á´½ÓÊ§Ğ§µÄÎÊÌâ¡£
+%é¿å…å®åŒ… hyperref å’Œ arydshln ä¸å…¼å®¹å¸¦æ¥çš„ç›®å½•é“¾æ¥å¤±æ•ˆçš„é—®é¢˜ã€‚
 \def\temp{\relax}
 \let\temp\addcontentsline
 \gdef\addcontentsline{\phantomsection\temp}
-\newcommand*{\subfigencaptionlist}{} % ×ÓÍ¼ĞÎ¼ÓÈëÄ¿Â¼Ê±ÓÃ
+\newcommand*{\subfigencaptionlist}{} % å­å›¾å½¢åŠ å…¥ç›®å½•æ—¶ç”¨
 
 \makeatletter
 \gdef\hitempty{}
 
-\newcommand{\mr}[1]{\mathrm{#1}} %¶¨ÒåĞÂÃüÁî£¬ÓÃ\mrÀ´´úÌæ\mathrm
-\def \ReferenceEName {References} %%¶¨Òå²Î¿¼ÎÄÏ×µÄ±êÌâ
-\def \ReferenceCName {²Î¿¼ÎÄÏ×}
+\newcommand{\mr}[1]{\mathrm{#1}} %å®šä¹‰æ–°å‘½ä»¤ï¼Œç”¨\mræ¥ä»£æ›¿\mathrm
+\def \ReferenceEName {References} %%å®šä¹‰å‚è€ƒæ–‡çŒ®çš„æ ‡é¢˜
+\def \ReferenceCName {å‚è€ƒæ–‡çŒ®}
 
-%¶¨ÒåÍ¼±íÕÂ½ÚË«±êÌâÃüÁî
+%å®šä¹‰å›¾è¡¨ç« èŠ‚åŒæ ‡é¢˜å‘½ä»¤
 \newcommand{\figenname}{Fig.}
 \newcommand{\listfigenname}{List of Figures}
 \newfloatlist[chapter]{figen}{fen}{\listfigenname}{\figenname}
@@ -66,13 +61,13 @@
 
 
 \newcommand{\FigureBiCaption}[2]
-{\renewcommand{\figurename}{Í¼}
+{\renewcommand{\figurename}{å›¾}
 \caption{\protect\setlength{\baselineskip}{1.5em}#1} %\protect\setlength{\baselinestretch}{1.3}\selectfont
 \vspace{-1.3ex}%-0.5ex
 \figencaption{\protect\setlength{\baselineskip}{1.5em}#2}%
 \vspace{-3.4mm}
 %%
-%%Æä×ÓÍ¼ĞÎ¼ÓÈëÄ¿Â¼
+%%å…¶å­å›¾å½¢åŠ å…¥ç›®å½•
 \def\hittemp{}
  \@for \hittemp:=\subfigencaptionlist \do {%
         \ifx \hitempty\hittemp\relax \else
@@ -82,22 +77,22 @@
 }
 
 
-\setcounter{fendepth}{2} %Ó¢ÎÄÍ¼ĞÎÄ¿Â¼µÄÉî¶È 1(Ö»ÓĞÒ»¼¶Ä¿Â¼) 2(ÓĞÁ½¼¶Ä¿Â¼)
-\setcounter{lofdepth}{2} %ÖĞÎÄÍ¼ĞÎÄ¿Â¼µÄÉî¶È 1(Ö»ÓĞÒ»¼¶Ä¿Â¼) 2(ÓĞÁ½¼¶Ä¿Â¼)
-\renewcommand*{\l@subfigure}{\@dottedxxxline{\ext@subfigure}{2}{3.8em}{1.5em}} %ÖĞÎÄÍ¼ĞÎÄ¿Â¼ subfigure
-\gdef\l@subfigen{\@dottedtocline{2}{3.8em}{1.5em}}%Ó¢ÎÄÍ¼ĞÎÄ¿Â¼ latex
+\setcounter{fendepth}{2} %è‹±æ–‡å›¾å½¢ç›®å½•çš„æ·±åº¦ 1(åªæœ‰ä¸€çº§ç›®å½•) 2(æœ‰ä¸¤çº§ç›®å½•)
+\setcounter{lofdepth}{2} %ä¸­æ–‡å›¾å½¢ç›®å½•çš„æ·±åº¦ 1(åªæœ‰ä¸€çº§ç›®å½•) 2(æœ‰ä¸¤çº§ç›®å½•)
+\renewcommand*{\l@subfigure}{\@dottedxxxline{\ext@subfigure}{2}{3.8em}{1.5em}} %ä¸­æ–‡å›¾å½¢ç›®å½• subfigure
+\gdef\l@subfigen{\@dottedtocline{2}{3.8em}{1.5em}}%è‹±æ–‡å›¾å½¢ç›®å½• latex
 \newif\ifsubfigtoc
 \ifnum \tw@ > \@nameuse{c@fendepth} \subfigtocfalse \else \subfigtoctrue \fi
 \newbox\tempbox
 \newcommand{\SubfigEnCaption}[1]
 {\ifsubfigtoc
-    %¼ÓÈëÄ¿Â¼Õâ¸ö¶¯×÷£¬Ò»¶¨ÒªÔÚ ¸¸Í¼ Ö®ºó,ËùÔÚÏÈÔİ´æÔÚ subfigencaptionlist
+    %åŠ å…¥ç›®å½•è¿™ä¸ªåŠ¨ä½œï¼Œä¸€å®šè¦åœ¨ çˆ¶å›¾ ä¹‹å,æ‰€åœ¨å…ˆæš‚å­˜åœ¨ subfigencaptionlist
     \protected@xdef\subfigencaptionlist{\subfigencaptionlist,%
         {{\thesubfigure}\protect\ignorespaces{#1}}}
 \else
     \relax
 \fi
-%²úÉúcaption
+%äº§ç”Ÿcaption
 \vspace{1pt}
 \sbox{\tempbox}{\thesubfigure\hskip\subfiglabelskip #1}%
 \ifthenelse{\lengthtest{\wd\tempbox > \linewidth}}%
@@ -116,20 +111,20 @@
 \newcommand{\listtblenname}{List of Tables}
 \newfloatlist[chapter]{tblen}{ten}{\listtblenname}{\tblenname}
 \newfixedcaption{\tblencaption}{tblen}
-\renewcommand{\thetblen}{\thechapter-\arabic{table}}% ½«tblen»»³Étable£¬ÒòÎªtableºÍtablen±àºÅÒ»ÖÂ£¬¶øtablenÔÚ\longbitoccaption¶¨ÒåÖĞÎŞĞ§¡£
+\renewcommand{\thetblen}{\thechapter-\arabic{table}}% å°†tblenæ¢æˆtableï¼Œå› ä¸ºtableå’Œtablenç¼–å·ä¸€è‡´ï¼Œè€Œtablenåœ¨\longbitoccaptionå®šä¹‰ä¸­æ— æ•ˆã€‚
 \renewcommand{\@cftmaketentitle}{\chapter*{\listtblenname\@mkboth{\bfseries\listtblenname}{\bfseries\listtblenname}}}
 
 
 \newcommand{\TableBiCaption}[2]
 {
-\renewcommand{\tablename}{±í}
+\renewcommand{\tablename}{è¡¨}
 \caption{\protect\setlength{\baselineskip}{1.5em}#1}
 \vspace{-2ex}
 \tblencaption{\protect\setlength{\baselineskip}{1.5em}#2}
 \vspace{1ex}
 }
 
-%%%% ³¤±í¸ñµÄcaptionÔÚÖĞÓ¢ÎÄ±í¸ñÄ¿Â¼ÖĞÕı³£ÏÔÊ¾
+%%%% é•¿è¡¨æ ¼çš„captionåœ¨ä¸­è‹±æ–‡è¡¨æ ¼ç›®å½•ä¸­æ­£å¸¸æ˜¾ç¤º
 \def\@cont@LT@LTBiToeCaption#1[#2]#3{%
   \LT@makecaption#1\fnum@table{#3}%
   \def\@tempa{#2}%
@@ -157,22 +152,22 @@
   \global\let\tablename\@cont@oldtablename
   \global\let\LT@c@ption\@cont@oldLT@c@ption}
 
-\renewcommand{\cfttblendotsep}{1} %×Ô¶¨ÒåÍ¼±íÄ¿Â¼ÖĞµÄµã¼ä¾à´óĞ¡
+\renewcommand{\cfttblendotsep}{1} %è‡ªå®šä¹‰å›¾è¡¨ç›®å½•ä¸­çš„ç‚¹é—´è·å¤§å°
 \renewcommand{\cftfigendotsep}{1}
 
-%\renewcommand{\tablename}{±í}  %jdgÌá¹©µÄÒ»ÖÖ·½·¨£¬Ó¢ÎÄ³¤±í»áÌí¼Óµ½ÖĞÎÄÄ¿Â¼ÖĞÈ¥£¬ÉÏÃæ¶¨Òå
-%\newcommand{\LTBiCaption}[2]   %\bicaptiontwotoc Ö÷Òª¾ÍÊÇ½â¾öÕâ¸öÎÊÌâ¡£
+%\renewcommand{\tablename}{è¡¨}  %jdgæä¾›çš„ä¸€ç§æ–¹æ³•ï¼Œè‹±æ–‡é•¿è¡¨ä¼šæ·»åŠ åˆ°ä¸­æ–‡ç›®å½•ä¸­å»ï¼Œä¸Šé¢å®šä¹‰
+%\newcommand{\LTBiCaption}[2]   %\bicaptiontwotoc ä¸»è¦å°±æ˜¯è§£å†³è¿™ä¸ªé—®é¢˜ã€‚
 %{%
 %\caption{#1} \gdef\tablename{Table}
 %\\ %[-3.5ex]
 %\caption{#2}
-%\gdef\tablename{±í}\\ %[-1.5ex]
+%\gdef\tablename{è¡¨}\\ %[-1.5ex]
 %}
 
-%%%---¹«Ê½ÖĞ·ûºÅÃèÊö----start----
-%\begin{formulasymb}{Ê½ÖĞ}{-3pt}%-3pt,-20ptµ÷ÓëÉÏ·½µÄ¼ä¾à¡£
-%  \fdesfirst{µÚÒ»±êÇ©}{¿ØÖÆ¿ØÖÆ¿ØÖÆ¿ØÖÆ¿ØÖÆ}
-%  \fdes{ÆäËû±êÇ©}{¿ØÖÆ¿ØÖÆ¿ØÖÆ¿ØÖÆ¿ØÖÆ}
+%%%---å…¬å¼ä¸­ç¬¦å·æè¿°----start----
+%\begin{formulasymb}{å¼ä¸­}{-3pt}%-3pt,-20ptè°ƒä¸ä¸Šæ–¹çš„é—´è·ã€‚
+%  \fdesfirst{ç¬¬ä¸€æ ‡ç­¾}{æ§åˆ¶æ§åˆ¶æ§åˆ¶æ§åˆ¶æ§åˆ¶}
+%  \fdes{å…¶ä»–æ ‡ç­¾}{æ§åˆ¶æ§åˆ¶æ§åˆ¶æ§åˆ¶æ§åˆ¶}
 %\end{formulasymb}
 \newenvironment{formulades}[1]%
 {\noindent\begin{list}{}{%
@@ -183,12 +178,12 @@
 }}{\end{list}}
 \newenvironment{formulasymb}[2]%-\!-\!-\!-
 {\vspace*{#2}\newcommand{\fdesfirst}[2]%
-{\begin{formulades}{#1\hspace*{26pt}##1~\cdash}\item[#1\hspace*{26pt}##1~\cdash]{##2}\end{formulades}\vspace*{-21pt}}%×Ô¼ºµ÷¾à
-\newcommand{\fdes}[2]{\begin{formulades}{#1\hspace{26pt}##1~\cdash}\item[##1~\cdash]{##2}\end{formulades}\vspace*{-21pt}}}%×Ô¼ºµ÷¾à
-{\vspace{21pt}\relax}%21ptµ÷¾à
-%%----¹«Ê½ÖĞ·ûºÅÃèÊö----end-----
+{\begin{formulades}{#1\hspace*{26pt}##1~\cdash}\item[#1\hspace*{26pt}##1~\cdash]{##2}\end{formulades}\vspace*{-21pt}}%è‡ªå·±è°ƒè·
+\newcommand{\fdes}[2]{\begin{formulades}{#1\hspace{26pt}##1~\cdash}\item[##1~\cdash]{##2}\end{formulades}\vspace*{-21pt}}}%è‡ªå·±è°ƒè·
+{\vspace{21pt}\relax}%21ptè°ƒè·
+%%----å…¬å¼ä¸­ç¬¦å·æè¿°----end-----
 
-%% ---- ×ó¶ÔÆëµÄ¹«Ê½ start-----   \begin{flualign} a=c \end{flualign}
+%% ---- å·¦å¯¹é½çš„å…¬å¼ start-----   \begin{flualign} a=c \end{flualign}
 \newenvironment{flualign}{%
     \@fleqntrue
     \@mathmargin = -1sp
@@ -209,9 +204,9 @@
   \ignorespacesafterend
   \@fleqnfalse
 }
-%%  ---- ×ó¶ÔÆëµÄ¹«Ê½  end----
+%%  ---- å·¦å¯¹é½çš„å…¬å¼  end----
 
-%ÖØĞÂ¶¨ÒåBiChapterÃüÁî£¬¿ÉÊµÏÖ±êÌâÊÖ¶¯»»ĞĞ£¬µ«²»Ó°ÏìÄ¿Â¼
+%é‡æ–°å®šä¹‰BiChapterå‘½ä»¤ï¼Œå¯å®ç°æ ‡é¢˜æ‰‹åŠ¨æ¢è¡Œï¼Œä½†ä¸å½±å“ç›®å½•
 \def\BiChapter{\relax\@ifnextchar [{\@BiChapter}{\@@BiChapter}}
 \def\@BiChapter[#1]#2#3{\chapter[#1]{#2}
     \addcontentsline{toe}{chapter}{\bfseries Chapter \thechapter\hspace{0.5em} #3}}
@@ -238,33 +233,33 @@
     \addcontentsline{toe}{subsubsection}{\protect\numberline{\csname thesubsubsection\endcsname}#2}
 }
 
-\newcommand{\BiAppendixChapter}[2] % ¸Ã¸½Â¼ÃüÁîÊÊÓÃÓÚ·¢±íÎÄÕÂ£¬¼òÀúµÈ
+\newcommand{\BiAppendixChapter}[2] % è¯¥é™„å½•å‘½ä»¤é€‚ç”¨äºå‘è¡¨æ–‡ç« ï¼Œç®€å†ç­‰
 {\phantomsection
 \markboth{#1}{#1}%\markboth{\MakeUppercase{#1}}{\MakeUppercase{#1}}
 \addcontentsline{toc}{chapter}{\hei #1}
 \addcontentsline{toe}{chapter}{\bfseries #2}  \chapter*{#1}
 }
 
-\newcommand{\BiAppChapter}[2]    % ¸Ã¸½Â¼ÃüÁîÊÊÓÃÓÚÓĞÕÂ½ÚµÄÍêÕû¸½Â¼
-{\phantomsection  \chapter{#1}   %\markboth{\MakeUppercase{#1}}{\MakeUppercase{#1}} %ÎªÁËwinedtÖĞproject treeÖĞtocÕıÈ·ÏÔÊ¾£¬²»ÒªÅ²µ½ÏÂÒ»ĞĞ£»
+\newcommand{\BiAppChapter}[2]    % è¯¥é™„å½•å‘½ä»¤é€‚ç”¨äºæœ‰ç« èŠ‚çš„å®Œæ•´é™„å½•
+{\phantomsection  \chapter{#1}   %\markboth{\MakeUppercase{#1}}{\MakeUppercase{#1}} %ä¸ºäº†winedtä¸­project treeä¸­tocæ­£ç¡®æ˜¾ç¤ºï¼Œä¸è¦æŒªåˆ°ä¸‹ä¸€è¡Œï¼›
 %\addcontentsline{toc}{chapter}{\hei #1}
  \addcontentsline{toe}{chapter}{\bfseries Appendix \thechapter~~#2}
 }
 
-\renewcommand{\thefigure}{\arabic{chapter}-\arabic{figure}}%Ê¹Í¼±àºÅÎª 7-1 µÄ¸ñÊ½ %\protect{~}
+\renewcommand{\thefigure}{\arabic{chapter}-\arabic{figure}}%ä½¿å›¾ç¼–å·ä¸º 7-1 çš„æ ¼å¼ %\protect{~}
 %\renewcommand\fnum@figure{\figurename\nobreakspace\thefigure\protect{~~~~~~~~~}} %
 
-\renewcommand{\thesubfigure}{\alph{subfigure})}%Ê¹×ÓÍ¼±àºÅÎª a)µÄ¸ñÊ½
-\renewcommand{\p@subfigure}{\thefigure(} %%Ê¹×ÓÍ¼ÒıÓÃÎª 7-1(a) µÄ¸ñÊ½
+\renewcommand{\thesubfigure}{\alph{subfigure})}%ä½¿å­å›¾ç¼–å·ä¸º a)çš„æ ¼å¼
+\renewcommand{\p@subfigure}{\thefigure(} %%ä½¿å­å›¾å¼•ç”¨ä¸º 7-1(a) çš„æ ¼å¼
 %\renewcommand{\thesubfigure}{\alph{subfigure}}
-%\renewcommand{\p@subfigure}{\thefigure} %%Ê¹×ÓÍ¼ÒıÓÃÎª 7-1a µÄ¸ñÊ½
-%\renewcommand{\@thesubfigure}{\thesubfigure)\hskip\subfiglabelskip}%Ê¹×ÓÍ¼±àºÅÎª a)µÄ¸ñÊ½
+%\renewcommand{\p@subfigure}{\thefigure} %%ä½¿å­å›¾å¼•ç”¨ä¸º 7-1a çš„æ ¼å¼
+%\renewcommand{\@thesubfigure}{\thesubfigure)\hskip\subfiglabelskip}%ä½¿å­å›¾ç¼–å·ä¸º a)çš„æ ¼å¼
 
-\renewcommand{\thetable}{\arabic{chapter}-\arabic{table}}%%Ê¹±í±àºÅÎª 7-1 µÄ¸ñÊ½
-\renewcommand{\theequation}{\arabic{chapter}-\arabic{equation}}%%Ê¹¹«Ê½±àºÅÎª 7-1 µÄ¸ñÊ½
+\renewcommand{\thetable}{\arabic{chapter}-\arabic{table}}%%ä½¿è¡¨ç¼–å·ä¸º 7-1 çš„æ ¼å¼
+\renewcommand{\theequation}{\arabic{chapter}-\arabic{equation}}%%ä½¿å…¬å¼ç¼–å·ä¸º 7-1 çš„æ ¼å¼
 
-% ÉèÖÃËã·¨±êÌâĞÎÊ½£¬ÓÉ¡°Algorithm 2.1£ºËã·¨±êÌâ¡± ¸ÄÎª¡°Ëã·¨ 2-1 Ëã·¨±êÌâ¡±
-\renewcommand{\algorithmcfname}{Ëã·¨}
+% è®¾ç½®ç®—æ³•æ ‡é¢˜å½¢å¼ï¼Œç”±â€œAlgorithm 2.1ï¼šç®—æ³•æ ‡é¢˜â€ æ”¹ä¸ºâ€œç®—æ³• 2-1 ç®—æ³•æ ‡é¢˜â€
+\renewcommand{\algorithmcfname}{ç®—æ³•}
 \setlength\AlCapSkip{1.2ex}
 \SetAlgoSkip{1pt}
 \renewcommand{\algocf@captiontext}[2]{#1\algocf@typo ~ \AlCapFnt{}#2} % text of caption 
@@ -275,31 +270,31 @@
 \fi
 
 \makeatother
-%¶¨Òå Ñ§¿Æ Ñ§Î»
+%å®šä¹‰ å­¦ç§‘ å­¦ä½
 \def \xuekeEngineering {Engineering}
 \def \xuekeScience {Science}
 \def \xuekeManagement {Management}
 \def \xuekeArts {Arts}
 
 \ifx \xueke \xuekeEngineering
-\newcommand{\cxueke}{¹¤Ñ§}
+\newcommand{\cxueke}{å·¥å­¦}
 \newcommand{\exueke}{Engineering}
 \fi
 
 \ifx \xueke \xuekeScience
-\newcommand{\cxueke}{ÀíÑ§}
+\newcommand{\cxueke}{ç†å­¦}
 \newcommand{\exueke}{Science}
 \fi
 
 \ifx \xueke \xuekeManagement
-\newcommand{\cxueke}{¹ÜÀíÑ§}
+\newcommand{\cxueke}{ç®¡ç†å­¦}
 \newcommand{\exueke}{Management}
 \fi
 
 \ifx \xueke \xuekeArts
-\newcommand{\cxueke}{ÎÄÑ§}
+\newcommand{\cxueke}{æ–‡å­¦}
 \newcommand{\exueke}{Arts}
 \fi
 
-\newcommand{\cdash}{\mbox{¡ª\!\!\!\!¡ª\!\!\!\!¡ª}}%ÊäÈëÖĞÎÄÆÆÕÛºÅµÄÃüÁî
-\newcommand{\dif}{\mathrm{d}}%ÔÚÊıÑ§Ä£Ê½ÖĞÊäÈëÎ¢·Ödx
+\newcommand{\cdash}{\mbox{â€”\!\!\!\!â€”\!\!\!\!â€”}}%è¾“å…¥ä¸­æ–‡ç ´æŠ˜å·çš„å‘½ä»¤
+\newcommand{\dif}{\mathrm{d}}%åœ¨æ•°å­¦æ¨¡å¼ä¸­è¾“å…¥å¾®åˆ†dx
