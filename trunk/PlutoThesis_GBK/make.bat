@@ -52,7 +52,7 @@ ren main2.bbl main.bbl
 xelatex main.tex
 xelatex main.tex
 ren main.pdf main_xelatex.pdf
-del *.aux *.bbl *.blg *.out *.thm *.toc *.lof *.fen *.toe *.lot *.ten *.log /s
+del *.aux *.bbl *.blg *.out *.thm *.toc *.lof *.fen *.toe *.lot *.ten *.log *.gz *.gz(busy) /s
 start main_xelatex.pdf
 exit
 

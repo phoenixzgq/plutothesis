@@ -17,4 +17,5 @@ del *.fen
 del *.ten
 del *.ps
 
-
+del *.gz
+del *.gz(busy)
