@@ -1,3 +1,4 @@
+% -*-coding: utf-8 -*-
 
 %论文版芯大小一般应为145mm×210mm（包括页眉及页码则为145mm×230mm）
 %页码在版芯下边线之下隔行居中放置；
@@ -72,7 +73,7 @@
   \fi}  
 \CJKcaption{gb_452_UTF8}
 \else
-\CJKcaption{gb_452} %_UTF8
+\CJKcaption{gb_452_UTF8} %_UTF8
 \newlength \CJKtwospaces
 \def\CJKindent{
     \settowidth\CJKtwospaces{\CJKchar{"0A1}{"0A1}\CJKchar{"0A1}{"0A1}}%
@@ -506,7 +507,7 @@ mu$}\hfill
    \if@restonecol\twocolumn\fi
    }
 
-%\urlstyle{same}  %论文中引用的网址的字体默认与正文中字体不一致，这里修正为一致的。
+\urlstyle{same}  %论文中引用的网址的字体默认与正文中字体不一致，这里修正为一致的。
 
 %主要符号表 \NotationList
 \long\def\notation{\clearpage \BiAppendixChapter{主要符号表}{Main Symbol Table}\normalbiao\@NotationList\wuhaobiao}
