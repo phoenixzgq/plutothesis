@@ -1,4 +1,4 @@
-\def\usewhat{dvipdfmx}    % 你喜欢哪种编译方式，pdflatex dvipdfmx dvipspdf xelatex yap
+\def\usewhat{xelatex}    % 你喜欢哪种编译方式，pdflatex dvipdfmx dvipspdf xelatex yap
 
 %若用xelatex编译，默认用UTF8编码，非UTF8文件时，需在每个文件中指定字符编码;
 %本段无需改动，需放在输入中文之前；
@@ -56,7 +56,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frontmatter
 \sloppy % 解决中英文混排的断行问题，会加入间距，但不会影响断行
-%\interlinepenalty -100000
 \input{ preface/cover} % 封面
 
 %% 中英目录
