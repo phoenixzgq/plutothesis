@@ -1,4 +1,6 @@
-\def\usewhat{dvipspdf}    % 你喜欢哪种编译方式，pdflatex dvipdfmx dvipspdf xelatex yap
+% -*-coding: utf-8 -*-
+
+\def\usewhat{pdflatex}    % 你喜欢哪种编译方式，pdflatex dvipdfmx dvipspdf xelatex yap
 
 %input "reference\reference.bib" %for winedt users
 \def\version{1.8.2.20080601}         % 该变量仅用于模板文件的版本号控制
@@ -6,27 +8,27 @@
 \def \xuewei {Doctor}   % 定义学位 博士
 %\def \xuewei {Master}    % 硕士
 
-\def\oneortwoside{twoside} %定义单双面打印，只对硕士学位论文有效�?
+\def\oneortwoside{twoside} %定义单双面打印，只对硕士学位论文有效?
 %\def\oneortwoside{oneside} % 硕士单面打印
 
 \def\xueke{Engineering} % 定义学科 工学
 %\def\xueke{Science}      % 理学
-%\def\xueke{Management}   % 管理�?
-%\def\xueke{Arts}         % 艺术�?
+%\def\xueke{Management}   % 管理?
+%\def\xueke{Arts}         % 艺术?
 
 %定义xelatex的中间临时变量，若\usewhat为xelatex时，后面执行xelatx的相关选项
 \def\atempxetex{xelatex} %这一项无需改动
 
 \input{setup/type.tex}    % 硕博类型
 
-%下面的book选项中可以使�?draft 选项，使插入的图形只显示外框，以加快预览速度�?
+%下面的book选项中可以使用draft 选项，使插入的图形只显示外框，以加快预览速度?
 \documentclass[12pt,a4paper,openany,\oneortwoside]{book}
 
-\input{setup/package.tex} % 引用的宏�?
+\input{setup/package.tex} % 引用的宏包
 %\usepackage[slantfont,boldfont,CJKaddspaces]{xeCJK} %
 %\CJKlanguage{zh-cn}
 
-% 论文包含的内�?
+% 论文包含的内?
 \includeonly{
                 body/Introduction,
                 body/Tricks,
@@ -40,11 +42,11 @@
                 appendix/acknowledgements,
                 appendix/Resume
             }
-\graphicspath{{figures/}} %定义所有的eps文件�?figures 子目录下
+\graphicspath{{figures/}} %定义所有的eps文件在 figures 子目录下
 
 \begin{document}
 \ifx\atempxetex\usewhat\else
-\begin{CJK}{UTF8}{song}
+\begin{CJK*}{UTF8}{song}
 \fi
 
 \input{setup/Definition} % 文本格式定义
@@ -61,7 +63,7 @@
 \renewcommand{\baselinestretch}{1}
 \fontsize{12pt}{12pt}\selectfont
 \clearpage{\pagestyle{empty}\cleardoublepage}
-\pdfbookmark[0]{目~~~~�?}{mulu}
+\pdfbookmark[0]{目~~~~录 }{mulu}
 \tableofcontents    % 中文目录
 \ifxueweidoctor     % 英文目录右开
   \clearpage{\pagestyle{empty}\cleardoublepage}
@@ -75,7 +77,7 @@
 \fi
 
 \input{setup/figtab.tex}  %图表索引, 如果不需要图表索引，注释掉这一句即可；
-% \notation  %主要符号�?
+% \notation  %主要符号?
 \addtocontents{toc}{\protect\vskip1\baselineskip} % 中文目录增加空行
 \addtocontents{toe}{\protect\vskip1\baselineskip} % 英文目录增加空行
 
@@ -83,11 +85,11 @@
   \clearpage{\pagestyle{empty}\cleardoublepage}   % 清除目录后面空页的页眉和页脚
 \else%
   \ifoneortwoside\clearpage{\pagestyle{empty}\cleardoublepage}\fi  % 清除目录后面空页的页眉和页脚
-\fi                                               %  第一�?是否右开
+\fi                                               %  第一?是否右开
 
 \mainmatter
-\defaultfont % 对应于小四的标准字号�?12pt, 可以在正文中用此命令修改所需要字体的的大�?
-  
+\defaultfont % 对应于小四的标准字号?12pt, 可以在正文中用此命令修改所需要字体的的大?
+
 \include{body/Introduction}
 \include{body/Tricks}
 \include{body/UpdateLog}
@@ -95,7 +97,7 @@
 \include{body/copyright}
 \include{body/conclusion}   % 结论
 
-%参考文�?
+%参考文?
 \defaultfont
 \ifx\atempxetex\usewhat
 \bibliographystyle{chinesebst_UTF8}
@@ -109,18 +111,18 @@
 
 %\addtocontents{fen}{\protect\vskip1\baselineskip}
 %\addtocontents{ten}{\protect\vskip1\baselineskip}
-%英文图形和表格索引里加入空白行，通常放在 \include{appendix/appA}% 附录A之前�?
-%区分开正文和附录的图形和表格，一般没有这个必要�?
+%英文图形和表格索引里加入空白行，通常放在 \include{appendix/appA}% 附录A之前?
+%区分开正文和附录的图形和表格，一般没有这个必要?
 
 \include{appendix/appA}            % 附录A
-\include{appendix/publications}    % 所发文�?
-\include{appendix/Authorization}   % 原创性申�?
+\include{appendix/publications}    % 所发文?
+\include{appendix/Authorization}   % 原创性申?
 \include{appendix/acknowledgements}% 致谢
-\include{appendix/Resume}          % 个人简�?
+\include{appendix/Resume}          % 个人简?
 
 \clearpage
 \ifx\atempxetex\usewhat\else
-\end{CJK}
+\end{CJK*}
 \fi
 
 \end{document}
