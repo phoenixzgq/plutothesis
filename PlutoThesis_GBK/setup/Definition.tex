@@ -1,6 +1,6 @@
 % 若xelatex编译非UTF8文件，需在每个文件中指定字符编码;
 % main.tex中手动制定了\atemp和\usewhat参数；
-\ifx\atempxetex\usewhat 
+\ifx\atempxetex\usewhat
 \XeTeXinputencoding "gbk"
 \fi
 
@@ -130,6 +130,7 @@
 }
 
 %%%% 长表格的caption在中英文表格目录中正常显示
+\setlength{\LTcapwidth}{\textwidth} %长表格宽度
 \def\@cont@LT@LTBiToeCaption#1[#2]#3{%
   \LT@makecaption#1\fnum@table{#3}%
   \def\@tempa{#2}%
@@ -148,12 +149,12 @@
   \fi}
 \let\@cont@oldLT@c@ption\LT@c@ption
 \newcommand*{\LTBiTocCaption}[5]{
-  \@if@contemptyarg{#1}{\caption{#2}}{\caption[#1]{#2}}%
+  \@if@contemptyarg{#1}{\caption{\centering #2}}{\caption[#1]{\centering #2}}%
   \global\let\@cont@oldtablename\tablename
   \gdef\tablename{Table} %#3
   \global\let\LT@c@ption\@cont@LT@LTBiToeCaption
   \\
-  \@if@contemptyarg{#4}{\caption{#5}}{\caption[#4]{#5}}%
+  \@if@contemptyarg{#4}{\caption{\centering #5}}{\caption[#4]{\centering #5}}%
   \global\let\tablename\@cont@oldtablename
   \global\let\LT@c@ption\@cont@oldLT@c@ption}
 
@@ -267,7 +268,7 @@
 \renewcommand{\algorithmcfname}{算法}
 \setlength\AlCapSkip{1.2ex}
 \SetAlgoSkip{1pt}
-\renewcommand{\algocf@captiontext}[2]{#1\algocf@typo ~ \AlCapFnt{}#2} % text of caption 
+\renewcommand{\algocf@captiontext}[2]{#1\algocf@typo ~ \AlCapFnt{}#2} % text of caption
 \expandafter\ifx\csname algocf@within\endcsname\relax% if \algocf@within doesn't exist
 \renewcommand\thealgocf{\@arabic\c@algocf} % and the way it is printed
 \else%                                    else
