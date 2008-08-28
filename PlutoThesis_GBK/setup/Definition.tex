@@ -89,6 +89,7 @@
 \newif\ifsubfigtoc
 \ifnum \tw@ > \@nameuse{c@fendepth} \subfigtocfalse \else \subfigtoctrue \fi
 \newbox\tempbox
+\renewcommand*{\subcapsize}{\wuhao} %设置子图英文标题的字号为五号；
 \newcommand{\SubfigEnCaption}[1]
 {\ifsubfigtoc
     %加入目录这个动作，一定要在 父图 之后,所在先暂存在 subfigencaptionlist

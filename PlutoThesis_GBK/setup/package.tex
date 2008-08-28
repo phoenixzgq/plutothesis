@@ -134,7 +134,7 @@
 \fi
 
 \def\atemp{yap}\ifx\atemp\usewhat
-\usepackage[dvipdf,  %考虑到yap可以正反向搜索，dvipdf使yap中的链接有效。
+\usepackage[dvipdfmx,  %考虑到yap可以正反向搜索，dvipdf使yap中的链接有效。%dvipdf在hyperref中不存在？故改用dvipdfmx
             CJKbookmarks=true,
             bookmarksnumbered=true,
             bookmarksopen=true,
