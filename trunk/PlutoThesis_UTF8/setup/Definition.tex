@@ -6,6 +6,7 @@
 % 一些字体是office2000 带的
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \ifx\atempxetex\usewhat %xelatex调用系统字体；
+\defaultfontfeatures{Mapping=tex-text}
 \setmainfont{Times New Roman}   % 正文中的英文 采用 Times New Roman 字体；
 \setsansfont{SimHei}   % 正文中的英文 采用 Times New Roman 字体；
 \setCJKmainfont{SimSun}
@@ -85,6 +86,7 @@
 \newif\ifsubfigtoc
 \ifnum \tw@ > \@nameuse{c@fendepth} \subfigtocfalse \else \subfigtoctrue \fi
 \newbox\tempbox
+\renewcommand*{\subcapsize}{\wuhao} %设置子图英文标题的字号为五号；
 \newcommand{\SubfigEnCaption}[1]
 {\ifsubfigtoc
     %加入目录这个动作，一定要在 父图 之后,所在先暂存在 subfigencaptionlist

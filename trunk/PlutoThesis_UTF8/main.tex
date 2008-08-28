@@ -13,8 +13,8 @@
 
 \def\xueke{Engineering} % 定义学科 工学
 %\def\xueke{Science}      % 理学
-%\def\xueke{Management}   % 管理?
-%\def\xueke{Arts}         % 艺术?
+%\def\xueke{Management}   % 管理学
+%\def\xueke{Arts}         % 艺术学
 
 %定义xelatex的中间临时变量，若\usewhat为xelatex时，后面执行xelatx的相关选项
 \def\atempxetex{xelatex} %这一项无需改动
@@ -28,7 +28,7 @@
 %\usepackage[slantfont,boldfont,CJKaddspaces]{xeCJK} %
 %\CJKlanguage{zh-cn}
 
-% 论文包含的内?
+% 论文包含的内容
 \includeonly{
                 body/Introduction,
                 body/Tricks,
@@ -77,7 +77,7 @@
 \fi
 
 \input{setup/figtab.tex}  %图表索引, 如果不需要图表索引，注释掉这一句即可；
-% \notation  %主要符号?
+% \notation  %主要符号表
 \addtocontents{toc}{\protect\vskip1\baselineskip} % 中文目录增加空行
 \addtocontents{toe}{\protect\vskip1\baselineskip} % 英文目录增加空行
 
@@ -88,7 +88,7 @@
 \fi                                               %  第一?是否右开
 
 \mainmatter
-\defaultfont % 对应于小四的标准字号?12pt, 可以在正文中用此命令修改所需要字体的的大?
+\defaultfont % 对应于小四的标准字号为12pt, 可以在正文中用此命令修改所需要字体的的大小
 
 \include{body/Introduction}
 \include{body/Tricks}
@@ -97,7 +97,7 @@
 \include{body/copyright}
 \include{body/conclusion}   % 结论
 
-%参考文?
+%%参考文献
 \defaultfont
 \ifx\atempxetex\usewhat
 \bibliographystyle{chinesebst_UTF8}
