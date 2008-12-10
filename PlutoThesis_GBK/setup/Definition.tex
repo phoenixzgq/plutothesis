@@ -91,21 +91,20 @@
 \ifnum \tw@ > \@nameuse{c@fendepth} \subfigtocfalse \else \subfigtoctrue \fi
 \newbox\tempbox
 \renewcommand*{\subcapsize}{\wuhao} %设置子图英文标题的字号为五号；
-\newcommand{\SubfigEnCaption}[1]
-{\ifsubfigtoc
-    %加入目录这个动作，一定要在 父图 之后,所在先暂存在 subfigencaptionlist
+\def\SubfigEnCaption{%
+  \@ifnextchar [%
+      {\SubfigEnCap}%
+      {\SubfigEnCap[0pt]}
+} \long\def\SubfigEnCap[#1]#2  %产生caption  有水平间距调整
+{ \ifsubfigtoc %加入目录这个动作，一定要在 父图 之后,所在先暂存在 subfigencaptionlist
     \protected@xdef\subfigencaptionlist{\subfigencaptionlist,%
-        {{\thesubfigure}\protect\ignorespaces{#1}}}
-\else
-    \relax
-\fi
-%产生caption
-\vspace{1pt}
-\sbox{\tempbox}{\thesubfigure\hskip\subfiglabelskip #1}%
-\ifthenelse{\lengthtest{\wd\tempbox > \linewidth}}%
-{\\[-20pt]\parbox[t]{\linewidth}{\flushleft\noindent\wuhao\selectfont\thesubfigure\hskip\subfiglabelskip \centering#1\hangafter=1\hangindent=15pt}}%
-{\\\centerline{\wuhao\selectfont\thesubfigure\hskip\subfiglabelskip #1}}
-}
+        {{\thesubfigure}\protect\ignorespaces{#2}}}
+  \fi \vspace{1pt}
+  \sbox{\tempbox}{\thesubfigure\hskip\subfiglabelskip #2}%
+  \ifthenelse{\lengthtest{\wd\tempbox > \linewidth}}%
+  {\\[-20pt]\hspace*{#1}\parbox[t]{\linewidth}{\flushleft\noindent\wuhao\selectfont\thesubfigure\hskip\subfiglabelskip \centering#2\hangafter=1\hangindent=15pt}}%
+  {\\\hspace*{#1}\centerline{\wuhao\selectfont\thesubfigure\hskip\subfiglabelskip #2}}
+} 
 
 %\newcommand{\SubfigureCaption}[2]  % Two Parameters, the first one is the width of the subfigure,
 %{
