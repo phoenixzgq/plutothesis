@@ -1,6 +1,6 @@
 % -*-coding: utf-8 -*-
 
-\def\usewhat{pdflatex}    % 你喜欢哪种编译方式，pdflatex dvipdfmx dvipspdf xelatex yap
+\def\usewhat{xelatex}    % 你喜欢哪种编译方式，pdflatex dvipdfmx dvipspdf xelatex yap
 
 %input "reference\reference.bib" %for winedt users
 \def\version{1.8.2.20080601}         % 该变量仅用于模板文件的版本号控制
@@ -97,7 +97,7 @@
 \include{body/copyright}
 \include{body/conclusion}   % 结论
 
-%%参考文献
+%参考文献
 \defaultfont
 \ifx\atempxetex\usewhat
 \bibliographystyle{chinesebst_UTF8}
@@ -111,14 +111,14 @@
 
 %\addtocontents{fen}{\protect\vskip1\baselineskip}
 %\addtocontents{ten}{\protect\vskip1\baselineskip}
-%英文图形和表格索引里加入空白行，通常放在 \include{appendix/appA}% 附录A之前?
-%区分开正文和附录的图形和表格，一般没有这个必要?
+%英文图形和表格索引里加入空白行，通常放在 \include{appendix/appA}% 附录A之前。
+%区分开正文和附录的图形和表格，一般没有这个必要。
 
 \include{appendix/appA}            % 附录A
-\include{appendix/publications}    % 所发文?
-\include{appendix/Authorization}   % 原创性申?
+\include{appendix/publications}    % 所发文章
+\include{appendix/Authorization}   % 原创性申明
 \include{appendix/acknowledgements}% 致谢
-\include{appendix/Resume}          % 个人简?
+\include{appendix/Resume}          % 个人简历
 
 \clearpage
 \ifx\atempxetex\usewhat\else
