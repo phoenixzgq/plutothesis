@@ -81,8 +81,7 @@
 
 % 生成有书签的pdf及其开关, 该宏包应放在所有宏包的最后, 宏包之间有冲突
 \def\atemp{dvipspdf}\ifx\atemp\usewhat
-\usepackage[dvips, unicode,
-           %CJKbookmarks=true,
+\usepackage[dvips,unicode,
            bookmarksnumbered=true,
            bookmarksopen=true,
            colorlinks=false,    % 最后打印的时候可以改成false，这样字体都是黑色
@@ -97,8 +96,7 @@
 \fi
 
 \def\atemp{dvipdfmx}\ifx\atemp\usewhat
-\usepackage[dvipdfm, unicode,%dvi-->pdf 生成书签
-            %CJKbookmarks=true,
+\usepackage[dvipdfm,unicode,           %dvi-->pdf 生成书签
             bookmarksnumbered=true,
             bookmarksopen=true,
             colorlinks=false,
@@ -109,7 +107,6 @@
             urlcolor=blue,
             breaklinks=true
             ]{hyperref}
-%\AtBeginDvi{\special{pdf:tounicode GBK-EUC-UCS2}} % GBK -> Unicode,此时可以不用gbk2uni
 \fi
 
 \def\atemp{pdflatex}\ifx\atemp\usewhat
@@ -144,8 +141,7 @@
 \fi
 
 \ifx\atempxetex\usewhat %\def\atempxetex{xelatex} main.tex中已定义;
-\usepackage[xetex,unicode,
-            %CJKbookmarks=true,
+\usepackage[xetex,           
             bookmarksnumbered=true,
             bookmarksopen=true,
             colorlinks=false,
