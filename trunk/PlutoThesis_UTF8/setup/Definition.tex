@@ -6,7 +6,7 @@
 % 一些字体是office2000 带的
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \ifx\atempxetex\usewhat %xelatex调用系统字体；
-\defaultfontfeatures{Mapping=tex-text} 
+\defaultfontfeatures{Mapping=tex-text}
 \setmainfont{Times New Roman}   % 正文中的英文 采用 Times New Roman 字体；
 \setsansfont{Times New Roman}   % 正文中的英文 采用 Times New Roman 字体；
 \setCJKmainfont{SimSun}
@@ -18,10 +18,10 @@
 \setCJKfamilyfont{kai}{KaiTi_GB2312}
 \setCJKfamilyfont{li}{LiSu}
 \fi
-\newcommand{\song}{\CJKfamily{song}}    % 宋体   (Windows自带simsun.ttf) song
-\newcommand{\fs}{\CJKfamily{fs}}        % 仿宋体 (Windows自带simfs.ttf) fs
-\newcommand{\kai}{\CJKfamily{kai}}      % 楷体   (Windows自带simkai.ttf) kai
-\newcommand{\hei}{\CJKfamily{hei}}      % 黑体   (Windows自带simhei.ttf) hei
+\newcommand{\song}{\CJKfamily{song}}    % 宋体   (Windows自带simsun.ttf)
+\newcommand{\fs}{\CJKfamily{fs}}        % 仿宋体 (Windows自带simfs.ttf)
+\newcommand{\kai}{\CJKfamily{kai}}      % 楷体   (Windows自带simkai.ttf)
+\newcommand{\hei}{\CJKfamily{hei}}      % 黑体   (Windows自带simhei.ttf)
 \newcommand{\li}{\CJKfamily{li}}        % 隶书   (Windows自带simli.ttf)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -146,12 +146,12 @@
   \fi}
 \let\@cont@oldLT@c@ption\LT@c@ption
 \newcommand*{\LTBiTocCaption}[5]{
-  \@if@contemptyarg{#1}{\caption{#2}}{\caption[#1]{#2}}%
+  \@if@contemptyarg{#1}{\caption{\centering #2}}{\caption[#1]{\centering #2}}%
   \global\let\@cont@oldtablename\tablename
   \gdef\tablename{Table} %#3
   \global\let\LT@c@ption\@cont@LT@LTBiToeCaption
   \\
-  \@if@contemptyarg{#4}{\caption{#5}}{\caption[#4]{#5}}%
+  \@if@contemptyarg{#4}{\caption{\centering #5}}{\caption[#4]{\centering #5}}%
   \global\let\tablename\@cont@oldtablename
   \global\let\LT@c@ption\@cont@oldLT@c@ption}
 
@@ -212,9 +212,9 @@
 %重新定义BiChapter命令，可实现标题手动换行，但不影响目录
 \def\BiChapter{\relax\@ifnextchar [{\@BiChapter}{\@@BiChapter}}
 \def\@BiChapter[#1]#2#3{\chapter[#1]{#2}
-    \addcontentsline{toe}{chapter}{\bfseries Chapter \thechapter\hspace{0.5em} #3}}
+    \addcontentsline{toe}{chapter}{\bfseries \sihao Chapter \thechapter\hspace{0.5em} #3}}
 \def\@@BiChapter#1#2{\chapter{#1}
-    \addcontentsline{toe}{chapter}{\bfseries Chapter \thechapter\hspace{0.5em}{\boldmath #2}}}
+    \addcontentsline{toe}{chapter}{\bfseries \sihao Chapter \thechapter\hspace{0.5em}{\boldmath #2}}}
 %\newcommand{\BiChapter}[2]
 %{
 %    \chapter{#1}
@@ -240,13 +240,13 @@
 {\phantomsection
 \markboth{#1}{#1}%\markboth{\MakeUppercase{#1}}{\MakeUppercase{#1}}
 \addcontentsline{toc}{chapter}{\hei #1}
-\addcontentsline{toe}{chapter}{\bfseries #2}  \chapter*{#1}
+\addcontentsline{toe}{chapter}{\bfseries \sihao #2}  \chapter*{#1}
 }
 
 \newcommand{\BiAppChapter}[2]    % 该附录命令适用于有章节的完整附录
 {\phantomsection  \chapter{#1}   %\markboth{\MakeUppercase{#1}}{\MakeUppercase{#1}} %为了winedt中project tree中toc正确显示，不要挪到下一行；
 %\addcontentsline{toc}{chapter}{\hei #1}
- \addcontentsline{toe}{chapter}{\bfseries Appendix \thechapter~~#2}
+ \addcontentsline{toe}{chapter}{\bfseries \sihao Appendix \thechapter~~#2}
 }
 
 \renewcommand{\thefigure}{\arabic{chapter}-\arabic{figure}}%使图编号为 7-1 的格式 %\protect{~}
