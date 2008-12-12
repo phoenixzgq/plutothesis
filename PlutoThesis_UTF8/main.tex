@@ -25,8 +25,6 @@
 \documentclass[12pt,a4paper,openany,\oneortwoside]{book}
 
 \input{setup/package.tex} % 引用的宏包
-%\usepackage[slantfont,boldfont,CJKaddspaces]{xeCJK} %
-%\CJKlanguage{zh-cn}
 
 % 论文包含的内容
 \includeonly{
@@ -85,7 +83,7 @@
   \clearpage{\pagestyle{empty}\cleardoublepage}   % 清除目录后面空页的页眉和页脚
 \else%
   \ifoneortwoside\clearpage{\pagestyle{empty}\cleardoublepage}\fi  % 清除目录后面空页的页眉和页脚
-\fi                                               %  第一?是否右开
+\fi                                               %  第一章是否右开
 
 \mainmatter
 \defaultfont % 对应于小四的标准字号为12pt, 可以在正文中用此命令修改所需要字体的的大小
