@@ -103,7 +103,6 @@
   {\\\hspace*{#1}\centerline{\wuhao\selectfont\thesubfigure\hskip\subfiglabelskip #2}}
 } 
 
-
 %\newcommand{\SubfigureCaption}[2]  % Two Parameters, the first one is the width of the subfigure,
 %{
 %\addtocounter{subfigure}{-1}       % the second one is the caption of the subfigure
@@ -129,6 +128,7 @@
 }
 
 %%%% 长表格的caption在中英文表格目录中正常显示
+\setlength{\LTcapwidth}{\textwidth} %长表格宽度
 \def\@cont@LT@LTBiToeCaption#1[#2]#3{%
   \LT@makecaption#1\fnum@table{#3}%
   \def\@tempa{#2}%
@@ -266,7 +266,7 @@
 \renewcommand{\algorithmcfname}{算法}
 \setlength\AlCapSkip{1.2ex}
 \SetAlgoSkip{1pt}
-\renewcommand{\algocf@captiontext}[2]{#1\algocf@typo ~ \AlCapFnt{}#2} % text of caption 
+\renewcommand{\algocf@captiontext}[2]{#1\algocf@typo ~ \AlCapFnt{}#2} % text of caption
 \expandafter\ifx\csname algocf@within\endcsname\relax% if \algocf@within doesn't exist
 \renewcommand\thealgocf{\@arabic\c@algocf} % and the way it is printed
 \else%                                    else
