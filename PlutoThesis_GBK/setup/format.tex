@@ -323,6 +323,7 @@ mu$}\hfill
 \def\ekeywords#1{\def\@ekeywords{#1}}\def\@ekeywords{}
 \def\natclassifiedindex#1{\def\@natclassifiedindex{#1}}\def\@natclassifiedindex{}
 \def\internatclassifiedindex#1{\def\@internatclassifiedindex{#1}}\def\@internatclassifiedindex{}
+\def\statesecrets#1{\def\@statesecrets{#1}}\def\@statesecrets{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 定义封面
@@ -382,9 +383,18 @@ mu$}\hfill
     \parbox[t][0.6cm][t]{\textwidth}{
     \begin{center} \end{center}}
 
-    \parbox[t][2.2cm][t]{\textwidth}{
-    \song \xiaosi 国内图书分类号： \@natclassifiedindex \\
-                  国际图书分类号： \@internatclassifiedindex }
+%    \parbox[t][2.2cm][t]{\textwidth}{
+%    \song \xiaosi 国内图书分类号： \@natclassifiedindex \\
+%                  国际图书分类号： \@internatclassifiedindex }
+    \parbox[t][2.2cm][t]{\textwidth}{\song \xiaosi% 
+    \begin{tabular}%
+    	{>{}p{3.3cm}
+    	>{}p{5cm}%
+    	>{}p{2cm}%
+    	>{}p{1.5cm}}%
+    国内图书分类号：& \@natclassifiedindex & 学校代码：& 10213  \tabularnewline
+    国际图书分类号：& \@internatclassifiedindex & ~~~~ ~~~~ 密级：& \@statesecrets
+    \end{tabular}}
 
     \parbox[t][2.7cm][b]{\textwidth}{\xiaoer
     \begin{center} {\song  \@cdegree 学位论文 }\end{center} }
