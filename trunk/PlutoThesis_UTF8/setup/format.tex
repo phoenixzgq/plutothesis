@@ -328,8 +328,8 @@ mu$}\hfill
     \begin{titlepage}
     \begin{center}
 
-    \parbox[t][1cm][b]{\textwidth}{\erhao
-    \begin{center} {\song \ifxueweimaster\cxueke\fi\cxuewei 学位论文 }\end{center} }
+    \parbox[t][1cm][b]{\textwidth}{\xiaoyi
+    \begin{center} {\song \cxuewei 学位论文 }\end{center} } %\ifxueweimaster\cxueke\fi
 
     \parbox[t][0.8cm][t]{\textwidth}{
     \begin{center} \end{center} }
@@ -338,14 +338,14 @@ mu$}\hfill
     \begin{center} {\hei  \@ctitle}\end{center} }
 
     \ifxueweidoctor
-    \parbox[t][3.8cm][t]{\textwidth}{\erhao
-    \begin{center} {\hei  \@etitle}\end{center} }
+    \parbox[t][3.8cm][t]{\textwidth}{\erhao %英文标题太长时可以采用\xiaoer
+    \begin{center} {\bfseries  \@etitle}\end{center} }
     \else
     \parbox[t][3.8cm][t]{\textwidth}{\centering
         \ }
     \fi
 
-    \parbox[t][2.0cm][t]{\textwidth}{\sanhao
+    \parbox[t][2.0cm][t]{\textwidth}{\xiaoer
     \begin{center} {\song  \@cauthor}  \end{center} }
 
     \ifxueweidoctor
@@ -353,14 +353,14 @@ mu$}\hfill
         \includegraphics[width = 8cm]{hit_logo}}
     \else
     \parbox[t][8.5cm][t]{\textwidth}{\centering
-        \ }
+        \includegraphics[width = 8cm]{hit_logo} }
     \fi
 
     \parbox[t][1.2cm][t]{\textwidth}{\xiaoer
     \begin{center} {\kai  哈尔滨工业大学}  \end{center} }
 
     \parbox[t][0.5cm][t]{\textwidth}{
-    \begin{center} {\song \sanhao \@cdate} \end{center} }
+    \begin{center} {\song \xiaoer \@cdate} \end{center} }
 
     \end{center}
 
