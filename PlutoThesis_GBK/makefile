@@ -2,10 +2,22 @@ DVIPDFMX:=$(shell grep '\\def\\usewhat{dvipdfmx}' main.tex)
 PDFLATEX:=$(shell grep '\\def\\usewhat{pdflatex}' main.tex)
 DVIPSPDF:=$(shell grep '\\def\\usewhat{dvipspdf}' main.tex)
 YAP:=$(shell grep '\\def\\usewhat{yap}' main.tex)
+XELATEX :=$(shell grep '\\def\\usewhat{xelatex}'  main.tex)
 
 empty=
 
 all:
+ifneq ($(empty),$(XELATEX))
+	@echo Making xelatex......
+	rm main_xelatex.pdf &
+	xelatex main.tex
+	env BIBINPUTS=./ BSTINPUTS=./ bibtex main
+	xelatex main.tex
+	xelatex main.tex
+	mv main.pdf main_xelatex.pdf
+	@echo Done. Starting the browser......
+	acroread main_xelatex.pdf&
+endif
 ifneq ($(empty),$(DVIPDFMX))
 	@echo Making dvipdfmx......
 	rm main_dvipdfm.pdf main.dvi&
@@ -57,6 +69,7 @@ endif
 
 clean:
 	@echo Cleaning up......
-	-rm *.bbl *.blg *.log *.out *.thm *.toc *.toe
+	-rm *.bbl *.blg *.log *.out *.thm *.toc *.toe *.aux *.lo* *.ten *.fen
 	-rm body/*.aux
+	-rm appendix/*.aux
 	@echo All done.

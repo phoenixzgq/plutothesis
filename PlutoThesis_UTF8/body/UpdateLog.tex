@@ -386,3 +386,62 @@ Update \version (by luckyfox and LaTeX )}
    \item 补充对 xetex 的一些简单说明；
    \item 修改推荐的软件信息，删除对 chinatex 的推荐，增加 MiCTeX 和 MiKTeX 软件。
 \end{hitlist}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\BiSubsection{版本升级至~v1.8.3.20081210~(by luckyfox and LaTeX )}{Version
+Update \version (by luckyfox and LaTeX )}
+
+模板修正以下bugs：
+\begin{hitlist}
+    \item 文件头部加入编码信息;
+    \item 跨页表格，标题宽度，末行居中;
+    \item 消除Introduction.tex中 \textbackslash section的\} 前没有空格导致出现的hyperref宏包相关错误; 
+    \item jdg发现并修正五号表表格未能真正居中对齐的bugs；
+    \item 修正UTF编码下某些注释的文字不完整;
+    \item 修正子图标题中的字号非5号字的问题； 
+    \item 修正utf8的main.tex中原由gbk转换时部分文字无法显示的小bug；
+    \item [GBK+UTF8]将jdg针对多个子图并列时子图中英文caption可能不对齐的bug修正的子图英文caption定义代码加入；
+    \item 增加gb\_452\_UTF8文件；
+\end{hitlist}
+
+
+模板功能增强主要有：
+\begin{hitlist}
+    \item 默认编译改成dvipspdf;
+    \item 上传xelatex版本的readme,字体比较均匀;
+    \item 创建PlutoThesis的utf8文件;
+    \item 上传参考文献国标2005文件；
+\end{hitlist}
+
+文档说明完善主要有：
+\begin{hitlist}
+   \item  updatelog的更新
+\end{hitlist}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\BiSubsection{版本升级至~v1.9.0.20081213~(by luckyfox and LaTeX )}{Version
+Update \version (by luckyfox and LaTeX )}
+
+模板修正以下bugs：
+\begin{hitlist}
+    \item 修正makefile，添加xelatex编译代码; 
+    \item 去掉GBK封面上的"专业",英文封面的 in \textbackslash exueke; 
+    \item 修改了版芯，部分尺寸调整还待验证; 
+    \item 将英文目录的章改为四号字; 
+    \item 第四级标题题序顶格写，与标题空一格，阐述内容另起一段; 
+    \item 修正xelatex编译时，英文粗体采用了粗体，而非Times New Roman的bug;
+    \item UTF8，修正xelatex编译中文乱码的bug，去掉hyperref的unicode选项； 
+\end{hitlist}
+
+
+模板功能增强主要有：
+\begin{hitlist}
+    \item 提交比较符合GBT7714-2005标准的bst文件,文件名加后缀"\_HIT"; 
+    \item 中文封面加上学校代码和密级; 
+    \item 加入新论文规范的readme.pdf;
+    \item 添加jdg制作的chinesebst2005，包括GBK和UTF8编码；
+    \item 根据参考文献标准要求，修改了Reference.bib文件完善示例文献条目；
+\end{hitlist}
+
+文档说明完善主要有：
+\begin{hitlist}
+   \item  updatelog的更新
+\end{hitlist}
