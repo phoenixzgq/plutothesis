@@ -69,6 +69,7 @@ endif
 
 clean:
 	@echo Cleaning up......
-	-rm *.bbl *.blg *.log *.out *.thm *.toc *.toe
+	-rm *.bbl *.blg *.log *.out *.thm *.toc *.toe *.aux *.lo* *.ten *.fen
 	-rm body/*.aux
+	-rm appendix/*.aux
 	@echo All done.
