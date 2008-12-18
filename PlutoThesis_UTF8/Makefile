@@ -2,34 +2,27 @@ DVIPDFMX:=$(shell grep '\\def\\usewhat{dvipdfmx}' main.tex)
 PDFLATEX:=$(shell grep '\\def\\usewhat{pdflatex}' main.tex)
 DVIPSPDF:=$(shell grep '\\def\\usewhat{dvipspdf}' main.tex)
 YAP:=$(shell grep '\\def\\usewhat{yap}' main.tex)
-XELATEX :=$(shell grep '\\def\\usewhat{xelatex}'  main.tex)
 
 empty=
 
+part:
+	gbk2uni main.out
+	latex main.tex
+	dvipdfmx -p a4 main.dvi
+	xpdf main.pdf
+
 all:
-ifneq ($(empty),$(XELATEX))
-	@echo Making xelatex......
-	rm main_xelatex.pdf &
-	xelatex main.tex
-	env BIBINPUTS=./ BSTINPUTS=./ bibtex main
-	xelatex main.tex
-	xelatex main.tex
-	mv main.pdf main_xelatex.pdf
-	@echo Done. Starting the browser......
-	acroread main_xelatex.pdf&
-endif
 ifneq ($(empty),$(DVIPDFMX))
 	@echo Making dvipdfmx......
-	rm main_dvipdfm.pdf main.dvi&
+	rm main.pdf main.dvi &
 	latex main.tex
 	env BIBINPUTS=./ BSTINPUTS=./ bibtex main
 	latex main.tex
 	gbk2uni main.out
 	latex main.tex
 	dvipdfmx -p a4 main.dvi
-	mv main.pdf main_dvipdfm.pdf
 	@echo Done. Starting the browser......
-	acroread main_dvipdfm.pdf&
+	acroread main.pdf&
 endif
 ifneq ($(empty),$(PDFLATEX))
 	@echo Making pdflatex......
@@ -69,7 +62,22 @@ endif
 
 clean:
 	@echo Cleaning up......
-	-rm *.bbl *.blg *.log *.out *.thm *.toc *.toe *.aux *.lo* *.ten *.fen
-	-rm body/*.aux
-	-rm appendix/*.aux
+	-find -name '*.aux' -exec rm {} \;
+	-find -name '*.bak' -exec rm {} \;
+	-find -name '*.dvi' -exec rm {} \;
+	-find -name '*~' -exec rm {} \;
+	-find -name '#*#' -exec rm {} \;
+	-find -name 'semantic.cache' -exec rm {} \;
+	-find -name '*.log' -exec rm {} \;
+	-rm *.bbl *.blg *.log *.out *.ps *.thm *.toc *.toe *.lof *.lot *.pdf
+	-rm *.html *.css *.scm *.hlog
+	-rm _region_.tex
+	-rm -rf auto
+	-rm *.fen
+	-rm *.ten
+	-rm -rf ./body/auto
+	-rm -rf ./reference/auto
+	-rm -rf ./setup/auto
+	-rm -rf ./preface/auto
+	-rm -rf *.prv
 	@echo All done.
