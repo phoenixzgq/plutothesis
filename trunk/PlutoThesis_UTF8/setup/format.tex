@@ -94,7 +94,7 @@
 \setcounter{secnumdepth}{4} \setcounter{tocdepth}{2}
 
 \titleformat{\chapter}[block]{\xiaoer\bf\filcenter\hei\sf\boldmath}{\xiaoer\chaptertitlename}{18pt}{\xiaoer}
-\titlespacing{\chapter}{0pt}{8pt}{16pt} %[hang]
+\titlespacing{\chapter}{0pt}{8pt}{16pt} %block为居中对齐，hang 为悬挂的居中对齐（不包括
 
 \titleformat{\section}[hang]{\hei\sf\xiaosan\boldmath}{\xiaosan\thesection}{0.5em}{}
 \titlespacing{\section}{0pt}{13pt}{13pt}
@@ -388,8 +388,8 @@ mu$}\hfill
     	>{}p{5cm}%
     	>{}p{2cm}%
     	>{}p{1.5cm}}%
-    国内图书分类号：& \@natclassifiedindex & 学校代码：& 10213  \tabularnewline
-    国际图书分类号：& \@internatclassifiedindex & ~~~~ ~~~~ 密级：& \@statesecrets
+    国内图书分类号：& \@natclassifiedindex & 学校代码：& 10213  \tabularnewline [-0.3cm]
+     国际图书分类号：&  \@internatclassifiedindex &  ~~~~ ~~~~ 密级：&  \@statesecrets
     \end{tabular}}
 
     \parbox[t][2.7cm][b]{\textwidth}{\xiaoer
@@ -399,11 +399,11 @@ mu$}\hfill
     \parbox[t][3.0cm][b]{\textwidth}{\erhao
     \begin{center} {\hei  \@ctitle}\end{center} }
 
-    \parbox[t][5.3cm][t]{\textwidth}{
+    \parbox[t][4.3cm][t]{\textwidth}{
     \begin{center}  \end{center} }
 
     \parbox[t][6cm][c]{\textwidth}{ {\sihao
-    \begin{center} \song
+    \begin{center} \renewcommand{\arraystretch}{1.5} \song 
     \begin{tabular}{lll@{\extracolsep{0em}}l}
     ~ & {\hei \xueweishort \hfill 士\hfill 研究生：}           & \@cauthor\\
     ~ & {\hei 导\hfill 师：}                       & \@csupervisor\\
@@ -414,7 +414,7 @@ mu$}\hfill
     ~ & {\hei 所\hfill 在\hspace{1em}单\hfill 位：} & \@caffil\\
     ~ & {\hei 答\hfill 辩\hspace{1em}日\hfill 期：} & \@cdate\\
     ~ & {\hei 授予学位单位：}                     & 哈尔滨工业大学
-    \end{tabular}
+    \end{tabular} \renewcommand{\arraystretch}{1}
     \end{center} } }
 \end{center}
 
