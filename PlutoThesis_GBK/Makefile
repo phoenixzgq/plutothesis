@@ -2,23 +2,29 @@ DVIPDFMX:=$(shell grep '\\def\\usewhat{dvipdfmx}' main.tex)
 PDFLATEX:=$(shell grep '\\def\\usewhat{pdflatex}' main.tex)
 DVIPSPDF:=$(shell grep '\\def\\usewhat{dvipspdf}' main.tex)
 YAP:=$(shell grep '\\def\\usewhat{yap}' main.tex)
-
+XELATEX :=$(shell grep '\\def\\usewhat{xelatex}'  main.tex)
 empty=
 
-part:
-	gbk2uni main.out
-	latex main.tex
-	dvipdfmx -p a4 main.dvi
-	xpdf main.pdf
-
 all:
+ifneq ($(empty),$(XELATEX))
+	@echo Making xelatex......
+	rm main_xelatex.pdf &
+	xelatex main.tex
+	env BIBINPUTS=./ BSTINPUTS=./ bibtex main
+	xelatex main.tex
+	gbk2uni main.out
+	xelatex main.tex
+	xelatex main.tex
+	mv main.pdf main_xelatex.pdf
+	@echo Done. Starting the browser......
+	acroread main_xelatex.pdf&
+endif
 ifneq ($(empty),$(DVIPDFMX))
 	@echo Making dvipdfmx......
 	rm main.pdf main.dvi &
 	latex main.tex
 	env BIBINPUTS=./ BSTINPUTS=./ bibtex main
 	latex main.tex
-	gbk2uni main.out
 	latex main.tex
 	dvipdfmx -p a4 main.dvi
 	@echo Done. Starting the browser......
