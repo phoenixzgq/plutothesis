@@ -382,15 +382,11 @@ mu$}\hfill
 %    \parbox[t][2.2cm][t]{\textwidth}{
 %    \song \xiaosi 国内图书分类号： \@natclassifiedindex \\
 %                  国际图书分类号： \@internatclassifiedindex }
-    \parbox[t][2.2cm][t]{\textwidth}{\song \xiaosi% 
-    \begin{tabular}%
-    	{>{}p{3.3cm}
-    	>{}p{5cm}%
-    	>{}p{2cm}%
-    	>{}p{1.5cm}}%
-    国内图书分类号：& \@natclassifiedindex & 学校代码：& 10213  \tabularnewline [-0.3cm]
-     国际图书分类号：&  \@internatclassifiedindex &  ~~~~ ~~~~ 密级：&  \@statesecrets
-    \end{tabular}}
+			\parbox[t][2.2cm][t]{\textwidth}{\song \xiaosi \centering 
+			\begin{tabular}{>{\raggedleft}p{4cm}>{\raggedright}p{3.5cm}>{\raggedleft}p{3.5cm}>{\raggedright}p{2cm}}%% %% {rlrl}
+			国内图书分类号：& 1021.3 & 学校代码：& 10213 \tabularnewline 
+ 			国际图书分类号：&  423.4 &  ~~ 密级：&  公开 
+			\end{tabular}}
 
     \parbox[t][2.7cm][b]{\textwidth}{\xiaoer
     \begin{center} {\song  \@cdegree 学位论文 }\end{center} }
