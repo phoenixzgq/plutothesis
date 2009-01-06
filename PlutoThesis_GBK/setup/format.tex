@@ -283,14 +283,14 @@ mu$}\hfill
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 默认字体
 \renewcommand\normalsize{%
-  \@setfontsize\normalsize{12.1pt}{13pt}
+  \@setfontsize\normalsize{12pt}{13pt}
   \setlength\abovedisplayskip{8pt plus 2pt minus 2pt}
   \setlength\abovedisplayshortskip{7pt plus 2pt minus 2pt}
   \setlength\belowdisplayskip{\abovedisplayskip}
   \setlength\belowdisplayshortskip{\abovedisplayshortskip}
   \setlength\jot{6pt}
   \let\@listi\@listI}
-\def\defaultfont{\renewcommand{\baselinestretch}{1.37}\normalsize\selectfont}
+\def\defaultfont{\renewcommand{\baselinestretch}{1.5}\normalsize\selectfont} %正文行间距，大致与word中小四宋体的1.25倍行距相同，使用者若不满意可精调此参数
 \predisplaypenalty=0  %公式之前可以换页，公式出现在页面顶部
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -305,7 +305,7 @@ mu$}\hfill
 \def\ccosupervisor#1{\def\@ccosupervisor{~ & {\hei 联 \hfill 合\hfill 导 \hfill 师：} & #1\\}}\def\@ccosupervisor{}
 \def\cdate#1{\def\@cdate{#1}}\def\@cdate{}
 \long\def\cabstract#1{\long\def\@cabstract{#1}}\long\def\@cabstract{}
-\def\ckeywords#1{\def\@ckeywords{#1}}\def\@ckeywords{}
+\def\ckeywords#1{\def\@ckeywords{：#1}}\def\@ckeywords{}
 
 \def\etitle#1{\def\@etitle{#1}}\def\@etitle{}
 \def\edegree#1{\def\@edegree{#1}}\def\@edegree{}
@@ -320,7 +320,7 @@ mu$}\hfill
 \def\edate#1{\def\@edate{#1}}\def\@edate{}
 \long\def\eabstract#1{\long\def\@eabstract{#1}}\long\def\@eabstract{}
 \long\def\NotationList#1{\long\def\@NotationList{#1}}\long\def\@NotationList{}
-\def\ekeywords#1{\def\@ekeywords{#1}}\def\@ekeywords{}
+\def\ekeywords#1{\def\@ekeywords{:#1}}\def\@ekeywords{}
 \def\natclassifiedindex#1{\def\@natclassifiedindex{#1}}\def\@natclassifiedindex{}
 \def\internatclassifiedindex#1{\def\@internatclassifiedindex{#1}}\def\@internatclassifiedindex{}
 \def\statesecrets#1{\def\@statesecrets{#1}}\def\@statesecrets{}
