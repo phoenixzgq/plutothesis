@@ -305,7 +305,7 @@ mu$}\hfill
 \def\ccosupervisor#1{\def\@ccosupervisor{~ & {\hei 联 \hfill 合\hfill 导 \hfill 师：} & #1\\}}\def\@ccosupervisor{}
 \def\cdate#1{\def\@cdate{#1}}\def\@cdate{}
 \long\def\cabstract#1{\long\def\@cabstract{#1}}\long\def\@cabstract{}
-\def\ckeywords#1{\def\@ckeywords{：#1}}\def\@ckeywords{}
+\def\ckeywords#1{\def\@ckeywords{#1}}\def\@ckeywords{}
 
 \def\etitle#1{\def\@etitle{#1}}\def\@etitle{}
 \def\edegree#1{\def\@edegree{#1}}\def\@edegree{}
@@ -320,7 +320,7 @@ mu$}\hfill
 \def\edate#1{\def\@edate{#1}}\def\@edate{}
 \long\def\eabstract#1{\long\def\@eabstract{#1}}\long\def\@eabstract{}
 \long\def\NotationList#1{\long\def\@NotationList{#1}}\long\def\@NotationList{}
-\def\ekeywords#1{\def\@ekeywords{:#1}}\def\@ekeywords{}
+\def\ekeywords#1{\def\@ekeywords{#1}}\def\@ekeywords{}
 \def\natclassifiedindex#1{\def\@natclassifiedindex{#1}}\def\@natclassifiedindex{}
 \def\internatclassifiedindex#1{\def\@internatclassifiedindex{#1}}\def\@internatclassifiedindex{}
 \def\statesecrets#1{\def\@statesecrets{#1}}\def\@statesecrets{}
@@ -478,7 +478,7 @@ mu$}\hfill
 \vspace{1em}
 
 \hangafter1\hangindent4.28em\noindent
-{\hei 关键词} \quad \@ckeywords
+{\hei 关键词：} \@ckeywords %新规范有了冒号之后，不用再加\quad 空白距离了。
 
 %%%%%%%%%%%%%%%%%%%   English Abstract  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
@@ -487,7 +487,7 @@ mu$}\hfill
 \vspace{1em}
 
 \hangafter1\hangindent5.5em\noindent
-{\textbf{Keywords}} \quad \@ekeywords
+{\textbf{Keywords:}}  \@ekeywords % 新规范有了冒号之后，不用再加\quad 空白距离了。
 \wuhaobiao  %正文表格设置
 }  %\makecover
 
