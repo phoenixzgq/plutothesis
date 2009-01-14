@@ -11,7 +11,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \ifx\atempxetex\usewhat %xelatex调用系统字体；
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont{Times New Roman}   % 正文中的英文  采用 Times New Roman 字体；
+\setmainfont{Times New Roman}   % 正文中的英文 采用 Times New Roman 字体；
 \setsansfont{Times New Roman}   % 正文中的英文 采用 Times New Roman 字体；
 \setCJKmainfont{SimSun}
 \setCJKsansfont{SimHei}
@@ -258,7 +258,7 @@
 %\renewcommand\fnum@figure{\figurename\nobreakspace\thefigure\protect{~~~~~~~~~}} %
 
 \renewcommand{\thesubfigure}{\alph{subfigure})}%使子图编号为 a)的格式
-\renewcommand{\p@subfigure}{\thefigure(} %%使子图引用为 7-1(a) 的格式
+\renewcommand{\p@subfigure}{\thefigure ~~} %%使子图引用为 7-1 a) 的格式，母图编号和子图编号之间用~~加一个空格 
 %\renewcommand{\thesubfigure}{\alph{subfigure}}
 %\renewcommand{\p@subfigure}{\thefigure} %%使子图引用为 7-1a 的格式
 %\renewcommand{\@thesubfigure}{\thesubfigure)\hskip\subfiglabelskip}%使子图编号为 a)的格式
