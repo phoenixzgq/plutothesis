@@ -1,5 +1,6 @@
 % -*-coding: gb2312 -*-
-\def\usewhat{xelatex}    % 你喜欢哪种编译方式，pdflatex dvipdfmx dvipspdf xelatex yap
+
+\def\usewhat{pdflatex}    % 你喜欢哪种编译方式，pdflatex dvipdfmx dvipspdf xelatex yap
 
 %若用xelatex编译，默认用UTF8编码，非UTF8文件时，需在每个文件中指定字符编码;
 %本段无需改动，需放在输入中文之前；
@@ -8,7 +9,7 @@
 \fi
 
 %input "reference\reference.bib" %for winedt users
-\def\version{1.9.0.20081213}         % 该变量仅用于模板文件的版本号控制，新的论文规范从1.9开始；
+\def\version{1.9.1.20090223}         % 该变量仅用于模板文件的版本号控制，新的论文规范从1.9开始；
 
 \def \xuewei {Doctor}   % 定义学位 博士
 %\def \xuewei {Master}    % 硕士
@@ -57,7 +58,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frontmatter
 \sloppy % 解决中英文混排的断行问题，会加入间距，但不会影响断行
-\input{ preface/cover} % 封面
+\input{preface/cover} % 封面
 
 %% 中英目录
 \renewcommand{\baselinestretch}{1}
@@ -85,10 +86,10 @@
   \clearpage{\pagestyle{empty}\cleardoublepage}   % 清除目录后面空页的页眉和页脚
 \else%
   \ifoneortwoside\clearpage{\pagestyle{empty}\cleardoublepage}\fi  % 清除目录后面空页的页眉和页脚
-\fi                                               %  第一章 是否右开
+\fi                                               %  第一章是否右开
 
 \mainmatter
-\defaultfont % 对应于小四的标准字号是 12pt, 可以在正文中用此命令修改所需要字体的的大小
+\defaultfont % 对应于小四的标准字号为12pt, 可以在正文中用此命令修改所需要字体的的大小
 
 \include{body/Introduction}
 \include{body/Tricks}
@@ -126,3 +127,8 @@
 \fi
 
 \end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

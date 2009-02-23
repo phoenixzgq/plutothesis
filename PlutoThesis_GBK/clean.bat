@@ -19,3 +19,6 @@ del *.ps
 
 del *.gz
 del *.gz(busy)
+del *.synctex
+
+del *.loa

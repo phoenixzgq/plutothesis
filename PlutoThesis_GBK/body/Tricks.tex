@@ -398,7 +398,6 @@ Golfer Golfer Golfer Golfer} \label{Figure:Tricks:Example11}
 \label{Figure:Tricks:Example3}
 \end{figure}
 
-
 图~\ref{Figure:Tricks:Example3x} 给出了一个不同大小子图的例子，这时可以给出分图的标号，然后把分图的图题
 放到母图图题的下面。
 \begin{figure}[htbp]
@@ -514,7 +513,7 @@ a&emf&bcdef\\
 %a&emf&bcdef\\
 \end{longtable}
 
-%\iffalse
+
 
 \BiSection{算法}{algorithm}
 这是一个算法的例子，来自~worldguy@lilacbbs~
@@ -528,23 +527,32 @@ $q\in \mathbf{Q}$} }
     $\lambda^{t+1}_n = \lambda^t_n + \eta (f_n(q, c, d_i) - f_n(q, c, d_j))$
  }
 \end{algorithm}
-算法环境中右侧空白比较多，若想把右侧的空白框减小，可以采用minipage环境实现。把algorithm环境放到minipage环境里面，并且加上选项[H]禁止算法浮动，下面给出一个例子。需要说明的是，一般不需要进行这种处理。算法标题可有可无，若有标题的话，请使用\verb|\caption|。若想用中英文双标题，请暂且参考图表标题自己定义一下。
+算法环境中右侧空白比较多，若想把右侧的空白框减小，可以采用minipage环境实现。把algorithm环境放到minipage环境里面，并且加上选项[H]禁止算法浮动，下面给出一个例子。需要说明的是，一般不需要进行这种处理。算法图题可有可无，若有中英文图题，请使用\verb|\AlgoBiCaption{中文图题}{英文图题}|。下面给出两个有图题的例子。
 
-\begin{minipage}{0.8\textwidth}
-\vspace{5mm}
+\begin{minipage}{0.8\textwidth}\centering
 \begin{algorithm}[H]
-\caption{这是一个算法标题}
-\KwIn{training samples, {$(d_i, d_j)_q$; $\mathbf{q}_i, \mathbf{q}_j \in C$,
-$q\in \mathbf{Q}$} }
-\KwOut{parameter setting $\lambda^T$}
-
-\For{$t$=1 to $T$}
-{   
-    $\lambda^{t+1}_n = \lambda^t_n + \eta (f_n(q, c, d_i) - f_n(q, c, d_j))$
- }
+ \AlgoBiCaption{这是一个简短的算法中文图题}{This is the English caption of the algorithm}
+  \KwIn{training samples, {$(d_i, d_j)_q$; $\mathbf{q}_i, \mathbf{q}_j
+      \in C$, $q\in \mathbf{Q}$} }
+ \KwOut{parameter setting
+    $\lambda^T$}
+ \For{$t$=1 to $T$} { $\lambda^{t+1}_n = \lambda^t_n +
+    \eta (f_n(q, c, d_i) - f_n(q, c, d_j))$ }
 \end{algorithm}
 \end{minipage}
 
+
+\begin{minipage}{0.9\textwidth}\centering
+\begin{algorithm}[H]
+ \AlgoBiCaption{这是一个算法的比较长的中文图题，需要手动换行 \protect\\这里开始换行了，另外也可以自动换行的}{This is a long English caption of the algorithm, \protect\\ a new line  required}
+  \KwIn{training samples, {$(d_i, d_j)_q$; $\mathbf{q}_i, \mathbf{q}_j
+      \in C$, $q\in \mathbf{Q}$} }
+ \KwOut{parameter setting
+    $\lambda^T$}
+ \For{$t$=1 to $T$} { $\lambda^{t+1}_n = \lambda^t_n +
+    \eta (f_n(q, c, d_i) - f_n(q, c, d_j))$ }
+\end{algorithm}
+\end{minipage}
 
 \BiSection{公式}{Equations}
 \label{Tricks:Equations}
@@ -747,3 +755,8 @@ E=mc^2
 \textbf{A15}：\verb+\cite+ 是常规形式引用，\verb+\citeup+或\verb+\ucite+是上标形式引用;
 
 %\fi
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../main"
+%%% End: 
