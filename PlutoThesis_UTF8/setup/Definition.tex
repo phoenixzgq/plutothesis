@@ -79,7 +79,6 @@
  \gdef\subfigencaptionlist{}
 }
 
-
 \setcounter{fendepth}{2} %英文图形目录的深度 1(只有一级目录) 2(有两级目录)
 \setcounter{lofdepth}{2} %中文图形目录的深度 1(只有一级目录) 2(有两级目录)
 \renewcommand*{\l@subfigure}{\@dottedxxxline{\ext@subfigure}{2}{3.8em}{1.5em}} %中文图形目录 subfigure
@@ -262,16 +261,26 @@
 \renewcommand{\thetable}{\arabic{chapter}-\arabic{table}}%%使表编号为 7-1 的格式
 \renewcommand{\theequation}{\arabic{chapter}-\arabic{equation}}%%使公式编号为 7-1 的格式
 
-% 设置算法标题形式，由“Algorithm 2.1：算法标题” 改为“算法 2-1 算法标题”
+% 设置算法标题形式，由“Algorithm 2.1：算法标题” 改为“算法 2-1 算法标题”，并且定义算法的双标题命令（提醒：只提供了正文中的双标题实现，list of algorithms不好用，中英文标题就混杂在一块了）；
 \renewcommand{\algorithmcfname}{算法}
 \setlength\AlCapSkip{1.2ex}
 \SetAlgoSkip{1pt}
-\renewcommand{\algocf@captiontext}[2]{#1\algocf@typo ~ \AlCapFnt{}#2} % text of caption
+\renewcommand{\algocf@captiontext}[2]{\wuhao#1\algocf@typo ~ \AlCapFnt{}#2} % text of caption
 \expandafter\ifx\csname algocf@within\endcsname\relax% if \algocf@within doesn't exist
 \renewcommand\thealgocf{\@arabic\c@algocf} % and the way it is printed
 \else%                                    else
 \renewcommand\thealgocf{\csname the\algocf@within\endcsname-\@arabic\c@algocf}
 \fi
+\renewcommand{\algocf@makecaption}[2]{%中英文双标题一定多于一行，因此去掉单行时的判断，并将\parbox中标题设置为居中
+  \addtolength{\hsize}{\algomargin}%
+  \sbox\@tempboxa{\algocf@captiontext{#1}{#2}}%
+    \hskip .5\algomargin%
+    \parbox[t]{\hsize}{\centering\algocf@captiontext{#1}{#2}}% 
+  \addtolength{\hsize}{-\algomargin}%
+}
+\newcommand{\AlgoBiCaption}[2]{%直接取出自定义的中英文标题条目加入到真正的\caption 中  
+   \caption{\protect\setlength{\baselineskip}{1.5em}#1 \protect \\ Algo. \thealgocf~~ #2 }}
+
 
 \makeatother
 %定义 学科 学位
@@ -302,3 +311,8 @@
 
 \newcommand{\cdash}{\mbox{—\!\!\!\!—\!\!\!\!—}}%输入中文破折号的命令
 \newcommand{\dif}{\mathrm{d}}%在数学模式中输入微分dx
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../main"
+%%% End: 
