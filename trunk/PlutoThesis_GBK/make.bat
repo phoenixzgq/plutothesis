@@ -13,7 +13,7 @@ gbk2uni main.out
 latex main.tex
 dvips  -G0 -ta4 main.dvi
 ps2pdf main.ps main_dvipspdf.pdf
-del *.aux *.bbl *.blg *.out *.thm *.toc *.lof *.fen *.toe *.lot *.ten *.log *.ps *.dvi /s
+del *.aux *.bbl *.blg *.out *.thm *.toc *.lof *.fen *.toe *.lot *.ten *.log *.ps *.dvi *.loa /s
 start main_dvipspdf.pdf
 exit
 
@@ -26,7 +26,7 @@ gbk2uni main.out
 latex main.tex
 dvipdfmx -p a4 main.dvi
 ren main.pdf main_dvipdfm.pdf
-del *.aux *.bbl *.blg *.out *.thm *.toc *.lof *.fen *.toe *.lot *.ten *.log *.ps *.dvi /s
+del *.aux *.bbl *.blg *.out *.thm *.toc *.lof *.fen *.toe *.lot *.ten *.log *.ps *.dvi *.loa /s
 start main_dvipdfm.pdf
 exit
 
@@ -38,7 +38,7 @@ pdflatex main.tex
 gbk2uni main.out
 pdflatex main.tex
 ren main.pdf main_pdflatex.pdf
-del *.aux *.bbl *.blg *.out *.thm *.toc *.lof *.fen *.toe *.lot *.ten *.log /s
+del *.aux *.bbl *.blg *.out *.thm *.toc *.lof *.fen *.toe *.lot *.ten *.log *.synctex *.loa /s
 start main_pdflatex.pdf
 exit
 
@@ -52,7 +52,7 @@ ren main2.bbl main.bbl
 xelatex main.tex
 xelatex main.tex
 ren main.pdf main_xelatex.pdf
-del *.aux *.bbl *.blg *.out *.thm *.toc *.lof *.fen *.toe *.lot *.ten *.log *.gz *.gz(busy) /s
+del *.aux *.bbl *.blg *.out *.thm *.toc *.lof *.fen *.toe *.lot *.ten *.log *.gz *.gz(busy) *.synctex *.loa /s
 start main_xelatex.pdf
 exit
 
@@ -63,7 +63,7 @@ bibtex main
 latex main.tex
 gbk2uni main.out
 latex main.tex
-del *.aux *.bbl *.blg *.out *.thm *.toc *.lof *.fen *.toe *.lot *.ten *.log /s
+del *.aux *.bbl *.blg *.out *.thm *.toc *.lof *.fen *.toe *.lot *.ten *.log *.loa /s
 start main.dvi
 exit
 
