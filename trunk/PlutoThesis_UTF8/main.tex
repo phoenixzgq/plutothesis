@@ -1,32 +1,32 @@
 % -*-coding: utf-8 -*-
 
-\def\usewhat{xelatex}    % ä½ å–œæ¬¢å“ªç§ç¼–è¯‘æ–¹å¼ï¼Œpdflatex dvipdfmx dvipspdf xelatex yap
+\def\usewhat{pdflatex}    % ÄãÏ²»¶ÄÄÖÖ±àÒë·½Ê½£¬pdflatex dvipdfmx dvipspdf xelatex yap
 
 %input "reference\reference.bib" %for winedt users
-\def\version{1.9.0.20081213}         % è¯¥å˜é‡ä»…ç”¨äºæ¨¡æ¿æ–‡ä»¶çš„ç‰ˆæœ¬å·æ§åˆ¶ï¼Œæ–°çš„è®ºæ–‡è§„èŒƒä»1.9å¼€å§‹ï¼›
+\def\version{1.9.1.20090223}         % ¸Ã±äÁ¿½öÓÃÓÚÄ£°åÎÄ¼şµÄ°æ±¾ºÅ¿ØÖÆ£¬ĞÂµÄÂÛÎÄ¹æ·¶´Ó1.9¿ªÊ¼£»
 
-\def \xuewei {Doctor}   % å®šä¹‰å­¦ä½ åšå£«
-%\def \xuewei {Master}    % ç¡•å£«
+\def \xuewei {Doctor}   % ¶¨ÒåÑ§Î» ²©Ê¿
+%\def \xuewei {Master}    % Ë¶Ê¿
 
-\def\oneortwoside{twoside} %å®šä¹‰å•åŒé¢æ‰“å°ï¼Œåªå¯¹ç¡•å£«å­¦ä½è®ºæ–‡æœ‰æ•ˆ?
-%\def\oneortwoside{oneside} % ç¡•å£«å•é¢æ‰“å°
+\def\oneortwoside{twoside} %¶¨Òåµ¥Ë«Ãæ´òÓ¡£¬Ö»¶ÔË¶Ê¿Ñ§Î»ÂÛÎÄÓĞĞ§?
+%\def\oneortwoside{oneside} % Ë¶Ê¿µ¥Ãæ´òÓ¡
 
-\def\xueke{Engineering} % å®šä¹‰å­¦ç§‘ å·¥å­¦
-%\def\xueke{Science}      % ç†å­¦
-%\def\xueke{Management}   % ç®¡ç†å­¦
-%\def\xueke{Arts}         % è‰ºæœ¯å­¦
+\def\xueke{Engineering} % ¶¨ÒåÑ§¿Æ ¹¤Ñ§
+%\def\xueke{Science}      % ÀíÑ§
+%\def\xueke{Management}   % ¹ÜÀíÑ§
+%\def\xueke{Arts}         % ÒÕÊõÑ§
 
-%å®šä¹‰xelatexçš„ä¸­é—´ä¸´æ—¶å˜é‡ï¼Œè‹¥\usewhatä¸ºxelatexæ—¶ï¼Œåé¢æ‰§è¡Œxelatxçš„ç›¸å…³é€‰é¡¹
-\def\atempxetex{xelatex} %è¿™ä¸€é¡¹æ— éœ€æ”¹åŠ¨
+%¶¨ÒåxelatexµÄÖĞ¼äÁÙÊ±±äÁ¿£¬Èô\usewhatÎªxelatexÊ±£¬ºóÃæÖ´ĞĞxelatxµÄÏà¹ØÑ¡Ïî
+\def\atempxetex{xelatex} %ÕâÒ»ÏîÎŞĞè¸Ä¶¯
 
-\input{setup/type.tex}    % ç¡•åšç±»å‹
+\input{setup/type.tex}    % Ë¶²©ÀàĞÍ
 
-%ä¸‹é¢çš„booké€‰é¡¹ä¸­å¯ä»¥ä½¿ç”¨draft é€‰é¡¹ï¼Œä½¿æ’å…¥çš„å›¾å½¢åªæ˜¾ç¤ºå¤–æ¡†ï¼Œä»¥åŠ å¿«é¢„è§ˆé€Ÿåº¦?
+%ÏÂÃæµÄbookÑ¡ÏîÖĞ¿ÉÒÔÊ¹ÓÃdraft Ñ¡Ïî£¬Ê¹²åÈëµÄÍ¼ĞÎÖ»ÏÔÊ¾Íâ¿ò£¬ÒÔ¼Ó¿ìÔ¤ÀÀËÙ¶È?
 \documentclass[12pt,a4paper,openany,\oneortwoside]{book}
 
-\input{setup/package.tex} % å¼•ç”¨çš„å®åŒ…
+\input{setup/package.tex} % ÒıÓÃµÄºê°ü
 
-% è®ºæ–‡åŒ…å«çš„å†…å®¹
+% ÂÛÎÄ°üº¬µÄÄÚÈİ
 \includeonly{
                 body/Introduction,
                 body/Tricks,
@@ -40,83 +40,83 @@
                 appendix/acknowledgements,
                 appendix/Resume
             }
-\graphicspath{{figures/}} %å®šä¹‰æ‰€æœ‰çš„epsæ–‡ä»¶åœ¨ figures å­ç›®å½•ä¸‹
+\graphicspath{{figures/}} %¶¨ÒåËùÓĞµÄepsÎÄ¼şÔÚ figures ×ÓÄ¿Â¼ÏÂ
 
 \begin{document}
 \ifx\atempxetex\usewhat\else
 \begin{CJK*}{UTF8}{song}
 \fi
 
-\input{setup/Definition} % æ–‡æœ¬æ ¼å¼å®šä¹‰
+\input{setup/Definition} % ÎÄ±¾¸ñÊ½¶¨Òå
 \input{setup/format}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% æ­£æ–‡éƒ¨åˆ†
+% ÕıÎÄ²¿·Ö
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frontmatter
-\sloppy % è§£å†³ä¸­è‹±æ–‡æ··æ’çš„æ–­è¡Œé—®é¢˜ï¼Œä¼šåŠ å…¥é—´è·ï¼Œä½†ä¸ä¼šå½±å“æ–­è¡Œ
-\input{preface/cover} % å°é¢
+\sloppy % ½â¾öÖĞÓ¢ÎÄ»ìÅÅµÄ¶ÏĞĞÎÊÌâ£¬»á¼ÓÈë¼ä¾à£¬µ«²»»áÓ°Ïì¶ÏĞĞ
+\input{preface/cover} % ·âÃæ
 
-%% ä¸­è‹±ç›®å½•
+%% ÖĞÓ¢Ä¿Â¼
 \renewcommand{\baselinestretch}{1}
 \fontsize{12pt}{12pt}\selectfont
 \clearpage{\pagestyle{empty}\cleardoublepage}
-\pdfbookmark[0]{ç›®~~~~å½• }{mulu}
-\tableofcontents    % ä¸­æ–‡ç›®å½•
-\ifxueweidoctor     % è‹±æ–‡ç›®å½•å³å¼€
+\pdfbookmark[0]{Ä¿~~~~Â¼ }{mulu}
+\tableofcontents    % ÖĞÎÄÄ¿Â¼
+\ifxueweidoctor     % Ó¢ÎÄÄ¿Â¼ÓÒ¿ª
   \clearpage{\pagestyle{empty}\cleardoublepage}
 \else%
   \ifoneortwoside\clearpage{\pagestyle{empty}\cleardoublepage}\fi
 \fi
 \renewcommand{\baselinestretch}{1.3}
 \fontsize{12pt}{12pt}\selectfont
-\ifxueweidoctor %ç¡•å£«å­¦ä½è®ºæ–‡æ²¡æœ‰è‹±æ–‡ç›®å½•
-  \tableofengcontents % è‹±æ–‡ç›®å½•
+\ifxueweidoctor %Ë¶Ê¿Ñ§Î»ÂÛÎÄÃ»ÓĞÓ¢ÎÄÄ¿Â¼
+  \tableofengcontents % Ó¢ÎÄÄ¿Â¼
 \fi
 
-\input{setup/figtab.tex}  %å›¾è¡¨ç´¢å¼•, å¦‚æœä¸éœ€è¦å›¾è¡¨ç´¢å¼•ï¼Œæ³¨é‡Šæ‰è¿™ä¸€å¥å³å¯ï¼›
-% \notation  %ä¸»è¦ç¬¦å·è¡¨
-\addtocontents{toc}{\protect\vskip1\baselineskip} % ä¸­æ–‡ç›®å½•å¢åŠ ç©ºè¡Œ
-\addtocontents{toe}{\protect\vskip1\baselineskip} % è‹±æ–‡ç›®å½•å¢åŠ ç©ºè¡Œ
+\input{setup/figtab.tex}  %Í¼±íË÷Òı, Èç¹û²»ĞèÒªÍ¼±íË÷Òı£¬×¢ÊÍµôÕâÒ»¾ä¼´¿É£»
+% \notation  %Ö÷Òª·ûºÅ±í
+\addtocontents{toc}{\protect\vskip1\baselineskip} % ÖĞÎÄÄ¿Â¼Ôö¼Ó¿ÕĞĞ
+\addtocontents{toe}{\protect\vskip1\baselineskip} % Ó¢ÎÄÄ¿Â¼Ôö¼Ó¿ÕĞĞ
 
 \ifxueweidoctor
-  \clearpage{\pagestyle{empty}\cleardoublepage}   % æ¸…é™¤ç›®å½•åé¢ç©ºé¡µçš„é¡µçœ‰å’Œé¡µè„š
+  \clearpage{\pagestyle{empty}\cleardoublepage}   % Çå³ıÄ¿Â¼ºóÃæ¿ÕÒ³µÄÒ³Ã¼ºÍÒ³½Å
 \else%
-  \ifoneortwoside\clearpage{\pagestyle{empty}\cleardoublepage}\fi  % æ¸…é™¤ç›®å½•åé¢ç©ºé¡µçš„é¡µçœ‰å’Œé¡µè„š
-\fi                                               %  ç¬¬ä¸€ç« æ˜¯å¦å³å¼€
+  \ifoneortwoside\clearpage{\pagestyle{empty}\cleardoublepage}\fi  % Çå³ıÄ¿Â¼ºóÃæ¿ÕÒ³µÄÒ³Ã¼ºÍÒ³½Å
+\fi                                               %  µÚÒ»ÕÂÊÇ·ñÓÒ¿ª
 
 \mainmatter
-\defaultfont % å¯¹åº”äºå°å››çš„æ ‡å‡†å­—å·ä¸º12pt, å¯ä»¥åœ¨æ­£æ–‡ä¸­ç”¨æ­¤å‘½ä»¤ä¿®æ”¹æ‰€éœ€è¦å­—ä½“çš„çš„å¤§å°
+\defaultfont % ¶ÔÓ¦ÓÚĞ¡ËÄµÄ±ê×¼×ÖºÅÎª12pt, ¿ÉÒÔÔÚÕıÎÄÖĞÓÃ´ËÃüÁîĞŞ¸ÄËùĞèÒª×ÖÌåµÄµÄ´óĞ¡
 
 \include{body/Introduction}
 \include{body/Tricks}
 \include{body/UpdateLog}
 \include{body/ToTemplateMaintainers}
 \include{body/copyright}
-\include{body/conclusion}   % ç»“è®º
+\include{body/conclusion}   % ½áÂÛ
 
-%å‚è€ƒæ–‡çŒ®
+%²Î¿¼ÎÄÏ×
 \defaultfont
 \ifx\atempxetex\usewhat
 \bibliographystyle{chinesebst2005_UTF8}
 \else
 \bibliographystyle{chinesebst2005_UTF8}
 \fi
-\addcontentsline{toc}{chapter}{\hei \ReferenceCName}      % å‚è€ƒæ–‡çŒ®åŠ å…¥åˆ°ä¸­æ–‡ç›®å½•
-\addcontentsline{toe}{chapter}{\bfseries \ReferenceEName} % å‚è€ƒæ–‡çŒ®åŠ å…¥åˆ°è‹±æ–‡ç›®å½•
+\addcontentsline{toc}{chapter}{\hei \ReferenceCName}      % ²Î¿¼ÎÄÏ×¼ÓÈëµ½ÖĞÎÄÄ¿Â¼
+\addcontentsline{toe}{chapter}{\bfseries \ReferenceEName} % ²Î¿¼ÎÄÏ×¼ÓÈëµ½Ó¢ÎÄÄ¿Â¼
 \addtolength{\bibsep}{-0.8 em} \nocite{*}
 \bibliography{reference/reference}
 
 %\addtocontents{fen}{\protect\vskip1\baselineskip}
 %\addtocontents{ten}{\protect\vskip1\baselineskip}
-%è‹±æ–‡å›¾å½¢å’Œè¡¨æ ¼ç´¢å¼•é‡ŒåŠ å…¥ç©ºç™½è¡Œï¼Œé€šå¸¸æ”¾åœ¨ \include{appendix/appA}% é™„å½•Aä¹‹å‰ã€‚
-%åŒºåˆ†å¼€æ­£æ–‡å’Œé™„å½•çš„å›¾å½¢å’Œè¡¨æ ¼ï¼Œä¸€èˆ¬æ²¡æœ‰è¿™ä¸ªå¿…è¦ã€‚
+%Ó¢ÎÄÍ¼ĞÎºÍ±í¸ñË÷ÒıÀï¼ÓÈë¿Õ°×ĞĞ£¬Í¨³£·ÅÔÚ \include{appendix/appA}% ¸½Â¼AÖ®Ç°¡£
+%Çø·Ö¿ªÕıÎÄºÍ¸½Â¼µÄÍ¼ĞÎºÍ±í¸ñ£¬Ò»°ãÃ»ÓĞÕâ¸ö±ØÒª¡£
 
-\include{appendix/appA}            % é™„å½•A
-\include{appendix/publications}    % æ‰€å‘æ–‡ç« 
-\include{appendix/acknowledgements}% è‡´è°¢
-\include{appendix/Authorization}   % æ‰¿è¯º
-\include{appendix/Resume}          % ä¸ªäººç®€å†
+\include{appendix/appA}            % ¸½Â¼A
+\include{appendix/publications}    % Ëù·¢ÎÄÕÂ
+\include{appendix/acknowledgements}% ÖÂĞ»
+\include{appendix/Authorization}   % ³ĞÅµ
+\include{appendix/Resume}          % ¸öÈË¼òÀú
 
 \clearpage
 \ifx\atempxetex\usewhat\else
@@ -124,3 +124,8 @@
 \fi
 
 \end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
