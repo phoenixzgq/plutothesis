@@ -261,7 +261,15 @@
 \renewcommand{\thetable}{\arabic{chapter}-\arabic{table}}%%使表编号为 7-1 的格式
 \renewcommand{\theequation}{\arabic{chapter}-\arabic{equation}}%%使公式编号为 7-1 的格式
 
-% 设置算法标题形式，由“Algorithm 2.1：算法标题” 改为“算法 2-1 算法标题”，并且定义算法的双标题命令（提醒：只提供了正文中的双标题实现，list of algorithms不好用，中英文标题就混杂在一块了）；
+%----------- 设置算法标题形式，由“Algorithm 2.1：算法标题” 改为“算法 2-1 算法标题”，并且定义算法的双标题命令；---------%
+
+\newcommand{\algoenname}{Algo.} %算法英文标题
+\newcommand{\listalgoenname}{List of Algorithms}
+\newfloatlist[chapter]{algoen}{aen}{\listalgoenname}{\algoenname}
+\newfixedcaption{\algoencaption}{algoen}
+\renewcommand{\thealgoen}{\thechapter-\arabic{algocf}}
+\renewcommand{\@cftmakeaentitle}{\chapter*{\listalgoenname\@mkboth{\bfseries\listalgoenname}{\bfseries\listalgoenname}}}
+
 \renewcommand{\algorithmcfname}{算法}
 \setlength\AlCapSkip{1.2ex}
 \SetAlgoSkip{1pt}
@@ -279,8 +287,10 @@
   \addtolength{\hsize}{-\algomargin}%
 }
 \newcommand{\AlgoBiCaption}[2]{%直接取出自定义的中英文标题条目加入到真正的\caption 中  
-   \caption{\protect\setlength{\baselineskip}{1.5em}#1 \protect \\ Algo. \thealgocf~~ #2 }}
-
+   \caption[#1]{\protect\setlength{\baselineskip}{1.5em}#1 \protect \\ Algo. \thealgocf~~ #2} % \algoencaption{#2}   
+   \addcontentsline{aen}{algoen}{\protect\numberline{\thealgoen}{#2}}
+   }
+\renewcommand{\cftalgoendotsep}{1} %算法的英文目录里的点的间距
 
 \makeatother
 %定义 学科 学位
