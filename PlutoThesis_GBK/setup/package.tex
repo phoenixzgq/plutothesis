@@ -80,7 +80,7 @@
 
 \usepackage{enumitem}       %使用enumitem宏包,改变列表项的格式
 \usepackage{calc}           %长度可以用+ - * / 进行计算
-\usepackage[boxed,linesnumbered,algochapter]{algorithm2e}    % 算法的宏包
+
 
 % 生成有书签的pdf及其开关, 该宏包应放在所有宏包的最后, 宏包之间有冲突
 \def\atemp{dvipspdf}\ifx\atemp\usewhat
@@ -94,7 +94,7 @@
             linkcolor=red,
             anchorcolor=green,
             urlcolor=blue,
-            unicode,
+            %unicode,
             breaklinks=true
             ]{hyperref}
 \usepackage{breakurl} %消除dvips的时候网页链接断行失效的问题。
@@ -128,7 +128,7 @@
             linkcolor=red,
             anchorcolor=green,
             urlcolor=blue,
-            unicode,
+            % unicode,
             breaklinks=true
             ]{hyperref}
 \fi
@@ -166,3 +166,5 @@
 \fi
 
 \usepackage{arydshln}       %分块矩阵画虚线，挺好用
+
+\usepackage[boxed,linesnumbered,algochapter]{algorithm2e}  % 算法的宏包，注意宏包兼容性，先后顺序为float、hyperref、algorithm(2e)，否则无法生成算法列表
