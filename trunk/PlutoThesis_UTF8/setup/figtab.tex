@@ -1,26 +1,33 @@
 % -*-coding: utf-8 -*-
 
-%% 中英文图形表格索引   %硕博士学位论文规范均不要求这一项，请正式打印的时候屏蔽掉这一段；
+%% 中英文插图、表格、算法索引   
+%% 硕博士学位论文规范均不要求这一项，请正式打印的时候在main.tex中屏蔽掉\input{figtab.tex}；
+
 \ifxueweidoctor
   %\clearpage{\pagestyle{empty}\cleardoublepage}   % 清除目录后面空页的页眉和页脚
 \else%
   {\ifoneortwoside\clearpage{\pagestyle{empty}\cleardoublepage}\else\newpage\fi} % 清除目录后面空页的页眉和页脚
 \fi
+
 \addcontentsline{toc}{chapter}{\hei 插~~~~图}   % 中文插图加入到中文目录
 \listoffigures                                  % 生成中文 图形索引
+
 \ifxueweidoctor                                 %硕士学位论文没有英文目录
 %\clearpage{\pagestyle{empty}\cleardoublepage}   % 英文图形索引 右开 ？需要吗？
 \pdfbookmark[0]{List of Figures}{listfigure}
 \addcontentsline{toe}{chapter}{\bfseries\sihao List of Figures} % 英文插图加入到英文目录
 \listoffigen                                    % 生成英文图索引
 \fi
+
 \ifxueweidoctor
   %\clearpage{\pagestyle{empty}\cleardoublepage}   % 清除目录后面空页的页眉和页脚
 \else%
   {\ifoneortwoside\clearpage{\pagestyle{empty}\cleardoublepage}\else\newpage\fi}   % 清除目录后面空页的页眉和页脚
 \fi
+
 \addcontentsline{toc}{chapter}{\hei 表~~~~格}   % 中文表格加入到中文目录
 \listoftables                                   % 生成中文 表格索引
+
 \ifxueweidoctor                                 %硕士学位论文没有英文目录
   %\clearpage{\pagestyle{empty}\cleardoublepage}   % 英文表格索引 右开 ？需要吗？
   \addcontentsline{toe}{chapter}{\bfseries\sihao List of Tables} % 英文表格加入到英文目录
@@ -29,8 +36,22 @@
 \fi
 %% 如果不需要图表索引，注释掉上面的即可
 
-%\listofalgorithms %很奇怪这里什么都不出来，loa文件是空白的，一个简短的例子却没啥问题（留待解决，不影响使用，研究生院不要求列出该项）
+\ifxueweidoctor
+  %\clearpage{\pagestyle{empty}\cleardoublepage}   % 清除目录后面空页的页眉和页脚
+\else%
+  {\ifoneortwoside\clearpage{\pagestyle{empty}\cleardoublepage}\else\newpage\fi}   % 清除目录后面空页的页眉和页脚
+\fi
 
+\addcontentsline{toc}{chapter}{\hei 算~~~~法}   % 中文算法加入到中文目录
+\renewcommand{\listalgorithmcfname}{算~~~~法}   %中文“算法”代替英文list of algorithms
+\listofalgorithms                               % 生成中文算法索引
+
+\ifxueweidoctor                                 %硕士学位论文没有英文目录
+  %\clearpage{\pagestyle{empty}\cleardoublepage}   % 英文算法索引 右开 ？需要吗？
+  \addcontentsline{toe}{chapter}{\bfseries\sihao List of Algorithms} % 英文算法加入到英文目录
+  \pdfbookmark[0]{List of Algorithms}{listAlgo}
+  \listofalgoen                                    % 生成英文 表格索引
+\fi
 
 
 %%% Local Variables: 

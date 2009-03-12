@@ -524,7 +524,7 @@ $q\in \mathbf{Q}$} }
     $\lambda^{t+1}_n = \lambda^t_n + \eta (f_n(q, c, d_i) - f_n(q, c, d_j))$
  }
 \end{algorithm}
-算法环境中右侧空白比较多，若想把右侧的空白框减小，可以采用minipage环境实现。把algorithm环境放到minipage环境里面，并且加上选项[H]禁止算法浮动，下面给出一个例子。需要说明的是，一般不需要进行这种处理。算法图题可有可无，若有中英文图题，请使用\verb|\AlgoBiCaption{中文图题}{英文图题}|。下面给出两个有图题的例子。
+算法环境中右侧空白比较多，若想把右侧的空白框减小，可以采用minipage环境实现。把algorithm环境放到minipage环境里面，并且加上选项[H]禁止算法浮动，下面给出一个例子。需要说明的是，一般不需要进行这种处理。算法图题可有可无，若有中英文图题，请使用\verb|\AlgoBiCaption{中文图题}{英文图题}|。下面给出两个有图题的例子。需要说明的是，算法和图表的图题一样，都是自动换行，没有必要手动换行，如果采用\verb|\protect\\|手动换行，会造成目录中也是同样的手动换行，不符合常规排版要求。
 
 \begin{minipage}{0.8\textwidth}\centering
 \begin{algorithm}[H]
@@ -541,7 +541,7 @@ $q\in \mathbf{Q}$} }
 
 \begin{minipage}{0.9\textwidth}\centering
 \begin{algorithm}[H]
- \AlgoBiCaption{这是一个算法的比较长的中文图题，需要手动换行 \protect\\这里开始换行了，另外也可以自动换行的}{This is a long English caption of the algorithm, \protect\\ a new line  required}
+ \AlgoBiCaption{这是一个算法的比较长的中文图题，需要换行，这里采用自动换行，如果手动换行会造成算法目录中同样出现断行}{This is a long English caption of the algorithm, a new line  required, and this a new line}
   \KwIn{training samples, {$(d_i, d_j)_q$; $\mathbf{q}_i, \mathbf{q}_j
       \in C$, $q\in \mathbf{Q}$} }
  \KwOut{parameter setting
@@ -736,7 +736,18 @@ E=mc^2
 \textbf{A12}：从~1.8rc2 这个版本开始，模板升级时只需把~setup 目录，gb\_452.cpx, gb\_452.cap,chinesebst.bst Authorization.tex 文件替换掉即可（方便吧:-P）；当然最好是先把原来内容做一个备份 :-)
 
 \noindent \textbf{Q13}: \textcolor{blue}{怎么编译模板？编译时需要注意哪些问题？}\\
-\textbf{A13}: Windows 下直接运行 make.bat 就可以编译，linux 下是 makefile；如果你想采用自己的编译方式，则需要相应修改 main.tex 中的 \verb+\usewhat+ 参数，各个命令的参数及先后顺序参照~make.bat 或~makefile；PDF 书签出现乱码，很可能是因为没有运行gbk2uni程序。如果使用的是CTeX套装(www.ctex.org)，编译顺序：LaTeX $->$ bibtex $->$ LaTeX(已含gbk2uni) $->$ LaTeX $->$dvipdf(dvipdfmx)。
+\textbf{A13}: Windows 下直接运行 make.bat 就可以编
+译，linux 下是 Makefile；如果你想采用自己的编译方式，则需要相应修
+改 main.tex 中的 \verb+\usewhat+ 参数，各个命令的参数及先后顺序参
+照~make.bat 或~makefile；PDF 书签出现乱码，很可能是因为你使用的模板
+为GBK编码的，没有运行gbk2uni程序（国内的TeX高手专为中文书签正常显示制
+作）。一般编译的顺序为：LaTeX(或pdflatex) $\rightarrow$ bibtex $\rightarrow$
+LaTeX(或pdflatex) $\rightarrow$ gbk2uni $\rightarrow$ LaTeX（或pdflatex） ( $\rightarrow$
+dvipdfmx(或dvips)，这一步由dvi格式得到其它格式，pdflatex不需要），更详
+细的步骤请见make.bat或Makefile文件。在texlive和miktex中等非中国网友定制
+的系统中一般不含有gbk2uni，因此在模板的\verb|accessories\tools\|下提供
+了适合各个系统的gbk2uni程序及其源代码，请将其复制到latex.exe所在
+的目录下，然后用命令行使用。
 
 \noindent \textbf{Q14}: \textcolor{blue}{多个附录的问题？}\\
 \textbf{A14}: 如果是 1.8.0.20071121（含） 之后的版本，示例如下：

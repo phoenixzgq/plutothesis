@@ -325,8 +325,9 @@ mu$}\hfill
 % 定义封面
 \def\makecover{
     \normalbiao %表格字号设置
-    %%%%%%%%%%%%%封面一
     \begin{titlepage}
+    
+    % 封面一
     \begin{center}
 
     \parbox[t][1cm][b]{\textwidth}{\xiaoyi
@@ -442,7 +443,7 @@ mu$}\hfill
     \begin{center}  \end{center} }
 
     \parbox[t][6cm][c]{\textwidth}{ {\sihao
-    \begin{center}
+    \begin{center} \renewcommand{\arraystretch}{1.5} 
     \begin{tabular}{p{0cm}p{14em}p{13.4em}l@{\extracolsep{2em}}l}
     ~ & \textbf{Candidate:}                     &  \@eauthor\\
     ~ & \textbf{Supervisor:}                    &  \@esupervisor\\
