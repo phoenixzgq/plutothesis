@@ -198,16 +198,16 @@ luckykfox)}
 模板改动如下：
 \begin{hitlist}
  \item 修正了长表格标题带来的中英文表格目录混乱的问题；
- \item 中文图表目录``插图'' 和``表格'' 加上空格，与``摘要''等协调;
- \item 调整~make.bat 中的命令，提前把上次生成的~dvi、ps 和~ pdf 文件删除，避免编译失败时误以为是本次的编译的问题;
- \item 修正~libq@lilac 发现的采用~Pineapple@lilac 的授权书与本模板不协调，带来的页眉为“博士期间发表的博士论文”的问题;
+ \item 中文图表目录``插图'' 和``表格'' 加上空格，与``摘要''等协调；
+ \item 调整~make.bat 中的命令，提前把上次生成的~dvi、ps 和~ pdf 文件删除，避免编译失败时误以为是本次的编译的问题；
+ \item 修正~libq@lilac 发现的采用~Pineapple@lilac 的授权书与本模板不协调，带来的页眉为“博士期间发表的博士论文”的问题；
  \item 增加cmap宏包，可以制作中文可复制的~pdf 文档；
  \item 采用了标准的~ifpdf 宏包代替~ifpdf 定义；
  \item 增加arydshln宏包，给分块矩阵画虚线；
  \item 修正了libq 发现的授权书的硕博士论文相关的笔误问题；
  \item 把~gb\_452.cpx 和 ~gb\_452.cap 里面的中文图表索引每章后面的空行去掉了，与英文保持一致；
  \item 修正了make.bat中编译时得到的纸型是~letter 而不是~a4 的问题；
- \item 修正了长标题项中没有对齐的问题;
+ \item 修正了长标题项中没有对齐的问题；
  \item 增加一个~ToDoList文件，方便模板维护者统计bug，决定下一步的工作动向；
  \item 修改宏包~hyperref 的生成书签选项，将~dvipdf 改成~dvips ,hyperref 作者反对使用前者。
  \item 修正~make.bat 中的~dvips 命令，去掉~-Pdf 选项（嵌入字体），这个严重影响生成~pdf 文件的速度，却没有太大必要。
@@ -218,11 +218,11 @@ luckykfox)}
 模板改动如下：
 \begin{hitlist}
     \item figures 目录: hit\_logo.pdf, hit\_logo.eps 替换成矢量的；
-  \item chinesebst.bst 改正了两处，修正以前版面上提出的~url 问题;
-  \item main.tex 加入~reference.bib for winedt gather 设置，在~winedt 可以使用~tree、gather 等特性;
-    \verb|\graphicspath{{figures/}}|(定义所有的~eps 文件在 figures 子目录下)放到~\verb|\begin{document}| 之前，在使用~winedt 块编译的时候有用;第~1 章右开
+  \item chinesebst.bst 改正了两处，修正以前版面上提出的~url 问题；
+  \item main.tex 加入~reference.bib for winedt gather 设置，在~winedt 可以使用~tree、gather 等特性；
+    \verb|\graphicspath{{figures/}}|(定义所有的~eps 文件在 figures 子目录下)放到~\verb|\begin{document}| 之前，在使用~winedt 块编译的时候有用；第~1 章右开
   \item package.tex 增加 ~\verb|\usepackage{etex}|，增加计数器总数（原来是~256，宏包多，可能不够用），编译需基于~eTeX，因为咱模板计数器使用快超过~256了，如果用户自己在添加几个，编译就出错了。
-  \item definition.tex 增加一个环境~formulasymb，用来对公式中的符号进行描述，原模板中与工大论文要求的有出入;重新定义~BiChapter 命令，实现标题手动换行，但不影响目录;调整子图编号，符合工大论文要求；
+  \item definition.tex 增加一个环境~formulasymb，用来对公式中的符号进行描述，原模板中与工大论文要求的有出入；重新定义~BiChapter 命令，实现标题手动换行，但不影响目录；调整子图编号，符合工大论文要求；
         增加一个命令~\verb|\dif|，在数学模式中输入微分~$\dif$；调整破折号~\verb|\cdash| 的长度；更新表格目录中长表格超链接失效的问题；
         微调表格标题上下的间距；
   \item format.tex 虽然无法像word一样用难看的黑体英文，但最少也要把 章标题 与小节标题的英文字体一致起来；调整中英文目录，现在1.7rc1中的中文目录，章标题 后产生空白，应该在章标题之前产生；
@@ -240,10 +240,10 @@ luckykfox)}
 模板改动如下：
 \begin{hitlist}
   \item 支持二级图形目录，二级表格目录可以仿照图形目录实现；
-  \item 子图形英文标题用法更改，由~\verb|\SubfigureCaption|变成~\verb|\SubfigEnCaption|，并修正此命令解决由此带来的鲁棒性可能不强的问题;
-  \item 使用~violetwind@bbs.hit 提供的~linux 下的~makefile;
-  \item 章节目录和书签中增加图表目录;
-  \item 完善模板使用说明;
+  \item 子图形英文标题用法更改，由~\verb|\SubfigureCaption|变成~\verb|\SubfigEnCaption|，并修正此命令解决由此带来的鲁棒性可能不强的问题；
+  \item 使用~violetwind@bbs.hit 提供的~linux 下的~makefile；
+  \item 章节目录和书签中增加图表目录；
+  \item 完善模板使用说明；
   \item 至此，目前已知的~bugs 都已解决，功能也日益完善。
 \end{hitlist}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -265,20 +265,20 @@ luckykfox)}
 模板修正以下bugs：
 \begin{hitlist}
   \item 修正bst文件，使参考文献里书籍、学位论文中年份与页码之间是冒号，而不是逗号（参见规范），同时对学位论文进行细化，针对中英两种情况，
-中文输出``大学名称论文级别''，而英文输出``论文级别，大学名称'';
+中文输出``大学名称论文级别''，而英文输出``论文级别，大学名称''；
   \item 修正图题，表题的字号问题。使用ccaption以来，图题，表题字号一直不正确，主要在format.tex进行修正；
-  \item 把原 format.tex 的博硕一些定义，移到 type.tex;同时修正当学科不是engineering的时候，英文封面却始终显示 engineering的 小bug;
+  \item 把原 format.tex 的博硕一些定义，移到 type.tex；同时修正当学科不是engineering的时候，英文封面却始终显示 engineering的 小bug；
   \item 彻底修正附录的页眉问题；( 原因在于fancyhead设置是一个全局的设置，改变局部设置用\verb|\markboth{}{}|,在 Authorization.tex 添加了一项这个。在acknwledgement.tex去除fancyhead
-  同时在format.tex页眉部分简化，definition.tex biappchapter去除markboth，没有必要);
-  \item 修正硕士单面打印时，图表书签的链接指向问题，并去除单面打印时封面的空白页;
-  \item 修正 format.tex 中定理的定义。 定理后面不用冒号;
-  \item 修正图形英文标题的缩写， 由 ``Fig'' 改为``Fig.'';
+  同时在format.tex页眉部分简化，definition.tex biappchapter去除markboth，没有必要)；
+  \item 修正硕士单面打印时，图表书签的链接指向问题，并去除单面打印时封面的空白页；
+  \item 修正 format.tex 中定理的定义。 定理后面不用冒号；
+  \item 修正图形英文标题的缩写， 由 ``Fig'' 改为``Fig.''；
   \item 调整 cmap 宏包的引用位置，适应 miktex 2.5。
 \end{hitlist}
 
 模板功能增强主要有：
 \begin{hitlist}
-  \item 增加CJKpunct宏包，使得中文标点符号的处理，更符合中文习惯;
+  \item 增加CJKpunct宏包，使得中文标点符号的处理，更符合中文习惯；
   \item 取消原先的parlist宏包，采用enumitem(个人认为比parlist宏包强大，好用！)，
          同时修正 itemize enumerate description 这些列表项的格式；
   \item 增加导言区使用中文的命令设置；
@@ -291,7 +291,7 @@ luckykfox)}
 
 文档说明完善主要有：
 \begin{hitlist}
-  \item 补充论文规范里参考文献示例的条目到模板中，同时完善了正文里参考文献引用的使用说明;
+  \item 补充论文规范里参考文献示例的条目到模板中，同时完善了正文里参考文献引用的使用说明；
   \item 对 Tricks.tex 中封面内容部分、参考文献部分进行了一些补充；
   \item 对校内TeX资源的连接的介绍做一些修正和补充；
 \end{hitlist}
@@ -395,11 +395,11 @@ Update \version (by luckyfox and LaTeX )}
 
 模板修正以下bugs：
 \begin{hitlist}
-    \item 文件头部加入编码信息;
-    \item 跨页表格，标题宽度，末行居中;
-    \item 消除Introduction.tex中 \textbackslash section的\} 前没有空格导致出现的hyperref宏包相关错误; 
+    \item 文件头部加入编码信息；
+    \item 跨页表格，标题宽度，末行居中；
+    \item 消除Introduction.tex中 \textbackslash section的\} 前没有空格导致出现的hyperref宏包相关错误； 
     \item jdg发现并修正五号表表格未能真正居中对齐的bugs；
-    \item 修正UTF编码下某些注释的文字不完整;
+    \item 修正UTF编码下某些注释的文字不完整；
     \item 修正子图标题中的字号非5号字的问题； 
     \item 修正utf8的main.tex中原由gbk转换时部分文字无法显示的小bug；
     \item [GBK+UTF8]将jdg针对多个子图并列时子图中英文caption可能不对齐的bug修正的子图英文caption定义代码加入；
@@ -409,9 +409,9 @@ Update \version (by luckyfox and LaTeX )}
 
 模板功能增强主要有：
 \begin{hitlist}
-    \item 默认编译改成dvipspdf;
-    \item 上传xelatex版本的readme,字体比较均匀;
-    \item 创建PlutoThesis的utf8文件;
+    \item 默认编译改成dvipspdf；
+    \item 上传xelatex版本的readme,字体比较均匀；
+    \item 创建PlutoThesis的utf8文件；
     \item 上传参考文献国标2005文件；
 \end{hitlist}
 
@@ -425,21 +425,21 @@ Update \version (by luckyfox and LaTeX )}
 
 模板修正以下bugs：
 \begin{hitlist}
-    \item 修正makefile，添加xelatex编译代码; 
-    \item 去掉GBK封面上的"专业",英文封面的 in \textbackslash exueke; 
-    \item 修改了版芯，部分尺寸调整还待验证; 
-    \item 将英文目录的章改为四号字; 
-    \item 第四级标题题序顶格写，与标题空一格，阐述内容另起一段; 
-    \item 修正xelatex编译时，英文粗体采用了粗体，而非Times New Roman的bug;
+    \item 修正makefile，添加xelatex编译代码； 
+    \item 去掉GBK封面上的"专业",英文封面的 in \textbackslash exueke； 
+    \item 修改了版芯，部分尺寸调整还待验证； 
+    \item 将英文目录的章改为四号字； 
+    \item 第四级标题题序顶格写，与标题空一格，阐述内容另起一段； 
+    \item 修正xelatex编译时，英文粗体采用了粗体，而非Times New Roman的bug；
     \item UTF8，修正xelatex编译中文乱码的bug，去掉hyperref的unicode选项； 
 \end{hitlist}
 
 
 模板功能增强主要有：
 \begin{hitlist}
-    \item 提交比较符合GBT7714-2005标准的bst文件,文件名加后缀"\_HIT"; 
-    \item 中文封面加上学校代码和密级; 
-    \item 加入新论文规范的readme.pdf;
+    \item 提交比较符合GBT7714-2005标准的bst文件,文件名加后缀"\_HIT"； 
+    \item 中文封面加上学校代码和密级； 
+    \item 加入新论文规范的readme.pdf；
     \item 添加jdg制作的chinesebst2005，包括GBK和UTF8编码；
     \item 根据参考文献标准要求，修改了Reference.bib文件完善示例文献条目；
 \end{hitlist}
@@ -447,4 +447,31 @@ Update \version (by luckyfox and LaTeX )}
 文档说明完善主要有：
 \begin{hitlist}
    \item  updatelog的更新
+\end{hitlist}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\BiSubsection{版本升级至~v1.9.1.20090323~(by luckyfox)}{Version
+Update \version (by luckyfox)}
+
+模板修正以下bugs:
+\begin{hitlist}
+\item 修正保密项和学校代码导致部分编译分时下两行间距拉大的问题；
+\item 修正英文目录中手动加入的条目字号bug；
+\item 修正示例中上下放置的子图题和总图题间距过大的问题；
+\item 修正章节间距、段落间距、公式间距；
+\item 将正文中子图的引用从图7-1 (a)修正为图7-1 a)
+\end{hitlist}
+
+模板功能增强主要有:
+\begin{hitlist}
+\item 调整封面中文行间距；
+\item 增加一个将子图图题写到总图题之下的例子；
+\item 精调正文行距；
+\item 默认改为pdflatex编译；
+\item 添加算法的双图题例子，添加算法双图题的定义；
+\item 添加win下GBK版本可以用的gbk2uni.exe；
+\end{hitlist}
+
+文档说明完善主要有:
+\begin{hitlist}
+  \item updatelog的更新
 \end{hitlist}
