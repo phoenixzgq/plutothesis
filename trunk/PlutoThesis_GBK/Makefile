@@ -4,7 +4,7 @@ DVIPSPDF:=$(shell grep '\\def\\usewhat{dvipspdf}' main.tex)
 YAP:=$(shell grep '\\def\\usewhat{yap}' main.tex)
 XELATEX :=$(shell grep '\\def\\usewhat{xelatex}'  main.tex)
 empty=
-
+GBK2UNI = ./Accessories/tools/gbk2uni
 all:
 ifneq ($(empty),$(XELATEX))
 	@echo Making xelatex......
@@ -12,7 +12,7 @@ ifneq ($(empty),$(XELATEX))
 	xelatex main.tex
 	env BIBINPUTS=./ BSTINPUTS=./ bibtex main
 	xelatex main.tex
-	gbk2uni main.out
+	GBK2UNI main.out
 	xelatex main.tex
 	xelatex main.tex
 	mv main.pdf main_xelatex.pdf
@@ -36,7 +36,7 @@ ifneq ($(empty),$(PDFLATEX))
 	pdflatex main.tex
 	env BIBINPUTS=./ BSTINPUTS=./ bibtex main
 	pdflatex main.tex
-	gbk2uni main.out
+	$(GBK2UNI) main.out
 	pdflatex main.tex
 	mv main.pdf main_pdflatex.pdf
 	@echo Done. Starting the browser......
@@ -48,7 +48,7 @@ ifneq ($(empty),$(DVIPSPDF))
 	latex main.tex
 	env BIBINPUTS=./ BSTINPUTS=./ bibtex main
 	latex main.tex
-	gbk2uni main.out
+	GBK2UNI main.out
 	latex main.tex
 	dvips  -G0 -ta4 main.dvi
 	ps2pdf main.ps main_dvipspdf.pdf
@@ -61,7 +61,7 @@ ifneq ($(empty),$(YAP))
 	latex main.tex
 	env BIBINPUTS=./ BSTINPUTS=./ bibtex main
 	latex main.tex
-	gbk2uni main.out
+	GBK2UNI main.out
 	latex main.tex
 	xdvi main.dvi&
 endif
