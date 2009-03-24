@@ -216,9 +216,9 @@
 %重新定义BiChapter命令，可实现标题手动换行，但不影响目录
 \def\BiChapter{\relax\@ifnextchar [{\@BiChapter}{\@@BiChapter}}
 \def\@BiChapter[#1]#2#3{\chapter[#1]{#2}
-    \addcontentsline{toe}{chapter}{\bfseries \sihao Chapter \thechapter\hspace{0.5em} #3}}
+    \addcontentsline{toe}{chapter}{\bfseries \xiaosi Chapter \thechapter\hspace{0.5em} #3}}
 \def\@@BiChapter#1#2{\chapter{#1}
-    \addcontentsline{toe}{chapter}{\bfseries \sihao Chapter \thechapter\hspace{0.5em}{\boldmath #2}}}
+    \addcontentsline{toe}{chapter}{\bfseries \xiaosi Chapter \thechapter\hspace{0.5em}{\boldmath #2}}}
 %\newcommand{\BiChapter}[2]
 %{
 %    \chapter{#1}
@@ -244,13 +244,13 @@
 {\phantomsection
 \markboth{#1}{#1}%\markboth{\MakeUppercase{#1}}{\MakeUppercase{#1}}
 \addcontentsline{toc}{chapter}{\hei #1}
-\addcontentsline{toe}{chapter}{\bfseries \sihao #2}  \chapter*{#1}
+\addcontentsline{toe}{chapter}{\bfseries \xiaosi #2}  \chapter*{#1}
 }
 
 \newcommand{\BiAppChapter}[2]    % 该附录命令适用于有章节的完整附录
 {\phantomsection  \chapter{#1}   %\markboth{\MakeUppercase{#1}}{\MakeUppercase{#1}} %为了winedt中project tree中toc正确显示，不要挪到下一行；
 %\addcontentsline{toc}{chapter}{\hei #1}
- \addcontentsline{toe}{chapter}{\bfseries \sihao Appendix \thechapter~~#2}
+ \addcontentsline{toe}{chapter}{\bfseries \xiaosi Appendix \thechapter~~#2}
 }
 
 \renewcommand{\thefigure}{\arabic{chapter}-\arabic{figure}}%使图编号为 7-1 的格式 %\protect{~}
