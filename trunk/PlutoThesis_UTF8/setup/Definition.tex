@@ -5,7 +5,10 @@
 % 注意win2000,没有 simsun,　最好到网上找一个
 % 一些字体是office2000 带的
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\ifx\atempxetex\usewhat %xelatex调用系统字体；
+\ifx\atempxetex\usewhat 
+  % xelatex调用系统字体；
+  % 【请在命令行下用 "fc-list" 列出系统的字体，选择其对应的名字】
+  % 【只列出中文字体的命令 "fc-list :lang=zh-cn" 】
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont{Times New Roman}   % 正文中的英文 采用 Times New Roman 字体；
 \setsansfont{Times New Roman}   % 正文中的英文 采用 Times New Roman 字体；
@@ -14,8 +17,8 @@
 \setCJKmonofont{LiSu}
 \setCJKfamilyfont{song}{SimSun}
 \setCJKfamilyfont{hei}{SimHei}
-\setCJKfamilyfont{fs}{FangSong_GB2312}
-\setCJKfamilyfont{kai}{KaiTi_GB2312}
+\setCJKfamilyfont{fs}{FangSong_GB2312} % XP对应 FangSong_GB2312，Vista对应FangSong，注意根据系统切换
+\setCJKfamilyfont{kai}{KaiTi_GB2312}   % XP对应 KaiTi_GB2312，Vista对应KaiTi，注意根据系统切换
 \setCJKfamilyfont{li}{LiSu}
 \fi
 \newcommand{\song}{\CJKfamily{song}}    % 宋体   (Windows自带simsun.ttf)
