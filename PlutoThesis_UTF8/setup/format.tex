@@ -182,7 +182,13 @@ mu$}\hfill
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 设置行距和段落间垂直距离
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ifx\CJKoglue\undefined %CJKoglue是新版CJKpunct中的命令，以此来判断采用的是新版还是旧版CJKpunct宏包
+\renewcommand{\CJKglue}{\hskip 0.3pt plus 0.08\baselineskip} %加大字间距，使每行33个字 
+\else
+\let\CJKglue\CJKoglue
 \renewcommand{\CJKglue}{\hskip 0.3pt plus 0.08\baselineskip}%加大字间距，使每行33个字
+\fi
+    
 %\setlength{\belowcaptionskip}{10pt}   % 加大标题和表格之间的距离 \abovecaptionskip 默认是10pt
 %\setlength{\parskip}{3pt plus1pt minus1pt} % 段落之间的竖直距离
 \setlength{\parskip}{1.5pt plus 1pt minus 1pt} % by genfazhan（本来想改成0pt，和正常段之间一致，但生成的目录有点太紧凑了，不太好看，所以就设成了1.5pt）
