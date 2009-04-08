@@ -1,4 +1,8 @@
-% -*-coding: gb2312 -*-
+% -*- coding:gb2312 -*- 
+% 当main.tex文件中存在上面声明编码的命令时，用winedt5.4打开该文件时会winedt中所有的
+% 编译按钮都是灰色的，tex文档中的注释、latex命令等的颜色高亮显示也不正常，感觉是winedt没有识别出
+% tex文件一样，当将其删除时，一切都正常了。<这是winedt编辑器的bug，非模板bug>
+%  ======== 推荐winedt用户使用winedt5.5及以上版本或删除该命令。==========
 
 \def\usewhat{pdflatex}    % 你喜欢哪种编译方式，pdflatex dvipdfmx dvipspdf xelatex yap
 
