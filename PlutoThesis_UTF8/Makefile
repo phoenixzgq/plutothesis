@@ -10,7 +10,6 @@ ifneq ($(empty),$(XELATEX))
 	@echo Making xelatex......
 	rm main_xelatex.pdf &
 	xelatex main.tex
-	env BIBINPUTS=./ BSTINPUTS=./ bibtex main
 	xelatex main.tex
 	xelatex main.tex
 	mv main.pdf main_xelatex.pdf
@@ -73,7 +72,7 @@ clean:
 	-find -name '#*#' -exec rm {} \;
 	-find -name 'semantic.cache' -exec rm {} \;
 	-find -name '*.log' -exec rm {} \;
-	-rm *.bbl *.blg *.log *.out *.ps *.thm *.toc *.toe *.lof *.lot *.pdf
+	-rm *.bbl *.blg *.log *.out *.ps *.thm *.toc *.toe *.lof *.lot 
 	-rm *.html *.css *.scm *.hlog
 	-rm _region_.tex
 	-rm -rf auto
