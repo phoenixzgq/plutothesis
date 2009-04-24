@@ -477,7 +477,7 @@ Update v1.9.1.20090323 (by luckyfox  and maldinilz)}
 \end{hitlist}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\BiSubsection{版本升级至~v1.9.2.20090324~(by luckyfox  and maldinilz)}{Version
+\BiSubsection{版本升级至~v1.9.2.20090324~(by luckyfox and maldinilz)}{Version
 Update v1.9.2.20090324 (by luckyfox  and maldinilz)}
 
 模板修正以下bugs:
@@ -487,8 +487,27 @@ Update v1.9.2.20090324 (by luckyfox  and maldinilz)}
 \item 致谢放在个人简历前面（按研院老师说明，而非论文规范中致谢在承诺之前）；
 \end{hitlist}
 
-
 文档说明完善主要有:
 \begin{hitlist}
   \item updatelog的更新
+\end{hitlist}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\BiSubsection{版本升级至~v1.9.2.20090424~(by luckyfox and maldinilz)}{Version Update v.19.2.20090424 (by luckyfox and maldinilz)}
+
+模板修正以下bugs:
+\begin{hitlist}
+\item 修正在format.tex中手动给出中文封面上的分类号的bug （调试的时候把相应命令改成确定数值了）；
+\item 更正UpdateLog中的一个conclusions拼写错误（不影响使用）；
+\end{hitlist}
+
+模板功能增强主要有:
+\begin{hitlist}
+\item 完善模板对CJKpunct package的支持
+\end{hitlist}
+文档说明完善主要有:
+\begin{hitlist}
+\item updatelog的更新；
+\item 在definition中对xelatex字体选择做些说明，将来最好在tricks.tex中再说明一下，给用户在不同平台下用xelatex编译提供帮助；
+\item 对GBK版本的main.tex中第一句标示文件编码的语句进行补充说明，因为：“当main.tex文件中存在命令code：gb2312时，用winedt54打开该文件时会winedt中所有的编译按钮都是灰色的，tex文档中的注释、latex命令等的颜色高亮显示也不正常，感觉是winedt没有识别出tex文件一样，当把命令code：gb2312删除时，一切都正常了。”用winedt5.5不存在这个问题，应该说这是winedt的bug，但是为了照顾ctex用户，编码下增加这个说明；
 \end{hitlist}
