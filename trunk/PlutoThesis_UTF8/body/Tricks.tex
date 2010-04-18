@@ -521,6 +521,10 @@ a&emf&bcdef\\
 
 
 \BiSection{算法}{algorithm}
+
+注意：算法宏包的中英文标题在TeXlive2009下失效，故源代码中暂时屏蔽该功能！
+
+\iffalse
 这是一个算法的例子，来自~worldguy@lilacbbs~
 \begin{algorithm}
 \KwIn{training samples, {$(d_i, d_j)_q$; $\mathbf{q}_i, \mathbf{q}_j \in C$,
@@ -558,6 +562,8 @@ $q\in \mathbf{Q}$} }
     \eta (f_n(q, c, d_i) - f_n(q, c, d_j))$ }
 \end{algorithm}
 \end{minipage}
+
+\fi
 
 \BiSection{公式}{Equations}
 \label{Tricks:Equations}
@@ -696,7 +702,7 @@ E=mc^2
 \textbf{A1}：根据研究生院出的《论文规范》，三级标题后，是接着写而不是像二级标题那样重启一段。如果需要，
 可以在~format.tex 中寻找如下代码：
 \begin{verbatim}
-  \titleformat{\subsubsection}[runin]{\hei\sf\xiaosi}
+  \titleformat{\subsubsection}[runin]{\sf\hei\xiaosi}
   {\thesubsubsection}{0.5em}{}[\;\;]
 \end{verbatim}
 改为：
