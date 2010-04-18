@@ -1,11 +1,18 @@
 % -*-coding: utf-8 -*-
 
-\def\usewhat{pdflatex}    % 你喜欢哪种编译方式，pdflatex dvipdfmx dvipspdf xelatex yap
+\def\usewhat{pdflatex}    % 你喜欢哪种编译方式，pdflatex dvipdfmx xelatex yap 
+% 目前texlive2009、miktex2.8（ctex2.8基于miktex2.8）中提供了ctex中文支持宏包，在使用pdflatex、dvipdfmx和xelatex时，
+% 用户无需再进行中文配置，安装texlive09后就可编译本模板。
+% 由于dvipspdf编译方式相对其他编译方式比较麻烦，并且没有什么优势，texlive09中ctex宏包没有默认提供
+% dvips的中文支持方式，本模板不再提供dvipspdf编译方式。
+
 
 %定义xelatex的中间临时变量，若\usewhat为xelatex时，后面执行xelatx的相关选项
 \def\atempxetex{xelatex} %这一项无需改动
 %input "reference\reference.bib" %for winedt users
-\def\version{1.9.3.20090601}         % 该变量仅用于模板文件的版本号控制，新的论文规范从1.9开始；
+\def\version{1.9.4.20100419}         % 该变量仅用于模板文件的版本号控制，新的论文规范从1.9开始；
+	% 自从版本1.9.4.20100419后开始提供基于texlive09，miktex2.8的TeX系统的支持，不再支持早期的tl08和miktex2.7及以前版本。
+	% 请使用tl08和miktex2.7及以前版本的用户使用本模板的1.9.2.10090424版本。
 
 \def \xuewei {Doctor}   % 定义学位 博士
 %\def \xuewei {Master}    % 硕士

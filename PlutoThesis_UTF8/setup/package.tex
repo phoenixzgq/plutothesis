@@ -25,7 +25,7 @@
 
 \usepackage[%paperwidth=18.4cm, paperheight= 26cm,  % 版面控制宏包，定义规定的版面尺寸
             body={15true cm,22true cm},           %论文版芯145mm×210mm（包括页眉及页码则为15mm×240mm）
-            twosideshift=0 pt,                      %页码在版芯下边线之下隔行居中放置；
+            bindingoffset=0 pt,                      %页码在版芯下边线之下隔行居中放置；
             %headheight=1.0true cm
             ]{geometry}
 \usepackage{layouts}                    % 打印当前页面格式的宏包
@@ -37,10 +37,12 @@
 \usepackage{array}          %增强表格的功能 %可能与xeCJK宏包冲突，需放在xeCJK之前。
 
 \ifx\atempxetex\usewhat
-\usepackage[slantfont,boldfont,CJKaddspaces]{xeCJK} %
-\CJKlanguage{zh-cn}
+%\usepackage[slantfont,boldfont,CJKaddspaces]{xeCJK} %
+%\CJKlanguage{zh-cn}
+\usepackage{ctex}
 \else
-\usepackage{CJKutf8} %CJKpunct}   % 中文支持宏包
+%\usepackage{CJKutf8} %CJKpunct}   % 中文支持宏包
+\usepackage[UTF8]{ctex}
 \usepackage{times}          % 使用Times字体的宏包
 \fi
 
