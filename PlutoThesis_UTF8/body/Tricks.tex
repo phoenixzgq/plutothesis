@@ -522,20 +522,20 @@ a&emf&bcdef\\
 
 \BiSection{算法}{algorithm}
 
-注意：算法宏包的中英文标题在TeXlive2009下失效，故源代码中暂时屏蔽该功能！
+这是一个算法的例子，来自~worldguy@lilacbbs。
+建议将算法宏包放在minipage环境中，避免算法出现在页面版心之外。
 
-\iffalse
-这是一个算法的例子，来自~worldguy@lilacbbs~
-\begin{algorithm}
-\KwIn{training samples, {$(d_i, d_j)_q$; $\mathbf{q}_i, \mathbf{q}_j \in C$,
-$q\in \mathbf{Q}$} }
-\KwOut{parameter setting $\lambda^T$}
+%\begin{algorithm}
+%\KwIn{training samples, {$(d_i, d_j)_q$; $\mathbf{q}_i, \mathbf{q}_j \in C$,
+%$q\in \mathbf{Q}$} }
+%\KwOut{parameter setting $\lambda^T$}%
+%
+%\For{$t$=1 to $T$}
+%{   
+%    $\lambda^{t+1}_n = \lambda^t_n + \eta (f_n(q, c, d_i) - f_n(q, c, d_j))$
+% }
+%\end{algorithm}
 
-\For{$t$=1 to $T$}
-{   
-    $\lambda^{t+1}_n = \lambda^t_n + \eta (f_n(q, c, d_i) - f_n(q, c, d_j))$
- }
-\end{algorithm}
 算法环境中右侧空白比较多，若想把右侧的空白框减小，可以采用minipage环境实现。把algorithm环境放到minipage环境里面，并且加上选项[H]禁止算法浮动，下面给出一个例子。需要说明的是，一般不需要进行这种处理。算法图题可有可无，若有中英文图题，请使用\verb|\AlgoBiCaption{中文图题}{英文图题}|。下面给出两个有图题的例子。需要说明的是，算法和图表的图题一样，都是自动换行，没有必要手动换行，如果采用\verb|\protect\\|手动换行，会造成目录中也是同样的手动换行，不符合常规排版要求。
 
 \begin{minipage}{0.8\textwidth}\centering
@@ -562,8 +562,6 @@ $q\in \mathbf{Q}$} }
     \eta (f_n(q, c, d_i) - f_n(q, c, d_j))$ }
 \end{algorithm}
 \end{minipage}
-
-\fi
 
 \BiSection{公式}{Equations}
 \label{Tricks:Equations}
