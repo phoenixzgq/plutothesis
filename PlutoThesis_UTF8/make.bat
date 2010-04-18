@@ -25,7 +25,7 @@ gbk2uni main.out
 latex main.tex
 dvipdfmx -p a4 main.dvi
 ren main.pdf main_dvipdfm.pdf
-:del *.aux *.bbl *.blg *.out *.thm *.toc *.lof *.fen *.toe *.lot *.ten *.log *.ps *.dvi *.loa /s
+del *.aux *.bbl *.blg *.out *.thm *.toc *.lof *.fen *.toe *.lot *.ten *.log *.ps *.dvi *.loa /s
 start main_dvipdfm.pdf
 exit
 
