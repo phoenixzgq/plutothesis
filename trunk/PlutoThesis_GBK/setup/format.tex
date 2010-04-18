@@ -560,7 +560,9 @@ mu$}\hfill
 % 表格与下方间距
 \renewcommand\endtable{\vspace{-4mm}\end@float}
 % 算法与下方间距
-\renewcommand\endalgorithm{\@algocf@finish \ifthenelse {\equal {\algocf@float }{figure}}{\end {figure}}{
-\@algocf@term@caption \ifthenelse {\boolean {algocf@algoH}}{\end {algocf@Here}}
-{\end {algocf}}}\@algocf@term\vspace{-5mm}}
+%\renewcommand\endalgorithm{\@algocf@finish \ifthenelse {\equal {\algocf@float }{figure}}{\end {figure}}{
+%\@algocf@term@caption \ifthenelse {\boolean {algocf@algoH}}{\end {algocf@Here}}
+%{\end {algocf}}}\@algocf@term\vspace{-5mm}}
+% algorithm2e的4.0版本删除了\endalgorithm的命令，改为直接定义algoco@algorithm环境的形式，造成使用上面的语句为出现错误：
+% Latex Error:\begin{algoco@algorithm} on input line 526 ended by \end{algorithm}  
 \makeatother
