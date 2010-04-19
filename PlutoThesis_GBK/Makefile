@@ -8,7 +8,7 @@ GBK2UNI = ./Accessories/tools/gbk2uni
 all:
 ifneq ($(empty),$(XELATEX))
 	@echo Making xelatex......
-	rm main_xelatex.pdf &
+	rm -f main_xelatex.pdf &
 	xelatex main.tex
 	env BIBINPUTS=./ BSTINPUTS=./ bibtex main
 	xelatex main.tex
@@ -21,7 +21,7 @@ ifneq ($(empty),$(XELATEX))
 endif
 ifneq ($(empty),$(DVIPDFMX))
 	@echo Making dvipdfmx......
-	rm main.pdf main.dvi &
+	rm -f main.pdf main.dvi &
 	latex main.tex
 	env BIBINPUTS=./ BSTINPUTS=./ bibtex main
 	latex main.tex
@@ -32,7 +32,7 @@ ifneq ($(empty),$(DVIPDFMX))
 endif
 ifneq ($(empty),$(PDFLATEX))
 	@echo Making pdflatex......
-	rm main_pdflatex.pdf&
+	rm -f main_pdflatex.pdf&
 	pdflatex main.tex
 	env BIBINPUTS=./ BSTINPUTS=./ bibtex main
 	pdflatex main.tex
@@ -44,7 +44,7 @@ ifneq ($(empty),$(PDFLATEX))
 endif
 ifneq ($(empty),$(DVIPSPDF))
 	@echo Making dvipspdf......
-	rm main_dvipspdf.pdf main.dvi main.ps&
+	rm -f main_dvipspdf.pdf main.dvi main.ps&
 	latex main.tex
 	env BIBINPUTS=./ BSTINPUTS=./ bibtex main
 	latex main.tex
@@ -57,7 +57,7 @@ ifneq ($(empty),$(DVIPSPDF))
 endif
 ifneq ($(empty),$(YAP))
 	@echo Making dvi......
-	rm main.dvi&
+	rm -f main.dvi&
 	latex main.tex
 	env BIBINPUTS=./ BSTINPUTS=./ bibtex main
 	latex main.tex
@@ -68,19 +68,19 @@ endif
 
 clean:
 	@echo Cleaning up......
-	-find -name '*.aux' -exec rm {} \;
-	-find -name '*.bak' -exec rm {} \;
-	-find -name '*.dvi' -exec rm {} \;
-	-find -name '*~' -exec rm {} \;
-	-find -name '#*#' -exec rm {} \;
-	-find -name 'semantic.cache' -exec rm {} \;
-	-find -name '*.log' -exec rm {} \;
-	-rm *.bbl *.blg *.log *.out *.ps *.thm *.toc *.toe *.lof *.lot 
-	-rm *.html *.css *.scm *.hlog
-	-rm _region_.tex
-	-rm -rf auto
-	-rm *.fen
-	-rm *.ten
+	-find -name '*.aux' -exec rm -f {} \;
+	-find -name '*.bak' -exec rm -f {} \;
+	-find -name '*.dvi' -exec rm -f {} \;
+	-find -name '*~' -exec rm -f {} \;
+	-find -name '#*#' -exec rm -f {} \;
+	-find -name 'semantic.cache' -exec rm -f {} \;
+	-find -name '*.log' -exec rm -f {} \;
+	-rm -f *.bbl *.blg *.log *.out *.ps *.thm *.toc *.toe *.lof *.lot 
+	-rm -f *.html *.css *.scm *.hlog
+	-rm -f _region_.tex
+	-rm -f -rf auto
+	-rm -f *.fen
+	-rm -f *.ten
 	-rm -rf ./body/auto
 	-rm -rf ./reference/auto
 	-rm -rf ./setup/auto
